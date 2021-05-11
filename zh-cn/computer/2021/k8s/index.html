@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>k8s - Ndoskrnl&#039;s blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Ndoskrnl&#039;s blog"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Ndoskrnl&#039;s blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Kubernetes 的使用(我使用k0s)"><meta property="og:type" content="blog"><meta property="og:title" content="k8s"><meta property="og:url" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/k8s/"><meta property="og:site_name" content="Ndoskrnl&#039;s blog"><meta property="og:description" content="Kubernetes 的使用(我使用k0s)"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://blog.ndoskrnl.net/img/og_image.png"><meta property="article:published_time" content="2021-05-11T05:11:30.000Z"><meta property="article:modified_time" content="2021-05-11T07:17:04.056Z"><meta property="article:author" content="Ndoskrnl"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.ndoskrnl.net/zh-cn/computer/2021/k8s/"},"headline":"Ndoskrnl's blog","image":["http://blog.ndoskrnl.net/img/og_image.png"],"datePublished":"2021-05-11T05:11:30.000Z","dateModified":"2021-05-11T07:17:04.056Z","author":{"@type":"Person","name":"Ndoskrnl"},"description":"Kubernetes 的使用(我使用k0s)"}</script><link rel="canonical" href="http://blog.ndoskrnl.net/zh-cn/computer/2021/k8s/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Ndoskrnl&#039;s blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/peers">Peers</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-05-11T05:11:30.000Z" title="5/11/2021, 5:11:30 AM">2021-05-11</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-05-11T07:17:04.056Z" title="5/11/2021, 7:17:04 AM">2021-05-11</time></span><span class="level-item"><a class="link-muted" href="/categories/computer/">computer</a></span><span class="level-item">9 分钟 read (About 1420 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">k8s</h1><div class="content"><p>Kubernetes 的使用(我使用k0s)</p>
+<span id="more"></span>
+<p>To view the nodes in the cluster:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get nodes</span></span><br></pre></td></tr></table></figure>
+<p>Deploy our first app(include the full repository url for images hosted outside Docker hub):</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1</span></span><br></pre></td></tr></table></figure>
+<p>To list your deployments:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get deployments</span></span><br></pre></td></tr></table></figure>
+<p>To show the application deployed in the nodes</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get pods</span></span><br></pre></td></tr></table></figure>
+<p>Next, to view what containers are inside that Pod and what images are used to build those containers we run the <code>describe pods</code> command:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl describe pods</span></span><br></pre></td></tr></table></figure>
+<p>Pods that are running inside Kubernetes are running on a private, isolated network.<br>
+By default they are visible from other pods and services within the same kubernetes cluster.<br>
+The <code>kubectl</code> command can create a proxy that will forward communication into the cluster-wide:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl proxy</span></span><br></pre></td></tr></table></figure>
+<p>You can see all those APIs hosted through the proxy endpoint.<br>
+For example, we can query the version directly through the API using the <code>curl</code> command:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://localhost:8001/version</span><br></pre></td></tr></table></figure>
+<p>First we need to get the Pod name, and we’ll store in the environment variable POD_NAME:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> POD_NAME=$(kubectl get pods -o go-template --template <span class="string">&#x27;&#123;&#123;range .items&#125;&#125;&#123;&#123;.metadata.name&#125;&#125;&#123;&#123;&quot;\n&quot;&#125;&#125;&#123;&#123;end&#125;&#125;&#x27;</span>)</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> Name of the Pod: <span class="variable">$POD_NAME</span></span></span><br></pre></td></tr></table></figure>
+<p>To see the output of our application, run a <code>curl</code> request:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> curl http://localhost:8001/api/v1/namespaces/default/pods/<span class="variable">$POD_NAME</span>/proxy/</span></span><br></pre></td></tr></table></figure>
+<p>Anything that the application would normally send to <code>STDOUT</code> becomes logs for the container within the Pod. We can retrieve these logs using the <code>kubectl logs</code> command:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl logs <span class="variable">$POD_NAME</span></span></span><br></pre></td></tr></table></figure>
+<p>The name of the container itself can be omitted since we only have a single container in this Pod.</p>
+<p>We can execute commands directly on the container once the Pod is up and running.</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl <span class="built_in">exec</span> <span class="variable">$POD_NAME</span> -- env</span></span><br></pre></td></tr></table></figure>
+<p>Again, worth mentioning that the name of the container itself can be omitted since we only have a single container in this Pod.</p>
+<p>Next let’s start a bash session in the Pod’s container:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl <span class="built_in">exec</span> -ti <span class="variable">$POD_NAME</span> -- bash</span></span><br></pre></td></tr></table></figure>
+<p>We have now an open console on the container where we run our NodeJS application. The source code of the app is in the server.js file:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@kubernetes-bootcamp-xxxxxxxxx-xxxxx:/# cat server.js</span><br></pre></td></tr></table></figure>
+<p>To create a new service and expose it to external traffic we’ll use the expose command with NodePort as parameter:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl expose deployment/kubernetes-bootcamp --<span class="built_in">type</span>=<span class="string">&quot;NodePort&quot;</span> --port 8080</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Services can be exposed in different ways by specifying a <code>type</code> in the ServiceSpec:</p>
+<ul>
+<li><em>ClusterIP</em> (default) - Exposes the Service on an internal IP in the cluster. This type makes the Service only reachable from within the cluster.</li>
+<li><em>NodePort</em> - Exposes the Service on the same port of each selected Node in the cluster using NAT. Makes a Service accessible from outside the cluster using <code>&lt;NodeIP&gt;:&lt;NodePort&gt;</code>. Superset of ClusterIP.</li>
+<li><em>LoadBalancer</em> - Creates an external load balancer in the current cloud (if supported) and assigns a fixed, external IP to the Service. Superset of NodePort.</li>
+<li><em>ExternalName</em> - Maps the Service to the contents of the <code>externalName</code> field (e.g. <code>foo.bar.example.com</code>), by returning a <code>CNAME</code> record with its value. No proxying of any kind is set up. This type requires v1.7 or higher of <code>kube-dns</code>, or CoreDNS version 0.0.8 or higher.</li>
+</ul>
+</blockquote>
+<p>let’s list the current Services from our cluster:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get services</span></span><br></pre></td></tr></table></figure>
+<p>To find out what port was opened externally (by the NodePort option)<br>
+we’ll run the <code>describe service</code> command:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl describe services/kubernetes-bootcamp</span></span><br></pre></td></tr></table></figure>
+<p>Create an environment variable called NODE_PORT that has the value of the Node port assigned:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#x27;&#123;&#123;(index .spec.ports 0).nodePort&#125;&#125;&#x27;)</span><br></pre></td></tr></table></figure>
+<p>Now we can test that the app is exposed outside of the cluster using <code>curl</code>:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> curl 127.0.0.1:<span class="variable">$NODE_PORT</span></span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>
+<p>Using labels<br>
+With <code>describe deployment</code> command you can see the name of the label.<br>
+Let’s use this label to query out list of Pods or Services:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get pods -l app=kubernetes-bootcamp</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> kubectl get services -l app=kubernetes-bootcamp</span></span><br></pre></td></tr></table></figure>
+<p>Get the name of the Pod and store it in the POD_NAME environment variable:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> POD_NAME=$(kubectl get pods -o go-template --template <span class="string">&#x27;&#123;&#123;range .items&#125;&#125;&#123;&#123;.metadata.name&#125;&#125;&#123;&#123;&quot;\n&quot;&#125;&#125;&#123;&#123;end&#125;&#125;&#x27;</span>)</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> Name of the Pod: <span class="variable">$POD_NAME</span></span></span><br></pre></td></tr></table></figure>
+<p>To apply a new label we use the label command followed by the object type. object name and the new label:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl label pod <span class="variable">$POD_NAME</span> version=v1</span></span><br></pre></td></tr></table></figure>
+<p>We pinned the application version to the Pod, and we can check it with the describe pod command:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl describe pods <span class="variable">$POD_NAME</span></span></span><br></pre></td></tr></table></figure>
+<p>We see here that the label is attached now to our Pod.<br>
+And we can query now the list of pods using the new label:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get pods -l version=v1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>Deleting a service<br>
+To delete Services you can use the <code>delete service</code> command. Lables can be used also here:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl delete service -l app=kubernetes-bootcamp</span></span><br></pre></td></tr></table></figure>
+<p>Tips: You can confirm that the app is still running with a curl inside the pod:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl <span class="built_in">exec</span> -ti <span class="variable">$POD_NAME</span> -- curl localhost:8080</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Scale-up-your-app">Scale up your app</h2>
+<ol>
+<li>
+<p>Scaling a deployment<br>
+To list your deployments:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get deployments</span></span><br></pre></td></tr></table></figure>
+<p>The output should be similar to:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">NAME                  READY   UP-TO-DATE   AVAILABLE   AGE</span><br><span class="line">kubernetes-bootcamp   1&#x2F;1     1            1           11m</span><br></pre></td></tr></table></figure>
+<p>This shows:</p>
+<ul>
+<li><em>NAME</em> lists the names of the Deployments in the cluster.</li>
+<li><em>READY</em> shows the ratio of CURRENT/DESIRED replicas</li>
+<li><em>UP-TO-DATE</em> displays the number of replicas that have been updated to achieve the desired state.</li>
+<li><em>AVAILABLE</em> displays how many replicas of the application are available to your users.</li>
+<li><em>AGE</em> displays the amount of time that the application has been running.</li>
+</ul>
+<p>To see the ReplicaSet created by the Deployment, run</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl get rs</span><br></pre></td></tr></table></figure>
+<p>Two important columns of this command are:</p>
+<ul>
+<li><em>DESIRED</em> displays the desired number of replicas of the application, which you define when you create the Deployment. This is the desired state.</li>
+<li><em>CURRENT</em> displays how many replicas are currently running.</li>
+</ul>
+<p>Next, let’s scale the Deployment to 4 replicas:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl scale deployments/kubernetes-bootcamp --replicas=4</span></span><br></pre></td></tr></table></figure>
+<p>To list your Deployments once again:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl get deployments</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>Load Balancing<br>
+Let’s check that the Service is load-balancing the traffic. To find out the exposed IP and Port we can use the descrie service:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl describe services/kubernetes-bootcamp</span></span><br></pre></td></tr></table></figure>
+<p>Create an environment variable called NODE_PORT that has a value as the Node port:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">export</span> NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=<span class="string">&#x27;&#123;&#123;(index .spec.ports 0).nodePort&#125;&#125;&#x27;</span>)</span></span><br></pre></td></tr></table></figure>
+<p>Next, we’ll do a curl to the exposed IP and port. Execute the command multiple times:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> curl 127.0.0.1:<span class="variable">$NODE_PORT</span></span></span><br></pre></td></tr></table></figure>
+<p>We hit a different Pod with every request. This demonstrates that the load-balancing is working.</p>
+</li>
+<li>
+<p>Scale Down<br>
+To scale down the Service to 2 replicas, run again the <code>scale</code> command:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl scale deployments/kubernetes-bootcamp --replicas=2</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Update-your-app">Update your app</h2>
+<ol>
+<li>Update the version of the app<br>
+To update the image(for example version 2):<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl set image deployments&#x2F;kubernetes-bootcamp kubernetes-bootcamp&#x3D;jocatalin&#x2F;kubernetes-bootcamp:v2</span><br></pre></td></tr></table></figure>
+</li>
+<li>Verify an update<br>
+To view the current iamge version of the app, run a describe command against the Pods:<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl describe pods</span></span><br></pre></td></tr></table></figure>
+The update can be confirmed also by running a rollout status command:<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl rollout status deployments/kubernetes-bootcamp</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>Rollback an update<br>
+Let’s perform another update, and deploy image tagged as <code>v10</code><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl <span class="built_in">set</span> image deployments/kubernetes-bootcamp kubernetes-bootcamp=gcr.io/google-samples/kubernetes-bootcamp:v10</span></span><br></pre></td></tr></table></figure>
+Use <code>get deployments</code> to see the status of the deployment:<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get deployments</span></span><br></pre></td></tr></table></figure>
+And something is wrong… We do not have the desired number of Pods available. List the Pods again:<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get pods</span></span><br></pre></td></tr></table></figure>
+A <code>describe</code> command on the Pods should give more insights:<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl describe pods</span></span><br></pre></td></tr></table></figure>
+There is no image called <code>v10</code> in the repository. Let’s roll back to our previously working version. We’ll use the <code>rollout</code> undo command:<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl rollout undo deployments/kubernetes-bootcamp</span></span><br></pre></td></tr></table></figure>
+List again the Pods:<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> kubectl get pods</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> kubectl describe pods</span></span><br></pre></td></tr></table></figure>
+We see that the deployment is using a stable version of the app (v2). The Rollback was successful.</li>
+</ol>
+<p>The most common operations can be done with the following kubectl commans:</p>
+<ul>
+<li><strong>kubectl get</strong> - list resources<br>
+<strong>kubectl get pods -o wide</strong> to get more informations</li>
+<li><strong>kubectl describe</strong> - show detailed information about a resource</li>
+<li><strong>kubectl logs</strong> - print the logs from a container in a pod</li>
+<li><strong>kubectl exec</strong> - execute a command on a container in a pod</li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>k8s</p><p><a href="http://blog.ndoskrnl.net/zh-cn/computer/2021/k8s/">http://blog.ndoskrnl.net/zh-cn/computer/2021/k8s/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Ndoskrnl</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-05-11</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-05-11</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/zh-cn/daily-life/2021/Prof.Lin%20Xu/"><span class="level-item">Prof.Lin Xu</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'http://blog.ndoskrnl.net/zh-cn/computer/2021/k8s/';
+            this.page.identifier = 'zh-cn/computer/2021/k8s/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'ndoskrnls-blog' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Scale-up-your-app"><span class="level-left"><span class="level-item">1</span><span class="level-item">Scale up your app</span></span></a></li><li><a class="level is-mobile" href="#Update-your-app"><span class="level-left"><span class="level-item">2</span><span class="level-item">Update your app</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/computer/"><span class="level-start"><span class="level-item">computer</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li><li><a class="level is-mobile" href="/categories/daily-life/"><span class="level-start"><span class="level-item">daily-life</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/ideology-and-politics/"><span class="level-start"><span class="level-item">ideology-and-politics</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/learn/"><span class="level-start"><span class="level-item">learn</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/learn/mathematics/"><span class="level-start"><span class="level-item">mathematics</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/minecraft/"><span class="level-start"><span class="level-item">minecraft</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/mathematics/"><span class="tag">mathematics</span><span class="tag">3</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Ndoskrnl&#039;s blog" height="28"></a><p class="is-size-7"><span>&copy; 2021 Ndoskrnl</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
