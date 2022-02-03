@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>blender - 钱桑もぺもぺ～</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="钱桑もぺもぺ～"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="钱桑もぺもぺ～"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="开始入门 Blender, 契机是我的米家随手吸尘器的配件-前置滤网的 ABS 框架被我烤变形了, 淘宝搜寻一番后发现卖 50+ 实在太贵, 遂自己建模打印一个."><meta property="og:type" content="blog"><meta property="og:title" content="blender"><meta property="og:url" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/"><meta property="og:site_name" content="钱桑もぺもぺ～"><meta property="og:description" content="开始入门 Blender, 契机是我的米家随手吸尘器的配件-前置滤网的 ABS 框架被我烤变形了, 淘宝搜寻一番后发现卖 50+ 实在太贵, 遂自己建模打印一个."><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-1.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-2.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-4.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-6.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-5.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-1.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-2.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-4.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-5.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-6.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-7.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-1.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-2.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-4.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-5-1.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-5-2.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-6.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-7.jpg"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-8.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-9.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-10.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-11.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-12.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-13.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-14.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-15.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-1.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-2.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-5.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-4.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-6.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-7.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-8.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-9.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-10.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-11.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-12.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-13.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-14.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-15.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-16.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-17.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-18.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-19.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-1.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-2.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-4.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-5.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-6.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-7.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-8.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-9.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-10.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/6-1.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/6-2.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-1.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-2.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-4.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-5.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-6.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-7.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-8.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-9.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-10.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-11.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-12.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-13.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-14.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-15.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-16.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-17.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-18.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-19.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-20.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-21.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-1.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-2.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-4.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-5.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-6.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-7.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-8.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-9.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-10.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-11.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-12.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-13.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-14.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-15.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-16.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-17.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-18.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-22.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-19.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-20.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-21.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-23.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-25.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-24.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-26.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-27.png"><meta property="article:published_time" content="2021-07-28T10:56:39.000Z"><meta property="article:modified_time" content="2021-11-02T08:53:03.843Z"><meta property="article:author" content="Ndoskrnl"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/zh-cn/computer/2021/blender/1-1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/"},"headline":"blender","image":["http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-1.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-2.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-3.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-4.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-6.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/1-5.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-1.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-2.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-3.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-4.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-5.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-6.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/2-7.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-1.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-2.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-3.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-4.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-5-1.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-5-2.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-6.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-7.jpg","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-8.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-9.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-10.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-11.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-12.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-13.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-14.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/3-15.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-1.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-2.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-5.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-3.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-4.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-6.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-7.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-8.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-9.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-10.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-11.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-12.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-13.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-14.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-15.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-16.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-17.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-18.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/4-19.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-1.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-2.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-3.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-4.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-5.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-6.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-7.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-8.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-9.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/5-10.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/6-1.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/6-2.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-1.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-2.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-3.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-4.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-5.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-6.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-7.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-8.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-9.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-10.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-11.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-12.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-13.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-14.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-15.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-16.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-17.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-18.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-19.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-20.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/7-21.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-1.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-2.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-3.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-4.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-5.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-6.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-7.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-8.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-9.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-10.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-11.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-12.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-13.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-14.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-15.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-16.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-17.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-18.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-22.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-19.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-20.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-21.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-23.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-25.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-24.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-26.png","http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/9-27.png"],"datePublished":"2021-07-28T10:56:39.000Z","dateModified":"2021-11-02T08:53:03.843Z","author":{"@type":"Person","name":"Ndoskrnl"},"publisher":{"@type":"Organization","name":"钱桑もぺもぺ～","logo":{"@type":"ImageObject","url":"http://blog.ndoskrnl.net/img/logo.svg"}},"description":"开始入门 Blender, 契机是我的米家随手吸尘器的配件-前置滤网的 ABS 框架被我烤变形了, 淘宝搜寻一番后发现卖 50+ 实在太贵, 遂自己建模打印一个."}</script><link rel="canonical" href="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- hexo injector head_end start -->
+        <script>
+            function switchTab(element) {
+                const id = element.parentElement.id;
+                const tabElements = element.parentElement.parentElement.children;
+                const contentElements = element.parentElement.parentElement.parentElement.parentElement.children[1].children;
+                for (let i = 0; i < tabElements.length; i++) {
+                    const $tab = tabElements[i];
+                    const $content = contentElements[i];
+                    if ($tab.id === id) {
+                        $tab.classList.add('is-active');
+                    } else {
+                        $tab.classList.remove('is-active');
+                    }
+                    if ($content.id === id) {
+                        $content.classList.remove('is-hidden');
+                    } else {
+                        $content.classList.add('is-hidden');
+                    }
+                }
+            }
+        </script>
+        <!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="钱桑もぺもぺ～" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/peers">Peers</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-07-28T10:56:39.000Z" title="7/28/2021, 6:56:39 PM">2021-07-28</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-11-02T08:53:03.843Z" title="11/2/2021, 4:53:03 PM">2021-11-02</time></span><span class="level-item"><a class="link-muted" href="/categories/computer/">computer</a></span><span class="level-item">1 小时 read (About 6875 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">blender</h1><div class="content"><p>开始入门 Blender, 契机是我的米家随手吸尘器的配件-前置滤网的 ABS 框架被我烤变形了,<br>
+淘宝搜寻一番后发现卖 50+ 实在太贵, 遂自己建模打印一个.</p>
+<span id="more"></span>
+<h2 id="常规软件设置">常规软件设置</h2>
+<ol>
+<li>在状态栏(右下角)显示内存、显存、点线面数量等信息: <img src="/zh-cn/computer/2021/blender/1-1.png" class=""></li>
+<li>启用模拟三键鼠标(<code>Alt+鼠标左键</code> 旋转视角, 类似 MAYA 的操作): <img src="/zh-cn/computer/2021/blender/1-2.png" class=""><br>
+但是注意开启之后会导致选择循环边快捷键变成双击选择, 建议适应鼠标中键旋转视角(这样的优势在于一只手就能旋转视觉了)</li>
+<li>启用围绕选择物体旋转和自动深度(解决视角无法继续推近的问题) <img src="/zh-cn/computer/2021/blender/1-3.png" class=""></li>
+<li>启用自动加载 Python 脚本(一些插件需要开启, 不然可能会报错)<img src="/zh-cn/computer/2021/blender/1-4.png" class="">   
+</li>
+<li>启用插件:<br>
+Node: Node Wrangler (强大的节点工具)<br>
+Rigging: Rigify (自带的强大绑骨软件)<br>
+Import-Export: Import Images as Planes (导入图像为平面)<br>
+Import-Export: Export Autocad DXF Format (.dxf) (导出为 DXF 格式)<br>
+Import-Export: Import AutoCAD DXF Format (.dxf) (导入为 DXF 格式)<br>
+Add Curve: Extra Objects (添加额外的曲线物体)<br>
+Add Mesh: BoltFactory (添加螺栓)<br>
+Add Mesh: Extra Objects (添加额外的网格物体)<br>
+Add Mesh: A.N.T.Landscape (简单地形制作)<br>
+Interface: Modifier Tools (修改器工具)<br>
+Interface: Copy Attributes Menu (复制属性菜单)<br>
+Mesh: LoopTools (Loop 工具)<br>
+Object: Bool Tool (布尔工具)<br>
+Render: Auto Tile Size (自动 Tile 大小, 能自动帮你设置渲染块数量, 提供硬件利用率)<br>
+UV: Magic UV (魔法 UV)<img src="/zh-cn/computer/2021/blender/1-6.png" class="">
+</li>
+<li>最后别忘了保存设置 <img src="/zh-cn/computer/2021/blender/1-5.png" class=""></li>
+</ol>
+<h2 id="基础操作">基础操作</h2>
+<ol>
+<li>
+<p>观察物体:</p>
+<img src="/zh-cn/computer/2021/blender/2-1.png" class="">
+<p>➀ 视角旋转: <code>鼠标中键</code> 或 <code>Alt+左键</code> (模拟三键鼠标)<br>
+➁ 视角平移: <code>Shift+鼠标中键</code> 或 <code>Shift+Alt+鼠标左键</code> (模拟三键鼠标)<br>
+➂ 摄像机视图切换: <code>小键盘0</code><br>
+➃ 透视/正交切换: <code>小键盘5</code><br>
+提示: 若是87键键盘没有小键盘, 可通过在首选项开启模拟数字键盘, 使普通数字键作为快捷键使用</p>
+<img src="/zh-cn/computer/2021/blender/2-2.png" class="">
+<ol>
+<li>摄像机相关:
+<ul>
+<li>
+<p>如何让摄像机跟随视角同步?<br>
+按 <code>N</code> 键开启 N 面板, 然后点击视图选项卡, 勾选锁定相机到视图</p>
+<img src="/zh-cn/computer/2021/blender/2-3.png" class="">
+</li>
+<li>
+<p>如何更改摄像机取景框的比例和大小?<br>
+➀ 见图:</p>
+<img src="/zh-cn/computer/2021/blender/2-4.png" class="">
+<p>➁ 在关闭锁定相机到视图的情况下, 在相机视图下直接使用鼠标滚轮和视角平移操作就可以改变相机取景框在屏幕上的大小和位置</p>
+</li>
+<li>
+<p>我找到了一个不错的角度, 如何将当前的视角快速变为摄像机视图?<br>
+场景集合列表(Scene Collection)中选中相机物体, 然后 <code>Ctrl+Alt+小键盘0</code></p>
+</li>
+</ul>
+</li>
+<li>四视图视角: <code>Ctrl+Alt+Q</code><br>
+顶视图: <code>小键盘7</code>; 底视图: <code>Ctrl+小键盘7</code><br>
+前视图: <code>小键盘1</code>; 后视图: <code>Ctrl+小键盘1</code><br>
+右视图: <code>小键盘3</code>; 左视图: <code>Ctrl+小键盘3</code><br>
+翻转当前视角: <code>小键盘9</code> (如当前是顶视图, 翻转变成底视图; 正交视图之外的情况是绕Z轴翻转)</li>
+<li>聚焦当前物体: 选中目标物体, 然后在视图中按<code>小键盘的'.'键</code><br>
+聚焦并屏蔽其他物体的显示: 选中目标物体, 然后在视图中按<code>小键盘的'/'键</code><br>
+在四视图界面, 要想同步聚焦, 按 <code>Ctrl+小键盘'.'键</code><br>
+显示整个场景: <code>Home</code> 键</li>
+</ol>
+</li>
+<li>
+<p>调整物体</p>
+<ul>
+<li>
+<p>开启移动, 旋转, 调整工具的实时显示:</p>
+<img src="/zh-cn/computer/2021/blender/2-5.png" class="">
+<blockquote>
+<p>Gizmo 可通过 <code>Ctrl+` </code> 来快速开关</p>
+</blockquote>
+</li>
+<li>
+<p>移动物体: 快捷键 <code>G</code>, 此时按 <code>X</code>、<code>Y</code>、<code>Z</code> 可使其在对应的轴上移动, 输入数字可以进行精确移动.<br>
+若要在对应的平面上移动, 可按 <code>Shift+垂直轴的字母</code>, 如 <code>Shift+Z</code> 为在 <code>X-Y</code> 平面内移动<br>
+位置归零: <code>Alt+G</code></p>
+</li>
+<li>
+<p>旋转物体: 快捷键 <code>R</code>, 默认是基于当前视角旋转, 此时再按 <code>R</code> 可进入视角深度旋转, 按 <code>X</code>、<code>Y</code>、<code>Z</code> 可使其在对应的轴上旋转, 输入数字可以进行精确旋转(角度制).<br>
+旋转归零: <code>Alt+R</code></p>
+</li>
+<li>
+<p>缩放物体: 快捷键 <code>S</code>, 按 <code>X</code>、<code>Y</code>、<code>Z</code> 可使其在对应的轴上缩放, 输入数字可以进行精确缩放.<br>
+若要在对应的平面上缩放, 可按 <code>Shift+垂直轴的字母</code><br>
+缩放归零: <code>Alt+S</code></p>
+</li>
+<li>
+<p>也可利用N面板调整物体:</p>
+<img src="/zh-cn/computer/2021/blender/2-6.png" class="">
+</li>
+</ul>
+</li>
+<li>
+<p>选择物体<br>
+按 <code>W</code> 切换选择工具, 共有四种, 分别为选择移动工具、框选工具、刷选工具、套索选择工具<br>
+还可以设置对应工具的属性(如交集选择)</p>
+<img src="/zh-cn/computer/2021/blender/2-7.png" class="">
+<p>按 <code>A</code> 键全选, 再次按 <code>A</code> 或 <code>Alt+A</code> 取消全选</p>
+</li>
+<li>
+<p>新建物体<br>
+物体添加: <code>Shift+A</code>, 注意物品添加时部分支持使用新建参数, 但这个参数仅在新建时才有效</p>
+</li>
+<li>
+<p>删除物体<br>
+两种方法: <code>Delete</code> 键删除或按 <code>X</code> 删除</p>
+</li>
+</ol>
+<h2 id="坐标系与轴心点">坐标系与轴心点</h2>
+<ol>
+<li>物体变换坐标系: 快捷键 <code>,</code>
+<ul>
+<li>
+<p>局部(Local)坐标系: 基于物体本身方向的坐标系<br>
+可在对象属性下的视图显示里开启局部坐标轴显示:</p>
+<img src="/zh-cn/computer/2021/blender/3-1.png" class="">
+<blockquote>
+<ul>
+<li>
+<p>进入变换模式, 二次点击轴字母即可快速切换全局/局部坐标系.</p>
+</li>
+<li>
+<p>可以在编辑器的顶栏设置默认使用的坐标系:</p>
+<img src="/zh-cn/computer/2021/blender/3-2.png" class="">
+</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>法向(Normal)坐标系<br>
+切换到法向模式, 进入编辑模式中的面选择模式, 点击一个平面, 可以看到Z轴和这个平面平行<br>
+(按 <code>Tab</code> 进入编辑模式, 此时按 <code>1</code>、<code>2</code>、<code>3</code> 进入点、线、面选择模式, 注意要使用这个快捷键需关闭<strong>模拟数字键盘</strong>)</p>
+<img src="/zh-cn/computer/2021/blender/3-3.png" class="">
+<blockquote>
+<p>同样的, 进入变换模式后, 二次点击轴字母即可快速切换到全局坐标系</p>
+</blockquote>
+</li>
+<li>
+<p>万向(Gimbal)坐标系<br>
+对于万向轴来说, 它可通过固定两个轴(旋转轴和转向轴)的方式让第三个绕旋转轴旋转,<br>
+如让某个圆球的万向轴设置为旋转轴是它的的局部X轴, 转向轴为它的局部Z轴,<br>
+可在 Object Properties-&gt;Transform 选择 Mode 为 “YXZ Eular” (第二个字母为旋转轴, 第三个字母为转向轴):<br>
+此时当我们尝试将物体绕着X轴旋转, Y轴会发生变化, 但无论如何旋转, 万向坐标系的Z轴永远保持和全局坐标Z轴一个方向, 且万向Z轴与X轴始终保持正交</p>
+<img src="/zh-cn/computer/2021/blender/3-4.png" class="">
+</li>
+<li>
+<p>视图(View)坐标系<br>
+坐标轴XY与视窗锁定, 上下为Y, 左右为X, 垂直平面为Z</p>
+</li>
+<li>
+<p>创建坐标系功能<br>
+使场景中所有的物体的坐标系为某个物体的局部坐标系<br>
+(复制物体の两种方法: 选中物体, <code>Ctrl+C</code> + <code>Ctrl+V</code> 或 <code>Shift+D</code>)<br>
+选中某个物体, 点击变换坐标系菜单的&quot;+&quot;号:</p>
+<img src="/zh-cn/computer/2021/blender/3-5-1.png" class="">
+<p>此时会生成一个与该物体名称相同的坐标系, 其他物体的坐标系变为此物体的局部坐标系:</p>
+<img src="/zh-cn/computer/2021/blender/3-5-2.png" class="">
+</li>
+<li>
+<p>游标坐标系<br>
+和创建坐标系功能相似, 可以选择游标工具或在选择工具下按住 <code>Shift+鼠标右键</code> 拖动, 移动后游标会朝向移动时的视角</p>
+<img src="/zh-cn/computer/2021/blender/3-6.png" class="">
+</li>
+</ul>
+</li>
+<li>物体变换轴心点
+<ul>
+<li>
+<p>原点: 物体中心的橘黄色的小点称为原点, 可在编辑器右上角的选项中启用仅影响原点来对原点进行变换操作:</p>
+<img src="/zh-cn/computer/2021/blender/3-7.jpg" class="">
+<p>移动了原点后, 可通过右键菜单中的设置原点子菜单恢复原点位置:<br>
+(分别是几何中心到原点, 原点到几何中心, 原点到3D游标, 原点到重心(表面), 原点到重心(体积))</p>
+<img src="/zh-cn/computer/2021/blender/3-8.png" class="">
+</li>
+<li>
+<p>变换轴心点: 选择多个物体后出现的一个变换位置用的轴心点, 可使用句号键 “<code>.</code>” 或在编辑器的顶部选择变换轴心点位置的计算方式(边界框中心、3D游标、各自的原点、质心点、活动元素):</p>
+<img src="/zh-cn/computer/2021/blender/3-9.png" class="">
+<ul>
+<li>
+<p>质心点(Median Point): 为变换轴心点计算的默认方式, 是基于原点计算产生的均值, 在只有一个物体选择的情况下, <strong>质心等于原点</strong>.</p>
+</li>
+<li>
+<p>边界框中心(Bounding Box Center)</p>
+<blockquote>
+<p>边界框可在 Object Properties-&gt; Viewport Display 这里勾选 Bounds 来开启显示</p>
+</blockquote>
+  <img src="/zh-cn/computer/2021/blender/3-10.png" class="">
+<p>如图, 在边界框中心模式下, 两物体的变换轴心点是根据两个边界框来计算的</p>
+<img src="/zh-cn/computer/2021/blender/3-11.png" class="">
+</li>
+<li>
+<p>3D游标(3D Cursor): 顾名思义, 就是变换轴心点的位置是游标的位置. 配合下一章的吸附.</p>
+</li>
+<li>
+<p>各自的原点(Individual Origins): 比较特别, 此模式下对选中的多个物体进行缩放和旋转都会对以各自的原点进行变换, 而不是一个统一的变换轴心点. 如下图中的旋转操作:</p>
+ <img src="/zh-cn/computer/2021/blender/3-12.png" class="">
+</li>
+<li>
+<p>活动元素(Active Element): 变换轴心点的位置是活动元素(最后选择的对象, Scene Collection 中高亮的那个)的原点</p>
+<img src="/zh-cn/computer/2021/blender/3-13.png" class="">
+</li>
+</ul>
+<blockquote>
+<p>当使用句号键 “<code>.</code>” 在弹出的浮动菜单勾选仅位置后, 选择的多个物体的缩放和旋转只会相对于变换轴心点进行相对的距离和角度的变换而不会改变物体本身的缩放和旋转.</p>
+<img src="/zh-cn/computer/2021/blender/3-14.png" class="">
+<p>如图, 旋转操作不旋转物体本身, 只是相对于变换轴心点的角度进行位置上的&quot;旋转&quot;</p>
+<img src="/zh-cn/computer/2021/blender/3-15.png" class="">
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="吸附与衰减编辑工具">吸附与衰减编辑工具</h2>
+<ol>
+<li>
+<p>吸附功能全解:<br>
+可通过 <code>Shift+Tab</code> 或点击编辑器顶部的磁铁图标来开启或关闭吸附功能, 也可在变换的时候按住 <code>Ctrl</code> 来临时开启或(在吸附模式开启状态下)关闭<br>
+旁边的下拉菜单可以调整吸附对象的吸附内容(Snap To)和被吸附对象的吸附基准点(Snap With)和影响的变换(移动 Move、选择 Rotate、缩放 Scale):</p>
+<img src="/zh-cn/computer/2021/blender/4-1.png" class="">
+<blockquote>
+<ul>
+<li>为了更好地展示吸附效果, 开启线框模式(快捷键 <code>Shift+Z</code>):<img src="/zh-cn/computer/2021/blender/4-2.png" class="">
+</li>
+<li>对于吸附基准点, <strong>最近=被吸附对象离吸附目标最近距离的顶点, 中心=变换轴心点约等于质心, 但由变换轴心点的设置决定(参见上章)</strong>.</li>
+<li>可通过 <code>Shift+S</code> 呼出游标吸附相关的浮动菜单, 从而让游标吸附到各种位置上.<br>
+如将游标吸附到某个选择的面上: <code>Tab</code> 进入编辑模式, <code>3</code> 进入点线面的面模式, 然后选中物体的某个平面, <code>Shift+S</code> 呼出游标吸附菜单, 选择 Cursor to Selected, 如图所示.<img src="/zh-cn/computer/2021/blender/4-5.png" class="">
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>增量模式(Increment): 物体的变换会吸附到背景网格上, 可利用不同缩放下网络间距不同来达到选择移动 0.1M 或 1.0M 的效果.<br>
+默认是相对于网格的移动, 若选中绝对栅格对齐(Absolute Grid Snap), 则物体/多个物体的质心会被严格吸附到网格点上.</p>
+<img src="/zh-cn/computer/2021/blender/4-3.png" class="">
+<p>如图所示(俯视图), 移动后, 两个方块的质心点被吸附到网格上:</p>
+<img src="/zh-cn/computer/2021/blender/4-4.png" class="">
+</li>
+<li>
+<p>顶点模式(Vertex): 物体的变换会吸附到其他物体的顶点上.</p>
+<ul>
+<li>
+<p>勾选背面剔除(Backface Culling)后, 将不会吸附当前视角下处在物体背面的顶点.</p>
+<img src="/zh-cn/computer/2021/blender/4-6.png" class="">
+</li>
+<li>
+<p>勾选旋转对齐目标(Align Rotation to Target)后, 被吸附物体的局部坐标轴的Z轴会与顶点的法向对齐, 如图:</p>
+<img src="/zh-cn/computer/2021/blender/4-7.png" class="">
+<img src="/zh-cn/computer/2021/blender/4-8.png" class="">
+</li>
+</ul>
+</li>
+<li>
+<p>其他的功能, 自己尝试吧~</p>
+<ul>
+<li>
+<p>这里说一下面模式的妙用, 可以很方便地实现让一个物体摆放在另一个物体之上:<br>
+我们将这个要放置物体的原点置于底面的中心(配合四视图比如正视图+吸附功能)</p>
+<img src="/zh-cn/computer/2021/blender/4-9.png" class="">)
+<p>然后选择面吸附模式下并设置吸附基准点为质心(Median), 就可以将这个物体完美地放在另一个物体的平面上啦~</p>
+<img src="/zh-cn/computer/2021/blender/4-10.png" class="">
+</li>
+<li>
+<p>面模式下, 勾选项目的独立元素(Project Individual Elements)后, 将会使选择多个物体使用各自的原点进行吸附.</p>
+<img src="/zh-cn/computer/2021/blender/4-11.png" class="">
+<img src="/zh-cn/computer/2021/blender/4-12.png" class="">
+<ul>
+<li>
+<p>此外, 若在编辑模式下进行面吸附, 可以将网格物体贴合到另一个物体的面上, 目前版本贴合似乎有bug, 建议多开一个窗口用正交视图下(四视图)进行贴合.</p>
+<img src="/zh-cn/computer/2021/blender/4-13.png" class="">
+</li>
+</ul>
+</li>
+<li>
+<p>垂直交线(Edge Perpendicular)模式: 物体会被吸附到吸附基准点与目标吸附物体的边的垂直交线的交点上, 也适用于编辑模式下的顶点模式.</p>
+<img src="/zh-cn/computer/2021/blender/4-14.png" class="">
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>衰减编辑: 快捷键 <code>O</code>. 启用衰减编辑后, 对其中一个物体进行变换会带动周围的物体一起进行变换.<br>
+如图, 启用衰减编辑后, 变换物体时会出现一个灰色的圈, 圈内的物体会被带动, <strong>使用鼠标可以改变圈的大小</strong></p>
+<img src="/zh-cn/computer/2021/blender/4-15.png" class="">
+<p>衰减的模式有许多种, 具体可以自己逐一尝试, 这里略过不讲.</p>
+<img src="/zh-cn/computer/2021/blender/4-16.png" class="">
+<p>提一下衰减编辑配合网格(Grid)对象在编辑模式下的运用:</p>
+<img src="/zh-cn/computer/2021/blender/4-17.png" class="">
+<img src="/zh-cn/computer/2021/blender/4-18.png" class="">
+<p>配合从视角投影(Projected from View)可以做到根据视角的投影方向进行统一的操作:</p>
+<img src="/zh-cn/computer/2021/blender/4-19.png" class="">
+</li>
+</ol>
+<h2 id="常用基础操作集中处理-游标、物体合并分立、操作重复执行、第一人称观察、物体隐藏、物体父子级、物体镜像变换">常用基础操作集中处理(游标、物体合并分立、操作重复执行、第一人称观察、物体隐藏、物体父子级、物体镜像变换)</h2>
+<ol>
+<li>
+<p>游标操作:<br>
+游标移动相关浮动菜单 <code>Shift+S</code><br>
+游标快速移动 <code>Shift+右键拖动</code><br>
+游标回到世界坐标 <code>Shift+C</code></p>
+</li>
+<li>
+<p>物体合并分离:<br>
+合并: 选择物体然后 <code>Ctrl+J</code><br>
+分离: 进入编辑模式选择分离部分(可使用快捷键 <code>L</code> 选择相邻元素)然后 <code>P</code> 或 <code>Alt+M</code></p>
+<blockquote>
+<p>提示: 合并后原点为活动项原点, 分离后原点位置在分离物体原点上</p>
+</blockquote>
+</li>
+<li>
+<p>操作重复执行: 复制/变换等常规操作完成后按 <code>Shift+R</code></p>
+</li>
+<li>
+<p>第一人称观察和拍摄: <code>Shift+~</code><br>
+进入后, <code>WASDEQ</code> 前后左右上下, <code>+Shift</code> 加速, <code>+Alt</code> 减速, <code>空格</code> 可快速前进到准星对准的物体处</p>
+<blockquote>
+<p>可配合相机的锁定到视图实现相机的自由移动<br>
+记录K帧: 在相机的 Object Properties-&gt;Transform 下, 将鼠标指针停留在各项参数上然后按 <code>I</code> 键来启动记录(这里我们记录位置旋转缩放的信息), 最后开启自动记录关键帧.<br>
+此时按 <code>空格</code> 启动播放, 然后进入第一人称模式自由进行摄像机的一些移动:</p>
+<img src="/zh-cn/computer/2021/blender/5-1.png" class="">
+<p>可以选择然后按 <code>X</code> 或 <code>Delete</code> 来删除一些不想要的关键帧</p>
+<img src="/zh-cn/computer/2021/blender/5-2.png" class="">
+<p>进入到关键帧曲线编辑器(Graph Editor), 可以对关键帧进行一些平滑处理:</p>
+<img src="/zh-cn/computer/2021/blender/5-3.png" class="">
+<p>在编辑器中按 <code>A</code> 键选择所有曲线, 然后找到 Key-&gt;Smooth Keys (快捷键 <code>Alt+O</code>) 来平滑关键帧. 平衡一次的效果可能不够明显, 可以通过连续按住 <code>Alt+O</code> 来较为彻底地平滑曲线:</p>
+<img src="/zh-cn/computer/2021/blender/5-4.png" class="">
+</blockquote>
+</li>
+<li>
+<p>物体隐藏、显示、禁用</p>
+<ul>
+<li>
+<p>隐藏: 可通过点击物体然后按 <code>H</code> 或点击场景集合(Scene Collation)中物体旁边的&quot;小眼睛&quot;来实现.</p>
+<img src="/zh-cn/computer/2021/blender/5-5.png" class="">
+</li>
+<li>
+<p>显示: 重新显示所有隐藏对象 <code>Alt+H</code></p>
+</li>
+<li>
+<p>禁用:<br>
+首先确保在导航面板(Outliner)中, Restriction Toggles 的 Disable in Viewports (显示器图标)和 Disable in Renders (相机图标)为开启状态:</p>
+<img src="/zh-cn/computer/2021/blender/5-6.png" class="">
+<p>然后就可以对物体设置视图中禁用和渲染中禁用了:</p>
+<img src="/zh-cn/computer/2021/blender/5-7.png" class="">
+</li>
+</ul>
+</li>
+<li>
+<p>物体父子级: 子物体可以实现与父物体变换操作的同步</p>
+<ul>
+<li>建立父子级: 选择多个物体后, 按 <code>Ctrl+P</code>, 活动项会成为父级</li>
+<li>清空父级: <code>Alt+P</code></li>
+</ul>
+<blockquote>
+<p>也可在导航面板(Outliner)按住 <code>Shift</code> 拖动物体来建立或取消父子级关系:</p>
+<img src="/zh-cn/computer/2021/blender/5-8.png" class="">
+</blockquote>
+</li>
+<li>
+<p>物体镜像变换<br>
+如图, 在同一位置通过 <code>Shift+D</code> 然后右键取消位移的方式原位复制一个猴子(这样在镜像后原来的猴子就不会消失)</p>
+<img src="/zh-cn/computer/2021/blender/5-9.png" class="">
+<p>选中要镜像变换的物体(上图中的 Suzanne.001), 按 <code>Ctrl+M</code> 进入交互式镜像变换模式,<br>
+此模式下, 按 <code>XYZ</code> 或者 <code>鼠标中键拖拽</code> 可以选择镜像轴:</p>
+<img src="/zh-cn/computer/2021/blender/5-10.png" class="">
+</li>
+</ol>
+<h2 id="建模功能篇">建模功能篇</h2>
+<h3 id="初识编辑模式点线面与统计信息拓展">初识编辑模式点线面与统计信息拓展</h3>
+<ol>
+<li>
+<p>点线面切换: <code>主键盘1/2/3</code><br>
+模式加减选: <code>Shift+1/2/3</code></p>
+</li>
+<li>
+<p>统计信息除了在首选项里进行信息栏的开启外,<br>
+也可在视图编辑器的视图叠加层设置(Viewport Overlays)中进行开启:</p>
+<img src="/zh-cn/computer/2021/blender/6-1.png" class="">
+<p>物体模式(Object Mode)统计数据计算的所有物体数据总和<br>
+编辑模式(Edit Mode)统计数据计算当前进入编辑物体数据总和<br>
+三角形(Triangles)为网格等效为三角面之后的预估数量, 面是可以三角化的:</p>
+<img src="/zh-cn/computer/2021/blender/6-2.png" class="">
+</li>
+</ol>
+<h3 id="挤出类工具全解-挤出、沿法向挤出、挤出各个面、挤出至游标">挤出类工具全解(挤出、沿法向挤出、挤出各个面、挤出至游标)</h3>
+<ol>
+<li>
+<p>初识T面板<br>
+左侧的工具栏可以通过 <code>T</code> 键开启/隐藏<br>
+鼠标移动到工具栏位置然后按 <code>小键盘 +/-</code> 可实现UI缩放.<br>
+向右拖拽工具栏可以切换显示并排工具栏、名称工具栏(推荐切换到图2的并排工具栏)</p>
+<img src="/zh-cn/computer/2021/blender/7-1.png" class="">
+<img src="/zh-cn/computer/2021/blender/7-2.png" class="">
+<img src="/zh-cn/computer/2021/blender/7-3.png" class="">
+</li>
+<li>
+<p>挤出并移动<br>
+进入编辑模式, T面板会出现 编辑模式下的工具.<br>
+选择挤出到选区工具(Extrude Region, 快捷键 <code>E</code>), 单个面默认沿面法向、多个面默认沿质心法向, 可按 <code>X/Y/Z</code> 直接切换轴向移动; 按 <code>Shift+X/Y/Z</code> 可锁定对应轴向方向的移动, 也可以进入对应的正交视图规避未显示轴向的数据干扰<br>
+切换到面模式选择一个面, 此时可以看到一个黄色的加号, 拖拽这个加号, 对面的法向方向进行挤出</p>
+<img src="/zh-cn/computer/2021/blender/7-4.png" class="">
+<img src="/zh-cn/computer/2021/blender/7-5.png" class="">
+<blockquote>
+<p><strong>翻车点: 挤出到选区工具的操作是挤出并移动, 按右键取消的只是移动, 但依旧会进行挤出从而产生一个重叠面. 解决方案是开启投选模式(X-Ray, 快捷键 <code>Alt+Z</code>), 然后框选并按距离合并顶点(快捷键 <code>M</code>).</strong></p>
+<img src="/zh-cn/computer/2021/blender/7-6.png" class="">
+<p>对于边的法向, 由于不是很直观, 可以在视图叠加层(Viewport Overlays)中进行开启法向线的显示, 图中的按钮分别是点法向/线法向/面法向的显示, 这里我们开启线法向线的显示并将长度设置为0.45</p>
+<img src="/zh-cn/computer/2021/blender/7-7.png" class="">
+<p>对于面法向, 除了在视图叠加层(Viewport Overlays)中开启法向线的显示外, 还可以启用面朝向(Face Orientation), 蓝色为正面, 红色为反面</p>
+<img src="/zh-cn/computer/2021/blender/7-8.png" class="">
+</blockquote>
+</li>
+<li>
+<p>沿法向挤出(Extrude Along Normals)<br>
+新建两个平面, 将其中一个面翻转. 如图所示, 选中这个面, 然后 <code>Alt+N</code> 在出现的菜单中选择 Flip 来翻转:</p>
+<img src="/zh-cn/computer/2021/blender/7-9.png" class="">
+<p>可以看到, 选中两个平面后, 挤出并移动工具会默认使用两物体的质心点的法向:</p>
+<img src="/zh-cn/computer/2021/blender/7-10.png" class="">
+<p>要让选择的平面独立使用自己的法向, 应使用沿法向挤出(Extrude Along Normals)工具, 此时控制柄会变化:</p>
+<img src="/zh-cn/computer/2021/blender/7-11.png" class="">
+<p>此时拖动平面会沿着各自的法向进行挤出:</p>
+<img src="/zh-cn/computer/2021/blender/7-12.png" class="">
+</li>
+<li>
+<p>挤出各个面(Extrude Individual)<br>
+在选取对象为多个相连面的时候, 沿法向挤出是相接的, 而挤出各个面是分开的.</p>
+<blockquote>
+<p>在沿法向挤出模式下, 选择正方形的两个面进行挤出, 会沿着这两个面的夹角作为法向进行挤出:</p>
+<img src="/zh-cn/computer/2021/blender/7-13.png" class="">
+<p>如果要让挤出变得平均, 需要在挤出操作的历史记录里勾选 Offset Even (均等偏移):</p>
+<img src="/zh-cn/computer/2021/blender/7-14.png" class="">
+</blockquote>
+<p>若要让选择的每个面都独自的进行挤出的话, 就需要使用挤出各个面(Extrude Individual)工具了:</p>
+<img src="/zh-cn/computer/2021/blender/7-15.png" class="">
+</li>
+<li>
+<p>挤出至光标(Extrude to Cursor)<br>
+把所选挤出到鼠标所在区域, 建议结合正交视图使用. 快捷键 <code>Ctrl+右键</code> (编辑模式)</p>
+</li>
+<li>
+<p>挤出流形(Extrude Manifold)<br>
+使用其他的挤出工具进行穿插挤压的话, 会出现多余面的问题:</p>
+<img src="/zh-cn/computer/2021/blender/7-16.png" class="">
+<p>使用挤出流形则可以很好地解决这个问题:</p>
+<img src="/zh-cn/computer/2021/blender/7-17.png" class="">
+</li>
+<li>
+<p>快捷菜单<br>
+编辑模式下选中目标然后 <code>Alt+E</code> 即可弹出全部和挤出相关的功能</p>
+<blockquote>
+<p>重复挤出: 除了挤出后按 <code>Shirt+R</code> 进行重复操作外, 在快捷菜单中也可选择 Extrude Reoeat 进行重复挤出, 在弹出的历史操作里进行重复挤出的设置:</p>
+<img src="/zh-cn/computer/2021/blender/7-18.png" class="">
+<p>绕视图旋转(Spin): 在快捷菜单下还有个旋转功能, 可以让轮廓沿着视图旋转成为一个立体模型:<br>
+首先通过顶点挤出创建一个轮廓</p>
+<img src="/zh-cn/computer/2021/blender/7-19.png" class="">
+<p>然后<strong>在俯视图下</strong>, <code>Alt+E</code> 然后选择 Spin 使其进行绕Z轴旋转:</p>
+<img src="/zh-cn/computer/2021/blender/7-20.png" class="">
+<p>当然, 也可以对旋转操作进行参数上的设置</p>
+<img src="/zh-cn/computer/2021/blender/7-21.png" class="">
+</blockquote>
+</li>
+</ol>
+<h3 id="内插面工具全解-激活内插、深度、外插、分离、边界与其他相关参数">内插面工具全解(激活内插、深度、外插、分离、边界与其他相关参数)</h3>
+<p>激活内插面 <code>I</code><br>
+激活后:<br>
+深度-按住 <code>Ctrl</code> 移动<br>
+外插- <code>O</code><br>
+边界- <code>B</code><br>
+分离- <code>I</code> (分离开启会影响到边界和外插属性)<br>
+面边界: 只被一个面包含的边</p>
+<h3 id="倒角工具全解-全参数解析、额外拓展、解决倒角不均匀">倒角工具全解(全参数解析、额外拓展、解决倒角不均匀)</h3>
+<ol>
+<li>
+<p>基础操作<br>
+快捷键 <code>Ctrl+B</code><br>
+进入后可根参考状态栏快捷键提示进行操作:<br>
+鼠标滚轮或按 <code>S</code> 键拖动切换段数.<br>
+按 <code>P</code> 键可控制形状轮廓(内凹还是外凸)</p>
+</li>
+<li>
+<p>宽度类型<br>
+为了更好的演示, 将宽度、段数、形状的值调整至下图所示:</p>
+<img src="/zh-cn/computer/2021/blender/9-1.png" class="">
+<p>针对宽度类型, 分别有偏移量(Offset), 宽度(Width), 深度(Depth), 百分比(Percent), 绝对值(Absolute)<br>
+对于前三个类型, 有如下图可以很好地解释:</p>
+<img src="/zh-cn/computer/2021/blender/9-2.png" class="">
+<p>偏移量宽度类型(Offset)=平行边 间距=垂线距离<br>
+百分比宽度类型(Percent), 会根据倒角原始边的邻边长度决定, 需要注意邻边不同会产生倒角不均匀的问题.<br>
+绝对值宽度类型(Absolute), 绝对值=平行线端点连线斜边长度&gt;=垂线距离:</p>
+<blockquote>
+<ul>
+<li>
+<p>如何测量两点间距离:<br>
+举个例子, 将倒角操作的参数设置为宽度类型为宽度(Width), 段数(Segments)为2, 形状为1:</p>
+<img src="/zh-cn/computer/2021/blender/9-3.png" class="">
+<p>将吸附模式选择为顶点吸附, 选择T面板中的测量工具(Measure), 持续按住 <code>Ctrl</code> (临时启用吸附)拖动连接两个顶点即可:</p>
+<img src="/zh-cn/computer/2021/blender/9-4.png" class="">
+</li>
+<li>
+<p>如何测量深度模式下的距离呢, 这个时候需要做一条辅助线.<br>
+选择两个顶点按 <code>J</code> 可在两点间作一条辅助线段, 随后启用吸附的垂直交线模式(按住 <code>Shift</code> 同时开启多个吸附)然后直接测量. 也可继续作一条垂直辅助线: 选中这条线段在右键菜单中选择细分(Subdivide)即可将其一分为二, 此时平分后的线段中间的顶点就是想要用于测量的垂直交线上的点.</p>
+<img src="/zh-cn/computer/2021/blender/9-5.png" class="">
+<img src="/zh-cn/computer/2021/blender/9-6.png" class="">
+</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>其他参数全解</p>
+<ul>
+<li>
+<p>材质编号(Material Index)<br>
+为了讲解, 需要给物体上材质:<br>
+如图, 在物体的材质属性(Material Properties)下建立三个材质槽, 然后将三个材质更名并设置基础色:</p>
+<img src="/zh-cn/computer/2021/blender/9-7.png" class="">
+<img src="/zh-cn/computer/2021/blender/9-8.png" class="">
+<p>默认情况下物体会使用第一个材质, 可进入编辑模式选择面然后指定该面的材质:</p>
+<img src="/zh-cn/computer/2021/blender/9-9.png" class="">
+<p>此时进行倒角操作, 会发现默认的 -1 材质编号会自动套用临边的材质.<br>
+可通过更改这个参数来选择倒角边的材质</p>
+<img src="/zh-cn/computer/2021/blender/9-10.png" class="">
+</li>
+<li>
+<p>平衡着色与硬化法向<br>
+想要让倒角变得平滑, 最笨的方法是给增加段数, 但是面数增加会导致运算量的增加.<br>
+更好的方法是使用右键菜单的平滑着色:</p>
+<img src="/zh-cn/computer/2021/blender/9-11.png" class="">
+<p>默认情况下平滑着色套用到了全局, 可在对象数据属性(Object Data Properties)的法向设置里勾选自动光滑来限制自动平滑角度:</p>
+<img src="/zh-cn/computer/2021/blender/9-12.png" class="">
+<p>另一种方法是硬化法向, 不影响原始法向, 仅平滑倒角.<br>
+为了让效果更为明显, 将试图着色方式改为以下快照材质:</p>
+<img src="/zh-cn/computer/2021/blender/9-13.png" class="">
+<img src="/zh-cn/computer/2021/blender/9-14.png" class="">
+<img src="/zh-cn/computer/2021/blender/9-15.png" class="">
+</li>
+<li>
+<p>钳制重叠(Clamp Overlap)可以避免宽度增大到一定出现穿插的情况.</p>
+</li>
+<li>
+<p>外斜接(Miter Outer): 有锐边(Sharp)、补块(Patch)、圆弧(Arc)三种模式.</p>
+<img src="/zh-cn/computer/2021/blender/9-16.png" class="">
+</li>
+<li>
+<p>内斜接(Inner): 有锐边(Sharp)、圆弧(Arc)两种模式</p>
+<img src="/zh-cn/computer/2021/blender/9-17.png" class="">
+</li>
+<li>
+<p>相交类型(Intersection Type): 有栅格填充(Grid Fill)、截止(Cutoff)两种模式.</p>
+<img src="/zh-cn/computer/2021/blender/9-18.png" class="">
+</li>
+<li>
+<p>面强度(Face Strength): 面权重限制法向平滑-结合未来加权法向修改器可以根据条件标记面的权重强弱, 比如面的面积、比如倒角区域, 来限制不同强度区域产生不同程度的平滑效果.</p>
+</li>
+<li>
+<p>标记(Mark)<br>
+缝合边(Seams):<br>
+对一个带有缝合边的边进行倒角时会出现缝合边断开的情况, 此时可以勾选标记缝合边来实现自动补全:</p>
+<img src="/zh-cn/computer/2021/blender/9-22.png" class="">
+<blockquote>
+<p>什么是缝合边? 有什么用?<br>
+进入UV编辑模式, 删除原有的UV映射. 然后想象剪一个纸盒, 选择要剪开的几条边, 将它们设置成缝合边:</p>
+<img src="/zh-cn/computer/2021/blender/9-19.png" class="">
+<img src="/zh-cn/computer/2021/blender/9-20.png" class="">
+<p>按 <code>A</code> 全选, 进行UV展开:</p>
+<img src="/zh-cn/computer/2021/blender/9-21.png" class="">
+</blockquote>
+<p>锐边(Sharp)同理, 勾选标记锐边可以自动补全断离的锐边.</p>
+<blockquote>
+<p>什么是锐边? 有什么用?<br>
+勾选了锐边后, 90°下的法向自动平滑将不会对标记为锐边的边进行平滑.</p>
+<img src="/zh-cn/computer/2021/blender/9-23.png" class="">
+</blockquote>
+</li>
+<li>
+<p>自定义倒角轮廓:<br>
+选择顶点可进行相关设置、删除:</p>
+<img src="/zh-cn/computer/2021/blender/9-25.png" class="">
+<p>注意楼梯预设在更改段数后不要忘了点击应用预设的按钮来刷新预设:</p>
+<img src="/zh-cn/computer/2021/blender/9-24.png" class="">
+</li>
+</ul>
+</li>
+<li>
+<p>倒角不均匀与顶点倒角</p>
+<ul>
+<li>倒角不均匀: 注意物体是否进行过变形, 可通过应用菜单(<code>Ctrl+A</code>)的&quot;全部变换(All Transforms)&quot;实现</li>
+<li>顶点倒角: 新建一个平面, 在编辑模式下右键菜单选择细分(Subdivide).<br>
+然后 <code>Ctrl+Shift+B</code> 进入顶点倒角模式, 参数的设置可参考边线倒角:<img src="/zh-cn/computer/2021/blender/9-26.png" class="">
+<img src="/zh-cn/computer/2021/blender/9-27.png" class="">
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="环切与偏移环切边工具全解-边线循环原理-全解析环切与偏移环切边工具">环切与偏移环切边工具全解(边线循环原理+全解析环切与偏移环切边工具)</h3>
+<ol>
+<li>循环边传递原理</li>
+<li>环切工具全解</li>
+<li>偏移循环边工具全解</li>
+</ol>
+</div><div class="article-licensing box"><div class="licensing-title"><p>blender</p><p><a href="http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/">http://blog.ndoskrnl.net/zh-cn/computer/2021/blender/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Ndoskrnl</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-07-28</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-11-02</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/zh-cn/computer/2021/altiumdesigner-notes/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">altiumdesigner-notes</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/zh-cn/learn/2021/simple-chemistry-experiment/"><span class="level-item">simple-chemistry-experiment</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#常规软件设置"><span class="level-left"><span class="level-item">1</span><span class="level-item">常规软件设置</span></span></a></li><li><a class="level is-mobile" href="#基础操作"><span class="level-left"><span class="level-item">2</span><span class="level-item">基础操作</span></span></a></li><li><a class="level is-mobile" href="#坐标系与轴心点"><span class="level-left"><span class="level-item">3</span><span class="level-item">坐标系与轴心点</span></span></a></li><li><a class="level is-mobile" href="#吸附与衰减编辑工具"><span class="level-left"><span class="level-item">4</span><span class="level-item">吸附与衰减编辑工具</span></span></a></li><li><a class="level is-mobile" href="#常用基础操作集中处理-游标、物体合并分立、操作重复执行、第一人称观察、物体隐藏、物体父子级、物体镜像变换"><span class="level-left"><span class="level-item">5</span><span class="level-item">常用基础操作集中处理(游标、物体合并分立、操作重复执行、第一人称观察、物体隐藏、物体父子级、物体镜像变换)</span></span></a></li><li><a class="level is-mobile" href="#建模功能篇"><span class="level-left"><span class="level-item">6</span><span class="level-item">建模功能篇</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#初识编辑模式点线面与统计信息拓展"><span class="level-left"><span class="level-item">6.1</span><span class="level-item">初识编辑模式点线面与统计信息拓展</span></span></a></li><li><a class="level is-mobile" href="#挤出类工具全解-挤出、沿法向挤出、挤出各个面、挤出至游标"><span class="level-left"><span class="level-item">6.2</span><span class="level-item">挤出类工具全解(挤出、沿法向挤出、挤出各个面、挤出至游标)</span></span></a></li><li><a class="level is-mobile" href="#内插面工具全解-激活内插、深度、外插、分离、边界与其他相关参数"><span class="level-left"><span class="level-item">6.3</span><span class="level-item">内插面工具全解(激活内插、深度、外插、分离、边界与其他相关参数)</span></span></a></li><li><a class="level is-mobile" href="#倒角工具全解-全参数解析、额外拓展、解决倒角不均匀"><span class="level-left"><span class="level-item">6.4</span><span class="level-item">倒角工具全解(全参数解析、额外拓展、解决倒角不均匀)</span></span></a></li><li><a class="level is-mobile" href="#环切与偏移环切边工具全解-边线循环原理-全解析环切与偏移环切边工具"><span class="level-left"><span class="level-item">6.5</span><span class="level-item">环切与偏移环切边工具全解(边线循环原理+全解析环切与偏移环切边工具)</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/computer/"><span class="level-start"><span class="level-item">computer</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li><li><a class="level is-mobile" href="/categories/daily-life/"><span class="level-start"><span class="level-item">daily-life</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/ideology-and-politics/"><span class="level-start"><span class="level-item">ideology-and-politics</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/learn/"><span class="level-start"><span class="level-item">learn</span></span><span class="level-end"><span class="level-item tag">16</span></span></a><ul><li><a class="level is-mobile" href="/categories/learn/mathematics/"><span class="level-start"><span class="level-item">mathematics</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/minecraft/"><span class="level-start"><span class="level-item">minecraft</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/electronic-and-information-engineering/"><span class="tag">electronic-and-information-engineering</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mathematics/"><span class="tag">mathematics</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/postgraduate/"><span class="tag">postgraduate</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/senior-high-schoool/"><span class="tag">senior-high-schoool</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="钱桑もぺもぺ～" height="28"></a><p class="is-size-7"><span>&copy; 2022 Ndoskrnl</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
