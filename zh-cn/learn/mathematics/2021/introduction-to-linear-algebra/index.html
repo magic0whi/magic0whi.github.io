@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Category: learn - 钱桑の记事本&gt;_</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="钱桑の记事本&gt;_"><meta name="msapplication-TileImage" content="/img/logo.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="钱桑の记事本&gt;_"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content=".content { 	font-family: KaTeX_Main, &amp;#39;FZYaSongS-R-GB&amp;#39;; } article.article .content { 	font-size: 1.3em; } .katex .base {     font-size: 0.8em; } &amp;#x2F;* .katex-display {     overflow-x: hidden; } *&amp;#x2F; .conte"><meta property="og:type" content="blog"><meta property="og:title" content="Introduction to Linear Algebra"><meta property="og:url" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"><meta property="og:site_name" content="钱桑の记事本&gt;_"><meta property="og:description" content=".content { 	font-family: KaTeX_Main, &amp;#39;FZYaSongS-R-GB&amp;#39;; } article.article .content { 	font-size: 1.3em; } .katex .base {     font-size: 0.8em; } &amp;#x2F;* .katex-display {     overflow-x: hidden; } *&amp;#x2F; .conte"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Screenshot_20220315_150242.png"><meta property="article:published_time" content="2021-02-24T03:53:14.000Z"><meta property="article:modified_time" content="2022-03-23T10:07:10.534Z"><meta property="article:author" content="Ndoskrnl"><meta property="article:tag" content="mathematics"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"},"headline":"Introduction to Linear Algebra","image":["http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png","http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Screenshot_20220315_150242.png"],"datePublished":"2021-02-24T03:53:14.000Z","dateModified":"2022-03-23T10:07:10.534Z","author":{"@type":"Person","name":"Ndoskrnl"},"publisher":{"@type":"Organization","name":"钱桑の记事本>_","logo":{"@type":"ImageObject","url":"http://blog.ndoskrnl.net/img/Comet_symbol.svg"}},"description":".content { \tfont-family: KaTeX_Main, &#39;FZYaSongS-R-GB&#39;; } article.article .content { \tfont-size: 1.3em; } .katex .base {     font-size: 0.8em; } &#x2F;* .katex-display {     overflow-x: hidden; } *&#x2F; .conte"}</script><link rel="canonical" href="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"><link rel="icon" href="/img/logo.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- hexo injector head_end start --><script>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Category: learn - 钱桑の记事本&gt;_</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="钱桑の记事本&gt;_"><meta name="msapplication-TileImage" content="/img/logo.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="钱桑の记事本&gt;_"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content=".content { 	font-family: KaTeX_Main, &amp;#39;FZYaSongS-R-GB&amp;#39;; } article.article .content { 	font-size: 1.3em; } .katex .base {     font-size: 0.8em; } &amp;#x2F;* .katex-display {     overflow-x: hidden; } *&amp;#x2F; .conte"><meta property="og:type" content="blog"><meta property="og:title" content="Introduction to Linear Algebra"><meta property="og:url" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"><meta property="og:site_name" content="钱桑の记事本&gt;_"><meta property="og:description" content=".content { 	font-family: KaTeX_Main, &amp;#39;FZYaSongS-R-GB&amp;#39;; } article.article .content { 	font-size: 1.3em; } .katex .base {     font-size: 0.8em; } &amp;#x2F;* .katex-display {     overflow-x: hidden; } *&amp;#x2F; .conte"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Screenshot_20220315_150242.png"><meta property="article:published_time" content="2021-02-24T03:53:14.000Z"><meta property="article:modified_time" content="2022-03-23T13:00:47.796Z"><meta property="article:author" content="Ndoskrnl"><meta property="article:tag" content="mathematics"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"},"headline":"Introduction to Linear Algebra","image":["http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png","http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Screenshot_20220315_150242.png"],"datePublished":"2021-02-24T03:53:14.000Z","dateModified":"2022-03-23T13:00:47.796Z","author":{"@type":"Person","name":"Ndoskrnl"},"publisher":{"@type":"Organization","name":"钱桑の记事本>_","logo":{"@type":"ImageObject","url":"http://blog.ndoskrnl.net/img/Comet_symbol.svg"}},"description":".content { \tfont-family: KaTeX_Main, &#39;FZYaSongS-R-GB&#39;; } article.article .content { \tfont-size: 1.3em; } .katex .base {     font-size: 0.8em; } &#x2F;* .katex-display {     overflow-x: hidden; } *&#x2F; .conte"}</script><link rel="canonical" href="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"><link rel="icon" href="/img/logo.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- hexo injector head_end start --><script>
   (function () {
       function switchTab() {
           if (!location.hash) {
@@ -27,7 +27,7 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Comet_symbol.svg" alt="钱桑の记事本&gt;_" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/peers">Peers</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-02-24T03:53:14.000Z" title="2/24/2021, 3:53:14 AM">2021-02-24</time></span><span class="level-item">Updated&nbsp;<time dateTime="2022-03-23T10:07:10.534Z" title="3/23/2022, 10:07:10 AM">2022-03-23</time></span><span class="level-item"><a class="link-muted" href="/categories/learn/">learn</a><span> / </span><a class="link-muted" href="/categories/learn/mathematics/">mathematics</a></span><span class="level-item">1 小时 read (About 13258 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Introduction to Linear Algebra</h1><div class="content"><style>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Comet_symbol.svg" alt="钱桑の记事本&gt;_" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/peers">Peers</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-02-24T03:53:14.000Z" title="2/24/2021, 3:53:14 AM">2021-02-24</time></span><span class="level-item">Updated&nbsp;<time dateTime="2022-03-23T13:00:47.796Z" title="3/23/2022, 1:00:47 PM">2022-03-23</time></span><span class="level-item"><a class="link-muted" href="/categories/learn/">learn</a><span> / </span><a class="link-muted" href="/categories/learn/mathematics/">mathematics</a></span><span class="level-item">2 小时 read (About 13736 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Introduction to Linear Algebra</h1><div class="content"><style>
 .content {
 	font-family: KaTeX_Main, 'FZYaSongS-R-GB';
 }
@@ -702,7 +702,7 @@ $$
       <span class="list-head">2.5 A</span>&emsp;The inverse of a triangular <strong>difference matrix</strong> \(A\) is a triangular <strong>sum matrix</strong> \(S\) :
       $$
       \begin{alignedat}{1}
-      \begin{bmatrix} A & I \end{bmatrix}
+        \begin{bmatrix} A & I \end{bmatrix}
       & =
         \left[\begin{array}{rrr|rrr}
          1 & 0 & 0 & 1 & 0 & 0 \\
@@ -825,7 +825,24 @@ $$
 <li>That product matrix \(\bm{L}\) is still lower triangular. <strong>Every multiplier \(\bm{\ell_{ij}}\) is in row \(\bm{i}\), column \(\bm{j}\).</strong></li>
 <li>The original \(A\) is recovered from \(U\) by \(\bm{A}=\bm{LU}=(\text{lower triangular})(\text{upper triangular})\).</li>
 <li>Elimination on \(A\bm{x}=\bm{b}\) reaches \(U\bm{x}=\bm{c}\). Then back-substitution solves \(U\bm{x}=\bm{c}\)</li>
-<li>Solving a triangular system takes \(n^2/2\) multiply-subtracts. Elimination to find \(U\) takes \(n^3/3\).</li>
+<li>Solving a triangular system takes \(n^2/2\) multiply-subtracts. Elimination to find \(U\) takes \(n^3/3\).<details>
+  <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
+    In elimination, to find new entries below the first pivot row requires \(n^2-n\) multiplications and subtractions. Here we using \(n^2\) and for simplicity ignore that the row 1 is actually does not change (In CS this is the usual case&mdash;focus on most affected factors in time complexicity). The next stage will has \((n-1)^n\) multiplications and subtractions. The matrices are getting smaller as elimination goes forward. The rough count to reach \(U\) is the sum of squares:
+    $$
+    n^2+(n-1)^2+\cdots+2^2+1^2=\frac{1}{3}n(n+\frac{1}{2})(n+1)\approx\frac{1}{3}n^3
+    $$
+    (When \(n\) is large, the \(\frac{1}{2}\) and the \(1\) are not important).
+    <br>
+    &emsp;&ensp;For solving a triangular system, in back substitution, the routh count of the multiplications:
+    $$
+      1+2+\cdots+n=\frac{(1+n)n}{2}\approx\frac{n^2}{2}
+    $$
+    and the routh count of the subtractions:
+    $$
+      0+1+\cdots+(n-1)=\frac{(n-1)n}{2}\approx\frac{n^2}{2}
+    $$
+</details>
+</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -948,7 +965,58 @@ $$
 </details>
 <h3 id="Transposes-and-Permutations">Transposes and Permutations</h3>
 <ol>
-<li>The transposes of \(A\bm{x}\) and \(AB\) and \(A^{-1}\) are \(\bm{x}^\mathrm{T}A^\mathrm{T}\) and \(B^\mathrm{T}A^\mathrm{T}\) and \((A^\mathrm{T})^{-1}\).</li>
+<li>The transposes of \(A\bm{x}\) and \(AB\) and \(A^{-1}\) are \(\bm{x}^\mathrm{T}A^\mathrm{T}\) and \(B^\mathrm{T}A^\mathrm{T}\) and \((A^\mathrm{T})^{-1}\).<details>
+  <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
+    To understand \((AB)^\mathrm{T}=B^\mathrm{T}A^\mathrm{T}\), start with \((A\bm{x})^\mathrm{T})=\bm{x}^\mathrm{T}A^\mathrm{T}\) when \(B\) is just a vector:
+    $$
+    \textcolor{RoyalBlue}{
+      \textit{\textbf{$A\bm{x}$ combines the columns of $A$ while $\bm{x}^\mathrm{T}A^\mathrm{T}$ combines the rows of $A^\mathrm{T}$}}
+    }
+    $$
+    In algebra language, this is:
+    $$
+    \begin{alignedat}{1}
+      (A\bm{x})^\mathrm{T}
+    & =
+      \left(
+        \begin{bmatrix} \bm{a}_1 & \bm{a}_2 & \cdots & \bm{a}_n \end{bmatrix}
+        \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}
+      \right)^\mathrm{T}
+    \\
+    & =(x_1\bm{a}_1+x_2\bm{a}_2+\cdots+x_n\bm{a}_n)^\mathrm{T}
+    \\
+    & =x_1\bm{a}_1^\mathrm{T}+x_2\bm{a}_2^\mathrm{T}+\cdots+x_n\bm{a}_n^\mathrm{T}
+    \\
+      \bm{x}^\mathrm{T}A^\mathrm{T}
+    & =
+      \begin{bmatrix} x_1 & x_2 & \cdots & x_n \end{bmatrix}
+      \begin{bmatrix} \bm{a}_1^\mathrm{T} \\ \bm{a}_2^\mathrm{T} \\ \vdots \\ \bm{a}_n^\mathrm{T} \end{bmatrix}
+    \\
+    & =x_1\bm{a}_1^\mathrm{T}+x_2\bm{a}_2^\mathrm{T}+\cdots+x_n\bm{a}_n^\mathrm{T}
+    \\
+    & \therefore (A\bm{x})^\mathrm{T}=\bm{x}^\mathrm{T}A^\mathrm{T}
+    \end{alignedat}
+    $$
+    Now we can prove the formula \((AB)^\mathrm{T}=B^\mathrm{T}A^\mathrm{T}\), let \(B=\begin{bmatrix} \bm{b}_1 & \bm{b}_2 & \bm{b}_n \end{bmatrix}\):
+    $$
+    (AB)^\mathrm{T}=
+    \left(\begin{bmatrix} A\bm{b}_1 & A\bm{b}_2 & \cdots & A\bm{b}_n \end{bmatrix}\right)^\mathrm{T}
+    =
+    \begin{bmatrix} \bm{b}_1^\mathrm{T}A^\mathrm{T} \\ \bm{b}_2^\mathrm{T}A^\mathrm{T} \\ \vdots \\ \bm{b}_n^\mathrm{T}A^\mathrm{T} \end{bmatrix}
+    =
+    \begin{bmatrix} \bm{b}_1^\mathrm{T} \\ \bm{b}_2^\mathrm{T} \\ \vdots \\ \bm{b}_n^\mathrm{T} \end{bmatrix}A^\mathrm{T}
+    =B^\mathrm{T}A^\mathrm{T}
+    $$
+    Apply this rule by transposing both sides of \(A^\mathrm{-1}A=I\):
+    $$
+    (A^{-1}A)^\mathrm{T}=I^\mathrm{T}
+    \harr
+    A^\mathrm{T}(A^{-1})^\mathrm{T}=I
+    \harr
+    (A^{-1})^\mathrm{T}=(A^\mathrm{T})^{-1}
+    $$
+</details>
+</li>
 <li>The dot product (inner product) is \(\bm{x}\cdot\bm{y}=\bm{x}^\mathrm{T}\bm{y}\). This is \((1\times n)(n\times 1)=(1\times 1)\).<br>
 The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\times n)=n\times n\text{ matrix}\).</li>
 <li>The idea behind \(A^\mathrm{T}\) is that \(A\bm{x}\cdot\bm{y}\) equals \(\bm{x}\cdot A^\mathrm{T}\bm{y}\) because \((A\bm{x})^\mathrm{T}\bm{y}=\bm{x}^\mathrm{T}A^\mathrm{T}\bm{y}=\bm{x}^\mathrm{T}(A^\mathrm{T}\bm{y})\).</li>
