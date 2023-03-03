@@ -1,7 +1,3 @@
-@font-face {
-  font-family: 'FZYaSongS-R-GB';
-  src: url("https://cdn.jsdelivr.net/gh/xinwuyun/font@0.1.1/FZBIAOYSJW.TTF");
-}
 @-moz-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -11342,6 +11338,9 @@ figure.highlight .section {
   min-width: inherit;
   border-radius: inherit;
 }
+figure.highlight.foldable div.level-left {
+  cursor: pointer;
+}
 .gist table tr:hover {
   background: transparent;
 }
@@ -11569,6 +11568,9 @@ figure.highlight .section {
   line-height: inherit;
 }
 .MathJax,
+.MathJax_Display,
+.MJXc-display,
+.MathJax_SVG_Display,
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
