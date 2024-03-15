@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Category: learn - 钱桑の记事本&gt;_</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="钱桑の记事本&gt;_"><meta name="msapplication-TileImage" content="/img/logo.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="钱桑の记事本&gt;_"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="This is an excerpt of both brief summary and worked examples of each section in the Introduction to Linear Algebra (Fifth Edition) by Gilbert Strang MIT Course 18.06, Spring 2022 TODO: draw svg format"><meta property="og:type" content="blog"><meta property="og:title" content="Introduction to Linear Algebra"><meta property="og:url" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"><meta property="og:site_name" content="钱桑の记事本&gt;_"><meta property="og:description" content="This is an excerpt of both brief summary and worked examples of each section in the Introduction to Linear Algebra (Fifth Edition) by Gilbert Strang MIT Course 18.06, Spring 2022 TODO: draw svg format"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Screenshot_20220315_150242.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png"><meta property="og:image" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure6.6.png"><meta property="article:published_time" content="2021-02-24T03:53:14.000Z"><meta property="article:modified_time" content="2024-01-29T12:20:54.193Z"><meta property="article:author" content="Ndoskrnl"><meta property="article:tag" content="mathematics"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"},"headline":"Introduction to Linear Algebra","image":["http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png","http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Screenshot_20220315_150242.png","http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png","http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png","http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure6.6.png"],"datePublished":"2021-02-24T03:53:14.000Z","dateModified":"2024-01-29T12:20:54.193Z","author":{"@type":"Person","name":"Ndoskrnl"},"publisher":{"@type":"Organization","name":"钱桑の记事本>_","logo":{"@type":"ImageObject","url":"http://blog.ndoskrnl.net/img/Comet_symbol.svg"}},"description":"This is an excerpt of both brief summary and worked examples of each section in the Introduction to Linear Algebra (Fifth Edition) by Gilbert Strang MIT Course 18.06, Spring 2022 TODO: draw svg format"}</script><link rel="canonical" href="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"><link rel="icon" href="/img/logo.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- hexo injector head_end start --><script>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Category: learn - 钱桑の记事本&gt;_</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="钱桑の记事本&gt;_"><meta name="msapplication-TileImage" content="/img/logo.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="钱桑の记事本&gt;_"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="This is an excerpt of both brief summary and worked examples of each section in the Introduction to Linear Algebra (Fifth Edition) by Gilbert Strang MIT Course 18.06, Spring 2022 TODO: draw svg format"><meta property="og:type" content="blog"><meta property="og:title" content="Introduction to Linear Algebra"><meta property="og:url" content="https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"><meta property="og:site_name" content="钱桑の记事本&gt;_"><meta property="og:description" content="This is an excerpt of both brief summary and worked examples of each section in the Introduction to Linear Algebra (Fifth Edition) by Gilbert Strang MIT Course 18.06, Spring 2022 TODO: draw svg format"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png"><meta property="og:image" content="https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Screenshot_20220315_150242.png"><meta property="og:image" content="https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png"><meta property="og:image" content="https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png"><meta property="og:image" content="https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure6.6.png"><meta property="article:published_time" content="2021-02-24T03:53:14.000Z"><meta property="article:modified_time" content="2024-03-15T16:13:02.648Z"><meta property="article:author" content="Ndoskrnl"><meta property="article:tag" content="mathematics"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"},"headline":"Introduction to Linear Algebra","image":["https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure1.3.png","https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Screenshot_20220315_150242.png","https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png","https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png","https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure6.6.png"],"datePublished":"2021-02-24T03:53:14.000Z","dateModified":"2024-03-15T16:13:02.648Z","author":{"@type":"Person","name":"Ndoskrnl"},"publisher":{"@type":"Organization","name":"钱桑の记事本>_","logo":{"@type":"ImageObject","url":"https://magic0whi.github.io/img/Comet_symbol.svg"}},"description":"This is an excerpt of both brief summary and worked examples of each section in the Introduction to Linear Algebra (Fifth Edition) by Gilbert Strang MIT Course 18.06, Spring 2022 TODO: draw svg format"}</script><link rel="canonical" href="https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/"><link rel="icon" href="/img/logo.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- hexo injector head_end start --><script>
   (function () {
       function switchTab() {
           if (!location.hash) {
@@ -29,10 +29,11 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Comet_symbol.svg" alt="钱桑の记事本&gt;_" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/peers">Peers</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-02-24T03:53:14.000Z" title="2/24/2021, 3:53:14 AM">2021-02-24</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-01-29T12:20:54.193Z" title="1/29/2024, 12:20:54 PM">2024-01-29</time></span><span class="level-item"><a class="link-muted" href="/categories/learn/">learn</a><span> / </span><a class="link-muted" href="/categories/learn/mathematics/">mathematics</a></span><span class="level-item">3 小时 read (About 25978 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Introduction to Linear Algebra</h1><div class="content"><p>This is an excerpt of both brief summary and worked examples of each section in the Introduction to Linear Algebra (Fifth Edition) by Gilbert Strang</p>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Comet_symbol.svg" alt="钱桑の记事本&gt;_" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/peers">Peers</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-02-24T03:53:14.000Z" title="2/24/2021, 3:53:14 AM">2021-02-24</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-03-15T16:13:02.648Z" title="3/15/2024, 4:13:02 PM">2024-03-16</time></span><span class="level-item"><a class="link-muted" href="/categories/learn/">learn</a><span> / </span><a class="link-muted" href="/categories/learn/mathematics/">mathematics</a></span><span class="level-item">3 小时 read (About 25978 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Introduction to Linear Algebra</h1><div class="content"><p>This is an excerpt of both brief summary and worked examples of each section in the Introduction to Linear Algebra (Fifth Edition) by Gilbert Strang</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/mitmath/1806/">MIT Course 18.06, Spring 2022</a></p>
 <p>TODO: draw svg format figure by using tikz; Using <code>gather*</code> or <code>align*</code> or <code>array</code> while there is a line break in display mode LaTex.</p>
 <span id="more"></span>
+
 <style>
 .content {
     font-family: KaTeX_Main, 'FZYaSongS-R-GB';
@@ -86,15 +87,14 @@ $$
 \newcommand\d[1]{\operatorname{d}\!{\\#1}}
 $$
 </div> -->
-<h2 id="Chapter-1-Introduction-to-Vectors">Chapter 1 Introduction to Vectors</h2>
-<h3 id="Vectors-and-Linear-Combinations">Vectors and Linear Combinations</h3>
-<ol>
+
+<h2 id="Chapter-1-Introduction-to-Vectors"><a href="#Chapter-1-Introduction-to-Vectors" class="headerlink" title="Chapter 1 Introduction to Vectors"></a>Chapter 1 Introduction to Vectors</h2><h3 id="Vectors-and-Linear-Combinations"><a href="#Vectors-and-Linear-Combinations" class="headerlink" title="Vectors and Linear Combinations"></a>Vectors and Linear Combinations</h3><ol>
 <li>\(3\bm{v}+5\bm{w}\) is a typical <strong>linear combination</strong> \(c\bm{v}+d\bm{w}\) of the vectors \(\bm{v}\) and \(\bm{w}\).</li>
-<li>For \(\bm{v}=\begin{bmatrix} 1 \\ 1 \end{bmatrix}\) and \(\bm{w}=\begin{bmatrix} 2 \\ 3 \end{bmatrix}\) that combination is \(3\begin{bmatrix} 1 \\ 1 \end{bmatrix}+5\begin{bmatrix} 2 \\ 3 \end{bmatrix}=\begin{bmatrix} 3+10 \\ 3+15 \end{bmatrix}=\begin{bmatrix} 13 \ 18 \end{bmatrix}\).</li>
-<li>The vector \(\begin{bmatrix} 2 \\ 3 \end{bmatrix}=\begin{bmatrix} 2 \\ 0 \end{bmatrix}+\begin{bmatrix} 0 \\ 3 \end{bmatrix}\) goes across to \(x=2\) and up to \(y=3\) in the \(xy\) plane.</li>
+<li>For \(\bm{v}&#x3D;\begin{bmatrix} 1 \\ 1 \end{bmatrix}\) and \(\bm{w}&#x3D;\begin{bmatrix} 2 \\ 3 \end{bmatrix}\) that combination is \(3\begin{bmatrix} 1 \\ 1 \end{bmatrix}+5\begin{bmatrix} 2 \\ 3 \end{bmatrix}&#x3D;\begin{bmatrix} 3+10 \\ 3+15 \end{bmatrix}&#x3D;\begin{bmatrix} 13 \ 18 \end{bmatrix}\).</li>
+<li>The vector \(\begin{bmatrix} 2 \\ 3 \end{bmatrix}&#x3D;\begin{bmatrix} 2 \\ 0 \end{bmatrix}+\begin{bmatrix} 0 \\ 3 \end{bmatrix}\) goes across to \(x&#x3D;2\) and up to \(y&#x3D;3\) in the \(xy\) plane.</li>
 <li>The combinations \(c\begin{bmatrix} 1 \\ 1 \end{bmatrix}+d\begin{bmatrix} 2 \\ 3 \end{bmatrix}\) fill the whole \(xy\) place. They produce every \(\begin{bmatrix} x \\ y \end{bmatrix}\).</li>
 <li>The combinations \(c\begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}+d\begin{bmatrix} 2 \\ 3 \\ 4 \end{bmatrix}\) fill a <strong>plane</strong> in \(xyz\) space. Same plane for \(\begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}\), \(\begin{bmatrix} 3 \\ 4 \\ 5 \end{bmatrix}\).</li>
-<li>But \(\begin{array}{l} c+2d=1 \\ c+3d=0 \\ c+4d=0 \end{array}\) has no solution because its right side \(\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}\) is not on that plane.</li>
+<li>But \(\begin{array}{l} c+2d&#x3D;1 \\ c+3d&#x3D;0 \\ c+4d&#x3D;0 \end{array}\) has no solution because its right side \(\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}\) is not on that plane.</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -196,14 +196,14 @@ $$
     </li>
   </ol>
 </details>
-<h3 id="Lengths-and-Dot-Products">Lengths and Dot Products</h3>
-<ol>
-<li>The “dot product” of \(\bm{v}=\begin{bmatrix} 1 \\ 2 \end{bmatrix}\) and \(\bm{w}=\begin{bmatrix} 4 \\ 5 \end{bmatrix}\) is \(\bm{v}\cdot\bm{w}=(1)(4)+(2)(5)=4+10=\bm{14}\).</li>
-<li>\(\bm{v}=\begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}\) and \(\bm{w}=\begin{bmatrix*}[r] 4 \\ -4 \\ 4 \end{bmatrix*}\) are perpendicular because \(\bm{v}\cdot\bm{w}\) is zero: \((1)(4)+(3)(-4)+(2)(4)=\bm{0}\).</li>
-<li>The length squared of \(\bm{v}=\begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}\) is \(\bm{v}\cdot\bm{v}=1+9+4=14\). <strong>The length is</strong> \(\|\bm{v}\|=\sqrt{\bm{14}}\).</li>
-<li>Then \(\bm{u}=\dfrac{\bm{v}}{\|\bm{v}\|}=\dfrac{\bm{v}}{\sqrt{14}}=\dfrac{1}{\sqrt{14}}\begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}\) has length \(\|\bm{u}\|=\bm{1}\). Check \(\dfrac{1}{14}+\dfrac{9}{14}+\dfrac{4}{14}=1\).</li>
-<li>The angle \(\theta\) between \(\bm{v}\) and \(\bm{w}\) has \(\cos\theta=\dfrac{\bm{v}\cdot\bm{w}}{\|\bm{v}\|\|\bm{w}\|}\).</li>
-<li>The angle between \(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\) and \(\begin{bmatrix} 1 \\ 1\end{bmatrix}\) has \(\cos\theta=\dfrac{1}{(1)(\sqrt{2})}\). That angle is \(\theta=45\degree\).</li>
+
+<h3 id="Lengths-and-Dot-Products"><a href="#Lengths-and-Dot-Products" class="headerlink" title="Lengths and Dot Products"></a>Lengths and Dot Products</h3><ol>
+<li>The &quot;dot product&quot; of \(\bm{v}&#x3D;\begin{bmatrix} 1 \\ 2 \end{bmatrix}\) and \(\bm{w}&#x3D;\begin{bmatrix} 4 \\ 5 \end{bmatrix}\) is \(\bm{v}\cdot\bm{w}&#x3D;(1)(4)+(2)(5)&#x3D;4+10&#x3D;\bm{14}\).</li>
+<li>\(\bm{v}&#x3D;\begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}\) and \(\bm{w}&#x3D;\begin{bmatrix*}[r] 4 \\ -4 \\ 4 \end{bmatrix*}\) are perpendicular because \(\bm{v}\cdot\bm{w}\) is zero: \((1)(4)+(3)(-4)+(2)(4)&#x3D;\bm{0}\).</li>
+<li>The length squared of \(\bm{v}&#x3D;\begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}\) is \(\bm{v}\cdot\bm{v}&#x3D;1+9+4&#x3D;14\). <strong>The length is</strong> \(\|\bm{v}\|&#x3D;\sqrt{\bm{14}}\).</li>
+<li>Then \(\bm{u}&#x3D;\dfrac{\bm{v}}{\|\bm{v}\|}&#x3D;\dfrac{\bm{v}}{\sqrt{14}}&#x3D;\dfrac{1}{\sqrt{14}}\begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}\) has length \(\|\bm{u}\|&#x3D;\bm{1}\). Check \(\dfrac{1}{14}+\dfrac{9}{14}+\dfrac{4}{14}&#x3D;1\).</li>
+<li>The angle \(\theta\) between \(\bm{v}\) and \(\bm{w}\) has \(\cos\theta&#x3D;\dfrac{\bm{v}\cdot\bm{w}}{\|\bm{v}\|\|\bm{w}\|}\).</li>
+<li>The angle between \(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\) and \(\begin{bmatrix} 1 \\ 1\end{bmatrix}\) has \(\cos\theta&#x3D;\dfrac{1}{(1)(\sqrt{2})}\). That angle is \(\theta&#x3D;45\degree\).</li>
 <li>All angles have \(|\cos\theta|\leq 1\). So all vectors have \(\boxed{|\bm{v}\cdot\bm{w}|\leq\|\bm{v}\|\|\bm{w}\|}\).</li>
 </ol>
 <details>
@@ -251,24 +251,13 @@ $$
     </li>
   </ol>
 </details>
-<h3 id="Matrices">Matrices</h3>
-<ol>
-<li>\(A=\begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ 5 &amp; 6 \end{bmatrix}\) is a 3 by 2 matrix : \(m=3\) rows and \(n=2\) columns.</li>
-<li>\(A\bm{x}=\begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ 5 &amp; 6 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}\) is <strong>a combination of the columns</strong> \(A\bm{x}=x_1\begin{bmatrix} 1 \\ 3 \\ 5 \end{bmatrix}+x_2\begin{bmatrix} 2 \\ 4 \\ 6 \end{bmatrix}\).</li>
-<li>The 3 components of \(A\bm{x}\) are dot products of the 3 rows of \(A\) with the vector \(\bm{x}\):<div>
-$$
-\textbf{Row at a time}\qquad
-\begin{bmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{bmatrix}\begin{bmatrix} 7 \\ 8 \end{bmatrix}
-=
-\begin{bmatrix} 1\cdot 7+2\cdot 8 \\ 3\cdot 7+4\cdot 8 \\ 5\cdot 7+6\cdot 8 \end{bmatrix}
-=
-\begin{bmatrix} 23 \\ 53 \\ 83 \end{bmatrix}
-\text{.}
-$$
-</div>
-</li>
-<li>Equations in matrix form \(A\bm{x}=\bm{b}\): \(\begin{bmatrix} 2 &amp; 5 \\ 3 &amp; 7 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} b_1 \\ b_2 \end{bmatrix}\) replaces \(\begin{array}{l} 2x_1+5x_2=b_1 \\ 3x_1+7x_2=b_2 \end{array}\).</li>
-<li>The solution to \(A\bm{x}=\bm{b}\) can be written as \(\bm{x}=A^{-1}\bm{b}\). But some matrices don’t allow \(A^{-1}\).</li>
+
+<h3 id="Matrices"><a href="#Matrices" class="headerlink" title="Matrices"></a>Matrices</h3><ol>
+<li>\(A&#x3D;\begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ 5 &amp; 6 \end{bmatrix}\) is a 3 by 2 matrix : \(m&#x3D;3\) rows and \(n&#x3D;2\) columns.</li>
+<li>\(A\bm{x}&#x3D;\begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ 5 &amp; 6 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}\) is <strong>a combination of the columns</strong>&emsp;\(A\bm{x}&#x3D;x_1\begin{bmatrix} 1 \\ 3 \\ 5 \end{bmatrix}+x_2\begin{bmatrix} 2 \\ 4 \\ 6 \end{bmatrix}\).</li>
+<li><h1 id="The-3-components-of-A-bm-x-are-dot-products-of-the-3-rows-of-A-with-the-vector-bm-x-textbf-Row-at-a-time-qquad-begin-bmatrix-1-2-3-4-5-6-end-bmatrix-begin-bmatrix-7-8-end-bmatrix"><a href="#The-3-components-of-A-bm-x-are-dot-products-of-the-3-rows-of-A-with-the-vector-bm-x-textbf-Row-at-a-time-qquad-begin-bmatrix-1-2-3-4-5-6-end-bmatrix-begin-bmatrix-7-8-end-bmatrix" class="headerlink" title="The 3 components of \(A\bm{x}\) are dot products of the 3 rows of \(A\) with the vector \(\bm{x}\):$$\textbf{Row at a time}\qquad\begin{bmatrix} 1 &amp; 2 \ 3 &amp; 4 \ 5 &amp; 6 \end{bmatrix}\begin{bmatrix} 7 \ 8 \end{bmatrix}"></a>The 3 components of \(A\bm{x}\) are dot products of the 3 rows of \(A\) with the vector \(\bm{x}\):<br><div><br>$$<br>\textbf{Row at a time}\qquad<br>\begin{bmatrix} 1 &amp; 2 \ 3 &amp; 4 \ 5 &amp; 6 \end{bmatrix}\begin{bmatrix} 7 \ 8 \end{bmatrix}</h1><h1 id="begin-bmatrix-1-cdot-7-2-cdot-8-3-cdot-7-4-cdot-8-5-cdot-7-6-cdot-8-end-bmatrix"><a href="#begin-bmatrix-1-cdot-7-2-cdot-8-3-cdot-7-4-cdot-8-5-cdot-7-6-cdot-8-end-bmatrix" class="headerlink" title="\begin{bmatrix} 1\cdot 7+2\cdot 8 \ 3\cdot 7+4\cdot 8 \ 5\cdot 7+6\cdot 8 \end{bmatrix}"></a>\begin{bmatrix} 1\cdot 7+2\cdot 8 \ 3\cdot 7+4\cdot 8 \ 5\cdot 7+6\cdot 8 \end{bmatrix}</h1>\begin{bmatrix} 23 \ 53 \ 83 \end{bmatrix}<br>\text{.}<br>$$</div></li>
+<li>Equations in matrix form \(A\bm{x}&#x3D;\bm{b}\): \(\begin{bmatrix} 2 &amp; 5 \\ 3 &amp; 7 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}&#x3D;\begin{bmatrix} b_1 \\ b_2 \end{bmatrix}\) replaces \(\begin{array}{l} 2x_1+5x_2&#x3D;b_1 \\ 3x_1+7x_2&#x3D;b_2 \end{array}\).</li>
+<li>The solution to \(A\bm{x}&#x3D;\bm{b}\) can be written as \(\bm{x}&#x3D;A^{-1}\bm{b}\). But some matrices don&#39;t allow \(A^{-1}\).</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -381,15 +370,14 @@ $$
     </li>
   </ol>
 </details>
-<h2 id="Chapter-2-Solving-Linear-Equations">Chapter 2 Solving Linear Equations</h2>
-<h3 id="Vectors-and-Linear-Equations">Vectors and Linear Equations</h3>
-<ol>
-<li><strong>The column picture of</strong> \(A\bm{x}=\bm{b}\) : a combination of \(n\) columns of \(A\) produces the vector \(\bm{b}\).</li>
-<li>This is a vector equation \(A\bm{x}=x_1\bm{a}_1+\cdots+x_n\bm{a}_n=\bm{b}\) : the columns of \(A\) are \(\bm{a}_1,\bm{a}_2,\ldots,\bm{a}_n\).</li>
-<li>When \(\bm{b}=\bm{0}\), a combination \(A\bm{x}\) of the columns is <em>zero</em> : one possibility is \(\bm{x}=(0,\ldots,0)\).</li>
-<li>The <strong>row picture of</strong> \(A\bm{x}=\bm{b}\) : \(m\) equations from \(m\) rows give \(m\) planes meeting at \(\bm{x}\).</li>
-<li>A dot product gives the equation of each plane : \((\textbf{row 1})\cdot\bm{x}=b_1,\ldots,(\textbf{row }\bm{m})\cdot\bm{x}=b_m\)</li>
-<li>When \(\bm{b}=\bm{0}\), all the planes \((\textbf{row }\bm{i})\cdot\bm{x}=0\) go through the center point \(\bm{x}=(0,0,\ldots,0)\).</li>
+
+<h2 id="Chapter-2-Solving-Linear-Equations"><a href="#Chapter-2-Solving-Linear-Equations" class="headerlink" title="Chapter 2 Solving Linear Equations"></a>Chapter 2 Solving Linear Equations</h2><h3 id="Vectors-and-Linear-Equations"><a href="#Vectors-and-Linear-Equations" class="headerlink" title="Vectors and Linear Equations"></a>Vectors and Linear Equations</h3><ol>
+<li><strong>The column picture of</strong> \(A\bm{x}&#x3D;\bm{b}\) : a combination of \(n\) columns of \(A\) produces the vector \(\bm{b}\).</li>
+<li>This is a vector equation \(A\bm{x}&#x3D;x_1\bm{a}_1+\cdots+x_n\bm{a}_n&#x3D;\bm{b}\) : the columns of \(A\) are \(\bm{a}_1,\bm{a}_2,\ldots,\bm{a}_n\).</li>
+<li>When \(\bm{b}&#x3D;\bm{0}\), a combination \(A\bm{x}\) of the columns is <em>zero</em> : one possibility is \(\bm{x}&#x3D;(0,\ldots,0)\).</li>
+<li>The <strong>row picture of</strong> \(A\bm{x}&#x3D;\bm{b}\) : \(m\) equations from \(m\) rows give \(m\) planes meeting at \(\bm{x}\).</li>
+<li>A dot product gives the equation of each plane : \((\textbf{row 1})\cdot\bm{x}&#x3D;b_1,\ldots,(\textbf{row }\bm{m})\cdot\bm{x}&#x3D;b_m\)</li>
+<li>When \(\bm{b}&#x3D;\bm{0}\), all the planes \((\textbf{row }\bm{i})\cdot\bm{x}&#x3D;0\) go through the center point \(\bm{x}&#x3D;(0,0,\ldots,0)\).</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -431,13 +419,13 @@ $$
     </li>
   </ol>
 </details>
-<h3 id="The-Idea-of-Elimination">The Idea of Elimination</h3>
-<ol>
-<li>For \(\bm{m}=\bm{n}=3\), there are three equations \(A\bm{x}=\bm{b}\) and three unknowns \(x_1\), \(x_2\), \(x_3\).</li>
-<li>The first two equations are \(a_{11}x_1+\cdots=b_1\) and \(a_{21}x_1+\cdots=b_2\)</li>
-<li>Multiply the first equation by \(a_{21}/a_{11}\) and subtract from the second : then \(x_1\) <strong>is eliminated</strong>.</li>
-<li>The corner entry \(a_{11}\) is the first “pivot” and the ratio \(a_{21}/a_{11}\) is the first “multiplier.”</li>
-<li>Eliminate \(x_1\) from every remaining equation \(i\) by subtracting \(a_{i1}/a_{11}\) times the first equation.</li>
+
+<h3 id="The-Idea-of-Elimination"><a href="#The-Idea-of-Elimination" class="headerlink" title="The Idea of Elimination"></a>The Idea of Elimination</h3><ol>
+<li>For \(\bm{m}&#x3D;\bm{n}&#x3D;3\), there are three equations \(A\bm{x}&#x3D;\bm{b}\) and three unknowns \(x_1\), \(x_2\), \(x_3\).</li>
+<li>The first two equations are \(a_{11}x_1+\cdots&#x3D;b_1\) and \(a_{21}x_1+\cdots&#x3D;b_2\)</li>
+<li>Multiply the first equation by \(a_{21}&#x2F;a_{11}\) and subtract from the second : then \(x_1\) <strong>is eliminated</strong>.</li>
+<li>The corner entry \(a_{11}\) is the first &quot;pivot&quot; and the ratio \(a_{21}&#x2F;a_{11}\) is the first &quot;multiplier.&quot;</li>
+<li>Eliminate \(x_1\) from every remaining equation \(i\) by subtracting \(a_{i1}&#x2F;a_{11}\) times the first equation.</li>
 <li>Now the last \(n-1\) equations contain \(n-1\) unknowns \(x_2,\ldots,x_n\). <em>Repeat to eliminate</em> \(x_2\).</li>
 <li>Elimination breaks down if zero appears in the pivot. Exchanging two equations may save it.</li>
 </ol>
@@ -506,14 +494,14 @@ $$
     </li>
   </ol>
 </details>
-<h3 id="Elimination-Using-Matrices">Elimination Using Matrices</h3>
-<ol>
-<li>The first step multiplies the equations \(A\bm{x}=\bm{b}\) by a matrix \(E_{21}\) to produce \(E_{21}A\bm{x}=E_{21}\bm{b}\).</li>
+
+<h3 id="Elimination-Using-Matrices"><a href="#Elimination-Using-Matrices" class="headerlink" title="Elimination Using Matrices"></a>Elimination Using Matrices</h3><ol>
+<li>The first step multiplies the equations \(A\bm{x}&#x3D;\bm{b}\) by a matrix \(E_{21}\) to produce \(E_{21}A\bm{x}&#x3D;E_{21}\bm{b}\).</li>
 <li>That matrix \(E_{21}A\) has a zero in row 2, column 1 because \(x_1\) is eliminated from equation 2.</li>
-<li>\(E_{21}\) is the <strong>identity matrix</strong> (diagonal of 1’s) minus the multiplier \(a_{21}/a_{11}\) in row 2, column.</li>
-<li>Matrix-matrix multiplication is \(n\) matrix-vector multiplications: \(\bm{EA}=\begin{bmatrix} \bm{Ea_1} &amp; \ldots &amp; \bm{Ea_n} \end{bmatrix}\)</li>
-<li>We must also multiply \(E\bm{b}\)! So \(E\) is multiplying the <strong>augmented matrix</strong> \(\begin{bmatrix} A &amp; \bm{b} \end{bmatrix}=\begin{bmatrix} \bm{a}_1 &amp; \ldots &amp; \bm{a}_n &amp; \bm{b} \end{bmatrix}\).</li>
-<li>Elimination multiplies \(A\bm{x}=\bm{b}\) by \(E_{21}\), \(E_{31}\), \(\ldots\), \(E_{n1}\), then \(E_{32}\), \(E_{42}\), \(\ldots\), \(E_{n2}\), and onward.</li>
+<li>\(E_{21}\) is the <strong>identity matrix</strong> (diagonal of 1&#39;s) minus the multiplier \(a_{21}&#x2F;a_{11}\) in row 2, column.</li>
+<li>Matrix-matrix multiplication is \(n\) matrix-vector multiplications: \(\bm{EA}&#x3D;\begin{bmatrix} \bm{Ea_1} &amp; \ldots &amp; \bm{Ea_n} \end{bmatrix}\)</li>
+<li>We must also multiply \(E\bm{b}\)! So \(E\) is multiplying the <strong>augmented matrix</strong> \(\begin{bmatrix} A &amp; \bm{b} \end{bmatrix}&#x3D;\begin{bmatrix} \bm{a}_1 &amp; \ldots &amp; \bm{a}_n &amp; \bm{b} \end{bmatrix}\).</li>
+<li>Elimination multiplies \(A\bm{x}&#x3D;\bm{b}\) by \(E_{21}\), \(E_{31}\), \(\ldots\), \(E_{n1}\), then \(E_{32}\), \(E_{42}\), \(\ldots\), \(E_{n2}\), and onward.</li>
 <li>The <strong>row exchange matrix</strong> is not \(E_{ij}\) but \(P_{ij}\). To find \(P_{ij}\), exchange rows \(i\) and \(j\) of \(I\).</li>
 </ol>
 <details>
@@ -618,14 +606,14 @@ $$
     </li>
   </ol>
 </details>
-<h3 id="Rules-for-Matrix-Operations">Rules for Matrix Operations</h3>
-<ol>
-<li>Matrices \(A\) with \(n\) columns multiply matrices \(B\) with \(n\) rows : \(\boxed{A_{\bm{m}\times\bm{n}}B_{\bm{n}\times\bm{p}}=C_{\bm{m}\times\bm{p}}}\).</li>
-<li>Each entry in \(AB=C\) is a dot product : \(C_{ij}=(\text{row $i$ of $A$})\cdot(\text{column $j$ of $B$})\).</li>
-<li>This rule is chosen so that <strong>\(\bm{AB}\) times \(C\) equals \(A\) times \(BC\)</strong>. And \((AB)\bm{x}=A(B\bm{x})\)</li>
+
+<h3 id="Rules-for-Matrix-Operations"><a href="#Rules-for-Matrix-Operations" class="headerlink" title="Rules for Matrix Operations"></a>Rules for Matrix Operations</h3><ol>
+<li>Matrices \(A\) with \(n\) columns multiply matrices \(B\) with \(n\) rows : \(\boxed{A_{\bm{m}\times\bm{n}}B_{\bm{n}\times\bm{p}}&#x3D;C_{\bm{m}\times\bm{p}}}\).</li>
+<li>Each entry in \(AB&#x3D;C\) is a dot product : \(C_{ij}&#x3D;(\text{row $i$ of $A$})\cdot(\text{column $j$ of $B$})\).</li>
+<li>This rule is chosen so that <strong>\(\bm{AB}\) times \(C\) equals \(A\) times \(BC\)</strong>. And \((AB)\bm{x}&#x3D;A(B\bm{x})\)</li>
 <li>More ways to compute \(AB\) : \((\text{$A$ times columns of $B$})\), \((\text{rows of $A$ times $B$})\), \((\textit{columns times rows})\).</li>
-<li>It is not usually true that \(AB=BA\). In most cases \(A\) <em>doesn’t commute with</em> \(B\).</li>
-<li>Matrices can be multiplied by <em>blocks</em> : \(A=\begin{bmatrix} A_1 &amp; A_2 \end{bmatrix}\) times \(B=\begin{bmatrix} B_1 \\ B_2 \end{bmatrix}\) is \(A_1B_1+A2B_2\).</li>
+<li>It is not usually true that \(AB&#x3D;BA\). In most cases \(A\) <em>doesn&#39;t commute with</em> \(B\).</li>
+<li>Matrices can be multiplied by <em>blocks</em> : \(A&#x3D;\begin{bmatrix} A_1 &amp; A_2 \end{bmatrix}\) times \(B&#x3D;\begin{bmatrix} B_1 \\ B_2 \end{bmatrix}\) is \(A_1B_1+A2B_2\).</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -687,14 +675,14 @@ $$
     </li>
   </ol>
 </details>
-<h3 id="Inverse-Matrices">Inverse Matrices</h3>
-<ol>
-<li>If the square matrix \(A\) has an inverse, then both \(A^{-1}A=I\) and \(AA^{-1}=I\)</li>
+
+<h3 id="Inverse-Matrices"><a href="#Inverse-Matrices" class="headerlink" title="Inverse Matrices"></a>Inverse Matrices</h3><ol>
+<li>If the square matrix \(A\) has an inverse, then both \(A^{-1}A&#x3D;I\) and \(AA^{-1}&#x3D;I\)</li>
 <li>The <em>algorithm</em> to test invertibility is elimination : \(A\) must have \(n\) (nonzero) pivots.</li>
 <li>The <em>algebra</em> test for invertibility is the determinant of \(A\) : \(\det A\) must not zero.</li>
-<li>The <em>equation</em> that tests for invertibility is \(A\bm{x}=\bm{0}\) : <strong>\(\bm{x=0}\) must be the only solution.</strong></li>
-<li>If \(A\) and \(B\) (same size) are invertible then so is \(AB\) : \(\boxed{(AB)^{-1}=B^{-1}A^{-1}}\) .</li>
-<li>\(AA^{-1}=I\) is \(n\) equations for \(n\) columns of \(A^{-1}\). Gauss-Jordan eliminates \(\begin{bmatrix} A &amp; I \end{bmatrix}\) to \(\begin{bmatrix} I &amp; A^{-1} \end{bmatrix}\).</li>
+<li>The <em>equation</em> that tests for invertibility is \(A\bm{x}&#x3D;\bm{0}\) : <strong>\(\bm{x&#x3D;0}\) must be the only solution.</strong></li>
+<li>If \(A\) and \(B\) (same size) are invertible then so is \(AB\) : \(\boxed{(AB)^{-1}&#x3D;B^{-1}A^{-1}}\) .</li>
+<li>\(AA^{-1}&#x3D;I\) is \(n\) equations for \(n\) columns of \(A^{-1}\). Gauss-Jordan eliminates \(\begin{bmatrix} A &amp; I \end{bmatrix}\) to \(\begin{bmatrix} I &amp; A^{-1} \end{bmatrix}\).</li>
 <li><a href="#LINEAR-ALGEBRA-IN-A-NUTSHELL">The last section of this page</a> gives 14 equivalent conditions for a square \(A\) to be invertible.</li>
 </ol>
 <details>
@@ -815,19 +803,18 @@ $$
     </li>
   </ol>
 </details>
-<h3 id="Elimination-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mo-mo-mrow-math-Factorization-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-A-mi-mo-mo-mi-L-mi-mi-U-mi-mrow-math">Elimination <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>=</mo></mrow></math> Factorization: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mo>=</mo><mi>L</mi><mi>U</mi></mrow></math></h3>
-<ol>
+
+<h3 id="Elimination-Factorization-A-LU"><a href="#Elimination-Factorization-A-LU" class="headerlink" title="Elimination &#x3D; Factorization: A&#x3D;LU"></a>Elimination <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x3D;</mo></mrow></math> Factorization: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mo>&#x3D;</mo><mi>L</mi><mi>U</mi></mrow></math></h3><ol>
 <li>Each elimination step \(E_{ij}\) is inverted by \(L_{ij}\). Off the main diagonal change \(-\ell_{ij}\) to \(+\ell_{ij}\).</li>
 <li>The whole forward elimination process (with no row exchanges) is inverted by \(\bm{L}\) :<div>
 $$
 \bm{L}=(L_{21}L_{31}\ldots L_{n1})(L_{32}\ldots L_{n2})(L_{43}\ldots L_{n3})\ldots(L_{n\space n-1})\text{.}
 $$
-<div>
-</li>
+<div></li>
 <li>That product matrix \(\bm{L}\) is still lower triangular. <strong>Every multiplier \(\bm{\ell_{ij}}\) is in row \(\bm{i}\), column \(\bm{j}\).</strong></li>
-<li>The original \(A\) is recovered from \(U\) by \(\bm{A}=\bm{LU}=(\text{lower triangular})(\text{upper triangular})\).</li>
-<li>Elimination on \(A\bm{x}=\bm{b}\) reaches \(U\bm{x}=\bm{c}\). Then back-substitution solves \(U\bm{x}=\bm{c}\)</li>
-<li>Solving a triangular system takes \(n^2/2\) multiply-subtracts. Elimination to find \(U\) takes \(n^3/3\).<details>
+<li>The original \(A\) is recovered from \(U\) by \(\bm{A}&#x3D;\bm{LU}&#x3D;(\text{lower triangular})(\text{upper triangular})\).</li>
+<li>Elimination on \(A\bm{x}&#x3D;\bm{b}\) reaches \(U\bm{x}&#x3D;\bm{c}\). Then back-substitution solves \(U\bm{x}&#x3D;\bm{c}\)</li>
+<li>Solving a triangular system takes \(n^2&#x2F;2\) multiply-subtracts. Elimination to find \(U\) takes \(n^3&#x2F;3\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
     In elimination, to find new entries below the first pivot row requires \(n^2-n\) multiplications and subtractions. Here we using \(n^2\) and for simplicity ignore that the row 1 is actually does not change (In CS this is the usual case&mdash;focus on most affected factors in time complexicity). The next stage will has \((n-1)^n\) multiplications and subtractions. The matrices are getting smaller as elimination goes forward. The rough count to reach \(U\) is the sum of squares:
     $$
@@ -843,8 +830,7 @@ $$
     $$
       0+1+\cdots+(n-1)=\frac{(n-1)n}{2}\approx\frac{n^2}{2}
     $$
-</details>
-</li>
+</details></li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -965,8 +951,8 @@ $$
     </li>
   </ol>
 </details>
-<h3 id="Transposes-and-Permutations">Transposes and Permutations</h3>
-<ol>
+
+<h3 id="Transposes-and-Permutations"><a href="#Transposes-and-Permutations" class="headerlink" title="Transposes and Permutations"></a>Transposes and Permutations</h3><ol>
 <li>The transposes of \(A\bm{x}\) and \(AB\) and \(A^{-1}\) are \(\bm{x}^\mathrm{T}A^\mathrm{T}\) and \(B^\mathrm{T}A^\mathrm{T}\) and \((A^\mathrm{T})^{-1}\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
     To understand \((AB)^\mathrm{T}=B^\mathrm{T}A^\mathrm{T}\), start with \((A\bm{x})^\mathrm{T})=\bm{x}^\mathrm{T}A^\mathrm{T}\) when \(B\) is just a vector:
@@ -1017,13 +1003,11 @@ $$
     \harr
     (A^{-1})^\mathrm{T}=(A^\mathrm{T})^{-1}
     $$
-</details>
-</li>
-<li>The dot product (inner product) is \(\bm{x}\cdot\bm{y}=\bm{x}^\mathrm{T}\bm{y}\). This is \((1\times n)(n\times 1)=(1\times 1)\).<br>
-The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\times n)=n\times n\text{ matrix}\).</li>
-<li>The idea behind \(A^\mathrm{T}\) is that \(A\bm{x}\cdot\bm{y}\) equals \(\bm{x}\cdot A^\mathrm{T}\bm{y}\) because \((A\bm{x})^\mathrm{T}\bm{y}=\bm{x}^\mathrm{T}A^\mathrm{T}\bm{y}=\bm{x}^\mathrm{T}(A^\mathrm{T}\bm{y})\).</li>
-<li>A <strong>symmetric matrix</strong> has \(\bm{S^\mathrm{T}=S}\) (and the product \(A^\mathrm{T}A\) is always symmetric).</li>
-<li>An <strong>orthogonal matrix</strong> has \(\bm{Q^\mathrm{T}=Q^{-1}}\). The columns of \(Q\) are orthogonal unit vectors.</li>
+</details></li>
+<li>The dot product (inner product) is \(\bm{x}\cdot\bm{y}&#x3D;\bm{x}^\mathrm{T}\bm{y}\). This is \((1\times n)(n\times 1)&#x3D;(1\times 1)\).<br>The outer product is \(\bm{xy^\mathrm{T}}&#x3D;\text{column times row}&#x3D;(n\times 1)(1\times n)&#x3D;n\times n\text{ matrix}\).</li>
+<li>The idea behind \(A^\mathrm{T}\) is that \(A\bm{x}\cdot\bm{y}\) equals \(\bm{x}\cdot A^\mathrm{T}\bm{y}\) because \((A\bm{x})^\mathrm{T}\bm{y}&#x3D;\bm{x}^\mathrm{T}A^\mathrm{T}\bm{y}&#x3D;\bm{x}^\mathrm{T}(A^\mathrm{T}\bm{y})\).</li>
+<li>A <strong>symmetric matrix</strong> has \(\bm{S^\mathrm{T}&#x3D;S}\) (and the product \(A^\mathrm{T}A\) is always symmetric).</li>
+<li>An <strong>orthogonal matrix</strong> has \(\bm{Q^\mathrm{T}&#x3D;Q^{-1}}\). The columns of \(Q\) are orthogonal unit vectors.</li>
 <li>A <strong>permutation matrix \(\bm{P}\)</strong> has the same rows as \(I\) (in any order). There are \(\bm{n!}\) different orders.</li>
 <li>Then \(P\bm{x}\) puts the components \(x_1\), \(x_2\), \(\ldots\), \(x_n\) in that new order. And \(P^\mathrm{T}\) equals \(P^{-1}\).</li>
 </ol>
@@ -1132,15 +1116,14 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h2 id="Chapter-3-Vector-Spaces-and-Subspaces">Chapter 3 Vector Spaces and Subspaces</h2>
-<h3 id="Spaces-of-Vectors">Spaces of Vectors</h3>
-<ol>
+
+<h2 id="Chapter-3-Vector-Spaces-and-Subspaces"><a href="#Chapter-3-Vector-Spaces-and-Subspaces" class="headerlink" title="Chapter 3 Vector Spaces and Subspaces"></a>Chapter 3 Vector Spaces and Subspaces</h2><h3 id="Spaces-of-Vectors"><a href="#Spaces-of-Vectors" class="headerlink" title="Spaces of Vectors"></a>Spaces of Vectors</h3><ol>
 <li>The standard \(n\)-dimensional space \(\mathbf{R}^n\) contains all real column vectors with \(n\) components.</li>
 <li>If \(\bm{v}\) and \(\bm{w}\) are in a <strong>vector space</strong> \(\bm{S}\), every combination \(c\bm{v}+d\bm{w}\) must be in \(\bm{S}\).</li>
-<li>The “vectors” in \(\bm{S}\) can be matrices or functions of \(x\). The 1-point space \(\bm{Z}\) consists of \(\bm{x}=\bm{0}\).</li>
-<li>A <strong>subspace</strong> of \(\mathbf{R}^n\) is a vector space inside \(\mathbf{R}^n\). <em>Example</em>: The line \(y=3x\) inside \(\mathbf{R}^2\).</li>
+<li>The &quot;vectors&quot; in \(\bm{S}\) can be matrices or functions of \(x\). The 1-point space \(\bm{Z}\) consists of \(\bm{x}&#x3D;\bm{0}\).</li>
+<li>A <strong>subspace</strong> of \(\mathbf{R}^n\) is a vector space inside \(\mathbf{R}^n\). <em>Example</em>: The line \(y&#x3D;3x\) inside \(\mathbf{R}^2\).</li>
 <li>The <strong>column space</strong> of \(A\) contains all combinations of the columns of \(A\) : a subspace of \(\mathbf{R}^m\).</li>
-<li>The column space contains all the vectors \(A\bm{x}\). So \(A\bm{x}=\bm{b}\) is solvable when \(\bm{b}\) is in \(\bm{C}(A)\).</li>
+<li>The column space contains all the vectors \(A\bm{x}\). So \(A\bm{x}&#x3D;\bm{b}\) is solvable when \(\bm{b}\) is in \(\bm{C}(A)\).</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -1191,14 +1174,14 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="The-Nullspace-of-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-A-mi-mrow-math-Solving-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-A-mi-mi-mathvariant-bold-italic-x-mi-mo-mo-mi-mathvariant-bold-0-mi-mrow-math-and-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-R-mi-mi-mathvariant-bold-italic-x-mi-mo-mo-mi-mathvariant-bold-0-mi-mrow-math">The Nullspace of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi></mrow></math>: Solving <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mi mathvariant="bold-italic">x</mi><mo>=</mo><mi mathvariant="bold">0</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>R</mi><mi mathvariant="bold-italic">x</mi><mo>=</mo><mi mathvariant="bold">0</mi></mrow></math></h3>
-<ol>
-<li>The <strong>nullspace</strong> \(\bm{N}(A)\) in \(\mathbf{R}^n\) contains all solutions \(\bm{x}\) to \(A\bm{x}=\bm{0}\). This includes \(\bm{x}=\bm{0}\)</li>
-<li>Elimination (from \(A\) to \(U\) to \(R\)) does not change the nullspace: \(\bm{N}(A)=\bm{N}(U)=\bm{N}(R)\).</li>
-<li>The <strong>reduced row echelon form</strong> \(\bm{R=\textbf{\textsf{rref(A)}}}\) has all pivots \(=1\), with zeros above and below.</li>
-<li>If column \(j\) of \(R\) is free (no pivot), there is a “<em>special solution</em>” to \(A\bm{x}=\bm{0}\) with \(x_j=1\).</li>
-<li>Number of pivots = number of nonzero rows in \(R=\textbf{rank }\bm{r}\). There are \(n-r\) free columns.</li>
-<li>Every matrix with \(m\lt n\) has nonzero solution to \(A\bm{x}=\bm{0}\) in its nullspace.</li>
+
+<h3 id="The-Nullspace-of-A-Solving-Ax-0-and-Rx-0"><a href="#The-Nullspace-of-A-Solving-Ax-0-and-Rx-0" class="headerlink" title="The Nullspace of A: Solving Ax&#x3D;0 and Rx&#x3D;0"></a>The Nullspace of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi></mrow></math>: Solving <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mi mathvariant="bold-italic">x</mi><mo>&#x3D;</mo><mi mathvariant="bold">0</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>R</mi><mi mathvariant="bold-italic">x</mi><mo>&#x3D;</mo><mi mathvariant="bold">0</mi></mrow></math></h3><ol>
+<li>The <strong>nullspace</strong> \(\bm{N}(A)\) in \(\mathbf{R}^n\) contains all solutions \(\bm{x}\) to \(A\bm{x}&#x3D;\bm{0}\). This includes \(\bm{x}&#x3D;\bm{0}\)</li>
+<li>Elimination (from \(A\) to \(U\) to \(R\)) does not change the nullspace: \(\bm{N}(A)&#x3D;\bm{N}(U)&#x3D;\bm{N}(R)\).</li>
+<li>The <strong>reduced row echelon form</strong> \(\bm{R&#x3D;\textbf{\textsf{rref(A)}}}\) has all pivots \(&#x3D;1\), with zeros above and below.</li>
+<li>If column \(j\) of \(R\) is free (no pivot), there is a &quot;<em>special solution</em>&quot; to \(A\bm{x}&#x3D;\bm{0}\) with \(x_j&#x3D;1\).</li>
+<li>Number of pivots &#x3D; number of nonzero rows in \(R&#x3D;\textbf{rank }\bm{r}\). There are \(n-r\) free columns.</li>
+<li>Every matrix with \(m\lt n\) has nonzero solution to \(A\bm{x}&#x3D;\bm{0}\) in its nullspace.</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -1300,15 +1283,15 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="The-Complete-Solution-to-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-A-mi-mi-mathvariant-bold-italic-x-mi-mo-mo-mi-mathvariant-bold-italic-b-mi-mrow-math">The Complete Solution to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mi mathvariant="bold-italic">x</mi><mo>=</mo><mi mathvariant="bold-italic">b</mi></mrow></math></h3>
-<ol>
-<li><strong>Complete solution</strong> to \(A\bm{x}=\bm{b}\): \(\bm{x}=(\text{one particular solution $\bm{x}_p$})+(\text{any $\bm{x}_n$ in the nullspace})\).</li>
-<li>Elimination on \(\begin{bmatrix} A &amp; \bm{b} \end{bmatrix}\) leads to \(\begin{bmatrix} R &amp; \bm{d} \end{bmatrix}\). Then \(A\bm{x}=\bm{b}\) is equivalent to \(R\bm{x}=\bm{d}\).</li>
-<li>\(A\bm{x}=\bm{b}\) and \(R\bm{x}=\bm{d}\) are solvable only when all zero rows of \(R\) have zeros in \(\bm{d}\).</li>
-<li>When \(R\bm{x}=\bm{d}\) is solvable, one very particular solution \(\bm{x}_p\) has all free variables equal to zero.</li>
-<li>\(A\) has <strong>full column rank</strong> \(\bm{r=n}\) when its nullspace \(\bm{N}(A)=\text{zero vector}\): <em>no free variables</em>.</li>
-<li>\(A\) has <strong>full row rank</strong> \(\bm{r=m}\) when its column space \(\bm{C}(A)\) is \(\mathbf{R}^m\): \(A\bm{x}=\bm{b}\) is always solvable.</li>
-<li>The four cases are \(r=m=n\) (\(A\) is invertible) and \(r=m\lt n\) (every \(A\bm{x}=\bm{b}\) is solvable) and \(r=n\lt m\) (\(A\bm{x}=\bm{b}\) has 1 or 0 solutions) and \(r\lt m\), \(r\lt n\) (0 or ∞ solutions).</li>
+
+<h3 id="The-Complete-Solution-to-Ax-b"><a href="#The-Complete-Solution-to-Ax-b" class="headerlink" title="The Complete Solution to Ax&#x3D;b"></a>The Complete Solution to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mi mathvariant="bold-italic">x</mi><mo>&#x3D;</mo><mi mathvariant="bold-italic">b</mi></mrow></math></h3><ol>
+<li><strong>Complete solution</strong> to \(A\bm{x}&#x3D;\bm{b}\): \(\bm{x}&#x3D;(\text{one particular solution $\bm{x}_p$})+(\text{any $\bm{x}_n$ in the nullspace})\).</li>
+<li>Elimination on \(\begin{bmatrix} A &amp; \bm{b} \end{bmatrix}\) leads to \(\begin{bmatrix} R &amp; \bm{d} \end{bmatrix}\). Then \(A\bm{x}&#x3D;\bm{b}\) is equivalent to \(R\bm{x}&#x3D;\bm{d}\).</li>
+<li>\(A\bm{x}&#x3D;\bm{b}\) and \(R\bm{x}&#x3D;\bm{d}\) are solvable only when all zero rows of \(R\) have zeros in \(\bm{d}\).</li>
+<li>When \(R\bm{x}&#x3D;\bm{d}\) is solvable, one very particular solution \(\bm{x}_p\) has all free variables equal to zero.</li>
+<li>\(A\) has <strong>full column rank</strong> \(\bm{r&#x3D;n}\) when its nullspace \(\bm{N}(A)&#x3D;\text{zero vector}\): <em>no free variables</em>.</li>
+<li>\(A\) has <strong>full row rank</strong> \(\bm{r&#x3D;m}\) when its column space \(\bm{C}(A)\) is \(\mathbf{R}^m\): \(A\bm{x}&#x3D;\bm{b}\) is always solvable.</li>
+<li>The four cases are \(r&#x3D;m&#x3D;n\) (\(A\) is invertible) and \(r&#x3D;m\lt n\) (every \(A\bm{x}&#x3D;\bm{b}\) is solvable) and \(r&#x3D;n\lt m\) (\(A\bm{x}&#x3D;\bm{b}\) has 1 or 0 solutions) and \(r\lt m\), \(r\lt n\) (0 or &infin; solutions).</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -1585,12 +1568,12 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Independence-Basis-and-Dimension">Independence, Basis and Dimension</h3>
-<ol>
-<li><strong>Independent columns</strong> of \(A\): The only solution to \(A\bm{x}=\bm{0}\) is \(\bm{x}=\bm{0}\). The nullspace is \(\bm{Z}\).</li>
-<li>Independent vectors: The only zero combination \(c_1\bm{v}_1+\cdots+c_k\bm{v}_k=\bm{0}\) has all \(c\text{'s}=0\).</li>
-<li>A matrix with \(m\lt n\) has <strong>dependent columns</strong>: At least \(n-m\) free variables/special solutions.</li>
-<li>The vectors \(\bm{v}_1,\ldots,\bm{v}_k\) <strong>span the space</strong> \(\bm{S}\) if \(\bm{S}=\text{all combinations of the $\bm{v}$'s}\).</li>
+
+<h3 id="Independence-Basis-and-Dimension"><a href="#Independence-Basis-and-Dimension" class="headerlink" title="Independence, Basis and Dimension"></a>Independence, Basis and Dimension</h3><ol>
+<li><strong>Independent columns</strong> of \(A\): The only solution to \(A\bm{x}&#x3D;\bm{0}\) is \(\bm{x}&#x3D;\bm{0}\). The nullspace is \(\bm{Z}\).</li>
+<li>Independent vectors: The only zero combination \(c_1\bm{v}_1+\cdots+c_k\bm{v}_k&#x3D;\bm{0}\) has all \(c\text{&#39;s}&#x3D;0\).</li>
+<li>A matrix with \(m\lt n\) has <strong>dependent columns</strong>: At least \(n-m\) free variables&#x2F;special solutions.</li>
+<li>The vectors \(\bm{v}_1,\ldots,\bm{v}_k\) <strong>span the space</strong> \(\bm{S}\) if \(\bm{S}&#x3D;\text{all combinations of the $\bm{v}$&#39;s}\).</li>
 <li>The vectors \(\bm{v}_1,\ldots,\bm{v}_k\) are a <strong>basis for</strong> \(S\) if they are independent and they span \(\bm{S}\).</li>
 <li>The <strong>dimension of a space</strong> \(\bm{S}\) is the number of vectors in every basis for \(\bm{S}\).</li>
 <li>If \(A\) is 4 by 4 and invertible, its columns are a basis for \(\mathbf{R}^4\). The dimension of \(\mathbf{R}^4\) is 4.</li>
@@ -1684,13 +1667,13 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Dimensions-of-the-Four-Subspaces">Dimensions of the Four Subspaces</h3>
-<ol>
+
+<h3 id="Dimensions-of-the-Four-Subspaces"><a href="#Dimensions-of-the-Four-Subspaces" class="headerlink" title="Dimensions of the Four Subspaces"></a>Dimensions of the Four Subspaces</h3><ol>
 <li>The column space \(\bm{C}(A)\) and the row space \(\bm{C}(A^\mathrm{T})\) both have <em>dimension</em> \(r\) (the rank of \(A\)).</li>
 <li>The nullspace \(\bm{N}(A)\) has <em>dimension</em> \(n-r\). The left nullspace \(\bm{N}(A^\mathrm{T})\) has <em>dimension</em> \(m-r\).</li>
 <li>Elimination produces bases for the row space and nullspace of \(A\): They are the same as for \(R\).</li>
-<li>Elimination often changes the column space and left nullspace (but dimensions don’t change).</li>
-<li><strong>Rank one matrices</strong>: \(A=\bm{uv}^\mathrm{T}=\text{column times row}\): \(\bm{C}(A)\) has basis \(\bm{u}\), \(\bm{C}(A^\mathrm{T})\) has basis \(\bm{v}\).</li>
+<li>Elimination often changes the column space and left nullspace (but dimensions don&#39;t change).</li>
+<li><strong>Rank one matrices</strong>: \(A&#x3D;\bm{uv}^\mathrm{T}&#x3D;\text{column times row}\): \(\bm{C}(A)\) has basis \(\bm{u}\), \(\bm{C}(A^\mathrm{T})\) has basis \(\bm{v}\).</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -1715,13 +1698,12 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h2 id="Chapter-4-Orthogonality">Chapter 4 Orthogonality</h2>
-<h3 id="Orthogonality-of-the-Four-Subspaces">Orthogonality of the Four Subspaces</h3>
-<ol>
-<li>Orthogonal vectors have \(\bm{v}^\mathrm{T}\bm{w}=0\). Then \(\|\bm{v}\|^2+\|\bm{w}\|^2=\|\bm{v}+\bm{w}\|^2=\|\bm{v}-\bm{w}\|^2\).</li>
-<li>Subspaces \(\bm{V}\) and \(\bm{W}\) are orthogonal when \(\bm{v}^\mathrm{T}\bm{w}=0\) for every \(\bm{v}\) in \(\bm{V}\) and every \(\bm{w}\) in \(\bm{W}\).</li>
+
+<h2 id="Chapter-4-Orthogonality"><a href="#Chapter-4-Orthogonality" class="headerlink" title="Chapter 4 Orthogonality"></a>Chapter 4 Orthogonality</h2><h3 id="Orthogonality-of-the-Four-Subspaces"><a href="#Orthogonality-of-the-Four-Subspaces" class="headerlink" title="Orthogonality of the Four Subspaces"></a>Orthogonality of the Four Subspaces</h3><ol>
+<li>Orthogonal vectors have \(\bm{v}^\mathrm{T}\bm{w}&#x3D;0\). Then \(\|\bm{v}\|^2+\|\bm{w}\|^2&#x3D;\|\bm{v}+\bm{w}\|^2&#x3D;\|\bm{v}-\bm{w}\|^2\).</li>
+<li>Subspaces \(\bm{V}\) and \(\bm{W}\) are orthogonal when \(\bm{v}^\mathrm{T}\bm{w}&#x3D;0\) for every \(\bm{v}\) in \(\bm{V}\) and every \(\bm{w}\) in \(\bm{W}\).</li>
 <li>The row space of \(A\) is orthogonal to the nullspace. The column space is orthogonal to \(\bm{N}(A^\mathrm{T})\).</li>
-<li>One pair of dimensions adds to \(r+(n-r)=n\). The other pair has \(r+(m-r)-m\).</li>
+<li>One pair of dimensions adds to \(r+(n-r)&#x3D;n\). The other pair has \(r+(m-r)-m\).</li>
 <li>Row space and nullspace are orthogonal <em>complements</em>: Every \(\bm{x}\) in \(\mathbf{R}^n\) splits into \(\bm{x}_\textbf{row}+\bm{x}_\textbf{null}\).</li>
 <li>Suppose a space \(\bm{S}\) has dimension \(d\). Then every basis for \(\bm{S}\) consists of \(d\) vectors.</li>
 <li>If \(d\) vectors in \(\bm{S}\) are independent, they span \(\bm{S}\). If \(d\) vectors span \(\bm{S}\), they are independent.</li>
@@ -1811,9 +1793,9 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Projections">Projections</h3>
-<ol>
-<li>The projection of a vector \(\bm{b}\) onto the line through \(\bm{a}\) is the closest point \(\bm{p}=\bm{a}(\bm{a^\mathrm{T}b}/\bm{a^\mathrm{T}a})\).<details>
+
+<h3 id="Projections"><a href="#Projections" class="headerlink" title="Projections"></a>Projections</h3><ol>
+<li>The projection of a vector \(\bm{b}\) onto the line through \(\bm{a}\) is the closest point \(\bm{p}&#x3D;\bm{a}(\bm{a^\mathrm{T}b}&#x2F;\bm{a^\mathrm{T}a})\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   <img src="/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png" class="">
   When projection onto a line, the projection \(\bm{p}\) will be some multiple of \(\bm{a}\). Call it \(\bm{p}=\widehat{x}\bm{a}=\text{\textquotedblleft$x$ hat\textquotedblright\space times $\bm{a}$}\).
@@ -1829,47 +1811,18 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
   \widehat{x}=\frac{\bm{a}^\mathrm{T}\bm{b}}{\bm{a}^\mathrm{T}\bm{a}}
   $$
   Then \(\bm{p}=\widehat{x}\bm{a}=\frac{\bm{a}^\mathrm{T}\bm{b}}{\bm{a}^\mathrm{T}\bm{a}}\bm{a}\).
-</details>
-</li>
-<li>The error \(\bm{e}=\bm{b}-\bm{p}\) is perpendicular to \(\bm{a}\): Right triangle \(\bm{b\space p\space e}\) has \(\|\bm{p}\|^2+\|\bm{e}\|^2=\|\bm{b}\|^2\)</li>
+</details></li>
+<li>The error \(\bm{e}&#x3D;\bm{b}-\bm{p}\) is perpendicular to \(\bm{a}\): Right triangle \(\bm{b\space p\space e}\) has \(\|\bm{p}\|^2+\|\bm{e}\|^2&#x3D;\|\bm{b}\|^2\)</li>
 <li>The <strong>projection</strong> of \(\bm{b}\) onto a subspace \(\bm{S}\) is the closest vector \(\bm{p}\) in \(\bm{S}\); \(\bm{b}-\bm{p}\) is orthogonal to \(\bm{S}\).</li>
-<li>\(A^\mathrm{T}A\) is invertible (and symmetric) only if \(A\) has independent columns: \(\bm{N}(A^\mathrm{T}A)=\bm{N}(A)\).</li>
-<li>Then the projection of \(\bm{b}\) onto the column space of \(A\) is the vector \(\bm{p}=A(A^\mathrm{T}A)^{-1}A^\mathrm{T}\bm{b}\).<details>
-  <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
-  <img src="/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png" class="">
-  As we know a subspace can be described as the column space of a matrix \(A\), when projection onto a subspace, we are actually looking for the combination of the columns of \(A\) that is closest to a given vector \(\bm{b}\):
-  $$
-  \bm{p}=\widehat{x}_1\bm{a}_1+\cdots+\widehat{x}_n\bm{a}_n=A\widehat{\bm{x}}
-  \qquad
-  \text{Here $\widehat{\bm{x}}$ comes a vector}
-  $$
-  The error vector \(\bm{b}-A\widehat{\bm{x}}\) is perpendicular to the subspace, which means every columns of \(A\) times \(\bm{e}\) is zero:
-  $$
-  \begin{bmatrix}
-    \bm{a}_1^\mathrm{T} \\
-    \vdots \\
-    \bm{a}_n^\mathrm{T}
-  \end{bmatrix}
-  \begin{bmatrix}
-    \bm{b}-A\widehat{\bm{x}}
-  \end{bmatrix}
-  =
-  \bm{0}
-  \harr
-  A^\mathrm{T}(\bm{b}-A\widehat{\bm{x}})=\bm{0}
-  \harr
-  A^\mathrm{T}A\widehat{\bm{x}}=A^\mathrm{T}\bm{b}
-  $$
-  Here \(A^\mathrm{T}A\) is a \(n\) by \(n\) symmetric matrix. It is invertible if the \(\bm{a}\)'s are independent. (Be aware \(A\) might not invertible as it may not a square matrix.) Solve this system we find \(\widehat{\bm{x}}\) and then \(p=A\widehat{\bm{x}}=A(A^\mathrm{T}A)^{-1}A^\mathrm{T}\bm{b}\).
-  <br>
+<li>\(A^\mathrm{T}A\) is invertible (and symmetric) only if \(A\) has independent columns: \(\bm{N}(A^\mathrm{T}A)&#x3D;\bm{N}(A)\).</li>
+<li><h1 id="Then-the-projection-of-bm-b-onto-the-column-space-of-A-is-the-vector-bm-p-A-A-mathrm-T-A-1-A-mathrm-T-bm-b-dagger-WHY-dagger-As-we-know-a-subspace-can-be-described-as-the-column-space-of-a-matrix-A-when-projection-onto-a-subspace-we-are-actually-looking-for-the-combination-of-the-columns-of-A-that-is-closest-to-a-given-vector-bm-b-bm-p-widehat-x-1-bm-a-1-cdots-widehat-x-n-bm-a-n-A-widehat-bm-x-qquad-text-Here-widehat-bm-x-comes-a-vector-The-error-vector-bm-b-A-widehat-bm-x-is-perpendicular-to-the-subspace-which-means-every-columns-of-A-times-bm-e-is-zero-begin-bmatrix-bm-a-1-mathrm-T-vdots-bm-a-n-mathrm-T-end-bmatrix-begin-bmatrix-bm-b-A-widehat-bm-x-end-bmatrix"><a href="#Then-the-projection-of-bm-b-onto-the-column-space-of-A-is-the-vector-bm-p-A-A-mathrm-T-A-1-A-mathrm-T-bm-b-dagger-WHY-dagger-As-we-know-a-subspace-can-be-described-as-the-column-space-of-a-matrix-A-when-projection-onto-a-subspace-we-are-actually-looking-for-the-combination-of-the-columns-of-A-that-is-closest-to-a-given-vector-bm-b-bm-p-widehat-x-1-bm-a-1-cdots-widehat-x-n-bm-a-n-A-widehat-bm-x-qquad-text-Here-widehat-bm-x-comes-a-vector-The-error-vector-bm-b-A-widehat-bm-x-is-perpendicular-to-the-subspace-which-means-every-columns-of-A-times-bm-e-is-zero-begin-bmatrix-bm-a-1-mathrm-T-vdots-bm-a-n-mathrm-T-end-bmatrix-begin-bmatrix-bm-b-A-widehat-bm-x-end-bmatrix" class="headerlink" title="Then the projection of \(\bm{b}\) onto the column space of \(A\) is the vector \(\bm{p}&#x3D;A(A^\mathrm{T}A)^{-1}A^\mathrm{T}\bm{b}\).  &dagger; WHY &dagger;    As we know a subspace can be described as the column space of a matrix (A), when projection onto a subspace, we are actually looking for the combination of the columns of (A) that is closest to a given vector (\bm{b}):  $$  \bm{p}&#x3D;\widehat{x}_1\bm{a}_1+\cdots+\widehat{x}_n\bm{a}_n&#x3D;A\widehat{\bm{x}}  \qquad  \text{Here $\widehat{\bm{x}}$ comes a vector}  $$  The error vector (\bm{b}-A\widehat{\bm{x}}) is perpendicular to the subspace, which means every columns of (A) times (\bm{e}) is zero:  $$  \begin{bmatrix}    \bm{a}_1^\mathrm{T} \    \vdots \    \bm{a}_n^\mathrm{T}  \end{bmatrix}  \begin{bmatrix}    \bm{b}-A\widehat{\bm{x}}  \end{bmatrix}"></a>Then the projection of \(\bm{b}\) onto the column space of \(A\) is the vector \(\bm{p}&#x3D;A(A^\mathrm{T}A)^{-1}A^\mathrm{T}\bm{b}\).<br><details><br>  <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary><br>  <img src="/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/Figure4.6.png" class=""><br>  As we know a subspace can be described as the column space of a matrix (A), when projection onto a subspace, we are actually looking for the combination of the columns of (A) that is closest to a given vector (\bm{b}):<br>  $$<br>  \bm{p}&#x3D;\widehat{x}_1\bm{a}_1+\cdots+\widehat{x}_n\bm{a}_n&#x3D;A\widehat{\bm{x}}<br>  \qquad<br>  \text{Here $\widehat{\bm{x}}$ comes a vector}<br>  $$<br>  The error vector (\bm{b}-A\widehat{\bm{x}}) is perpendicular to the subspace, which means every columns of (A) times (\bm{e}) is zero:<br>  $$<br>  \begin{bmatrix}<br>    \bm{a}_1^\mathrm{T} \<br>    \vdots \<br>    \bm{a}_n^\mathrm{T}<br>  \end{bmatrix}<br>  \begin{bmatrix}<br>    \bm{b}-A\widehat{\bm{x}}<br>  \end{bmatrix}</h1>  \bm{0}<br>  \harr<br>  A^\mathrm{T}(\bm{b}-A\widehat{\bm{x}})&#x3D;\bm{0}<br>  \harr<br>  A^\mathrm{T}A\widehat{\bm{x}}&#x3D;A^\mathrm{T}\bm{b}<br>  $$<br>  Here (A^\mathrm{T}A) is a (n) by (n) symmetric matrix. It is invertible if the (\bm{a})&#39;s are independent. (Be aware (A) might not invertible as it may not a square matrix.) Solve this system we find (\widehat{\bm{x}}) and then (p&#x3D;A\widehat{\bm{x}}&#x3D;A(A^\mathrm{T}A)^{-1}A^\mathrm{T}\bm{b}).  <br>
   &emsp;&ensp;From <a target="_blank" rel="noopener" href="https://math.stackexchange.com/a/1840807">Math StackExchange</a>. To prove \(A^\mathrm{T}A\) is invertible we can work on the statement &ldquo;\(A^\mathrm{T}A\bm{x}=\bm{0}\) has only one solution \(\bm{x}=\bm{0}\)&rdquo;. Because \(A^\mathrm{T}\bm{y}=\bm{0}\) may have solutions \(\bm{y}\neq\bm{0}\), we must prove that \(\bm{y}=\bm{0}\) while \(\bm{y}=A\bm{x}\):
   <br>
   &emsp;&ensp;\(A\bm{x}\) is a combination in \(\bm{C}(A)\) which is also in \(\bm{N}(A^\mathrm{T})\). However \(\bm{N}(A^\mathrm{T})\) and \(\bm{C}(A)\) are orthogonal complements, the only vector that can be in both a subspace and the orthogonal complement of its subspace is the zero vector, so \(A\bm{x}\) must produce zero vector.
   <br>
   &emsp;&ensp;For \(A\bm{x}=\bm{0}\) there is obviously only one solution \(\bm{x}=\bm{0}\). Then \(A^\mathrm{T}A\bm{x}=\bm{0}\harr\bm{x}=\bm{0}\) if \(A\) has independent columns.
-</details>
-</li>
-<li>The projection matrix onto \(\bm{C}(A)\) is \(\boxed{P=A(A^\mathrm{T}A)^{-1}A^\mathrm{T}}\). It has \(\bm{p}=P\bm{b}\) and \(P^2=P=P^\mathrm{T}\).</li>
+</details></li>
+<li>The projection matrix onto \(\bm{C}(A)\) is \(\boxed{P&#x3D;A(A^\mathrm{T}A)^{-1}A^\mathrm{T}}\). It has \(\bm{p}&#x3D;P\bm{b}\) and \(P^2&#x3D;P&#x3D;P^\mathrm{T}\).</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -1922,11 +1875,11 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Least-Squares-Approximations">Least Squares Approximations</h3>
-<ol>
-<li>Solving \(\boxed{A^\mathrm{T}A\widehat{\bm{x}}=A^\mathrm{T}\bm{b}}\) gives the projection \(\bm{p}=A\widehat{\bm{x}}\) of \(\bm{b}\) onto the column space of \(A\).</li>
-<li>When \(A\bm{x}=\bm{b}\) has no solution, \(\widehat{\bm{x}}\) is the “leqst-squares solution”: \(\|\bm{b}-A\widehat{\bm{x}}\|^2=\text{minimum}\).</li>
-<li>Setting partial derivatives of \(E=\|A\bm{x}-\bm{b}\|^2\) to zero \(\left(\dfrac{\partial E}{\partial x_i}=0\right)\) also produces \(A^\mathrm{T}A\widehat{\bm{x}}=A^\mathrm{T}\bm{b}\).<details>
+
+<h3 id="Least-Squares-Approximations"><a href="#Least-Squares-Approximations" class="headerlink" title="Least Squares Approximations"></a>Least Squares Approximations</h3><ol>
+<li>Solving \(\boxed{A^\mathrm{T}A\widehat{\bm{x}}&#x3D;A^\mathrm{T}\bm{b}}\) gives the projection \(\bm{p}&#x3D;A\widehat{\bm{x}}\) of \(\bm{b}\) onto the column space of \(A\).</li>
+<li>When \(A\bm{x}&#x3D;\bm{b}\) has no solution, \(\widehat{\bm{x}}\) is the &quot;leqst-squares solution&quot;: \(\|\bm{b}-A\widehat{\bm{x}}\|^2&#x3D;\text{minimum}\).</li>
+<li>Setting partial derivatives of \(E&#x3D;\|A\bm{x}-\bm{b}\|^2\) to zero \(\left(\dfrac{\partial E}{\partial x_i}&#x3D;0\right)\) also produces \(A^\mathrm{T}A\widehat{\bm{x}}&#x3D;A^\mathrm{T}\bm{b}\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
     Treat \(E=\|A\bm{x}-\bm{b}\|^2\) as a error function. Most functions are minimized by calculus! The graph bottoms out and the derivative in every direction is zero.
     <br>
@@ -1963,8 +1916,7 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     \textbf{This matrix $\begin{bmatrix} 3 & 3 \\ 5 & 5 \end{bmatrix}$ is $A^\mathrm{T}A$}
     $$
     <em><strong>These equations are identical with</strong></em> \(A^\mathrm{T}A\widehat{\bm{x}}=A^\mathrm{T}\bm{b}\). The best \(C\) and \(D\) are the components of \(\widehat{\bm{x}}\). The equations from calculus are the same as the &ldquo;normal equations&rdquo; from linear algebra.
-</details>
-</li>
+</details></li>
 <li>To fit points \((t_1,b_1),\ldots,(t_m,b_m)\) by a straight line, \(A\) has columns \(1,\ldots,1\) and \(t_1,\ldots,t_m\).</li>
 <li>In that case \(A^\mathrm{T}A\) is the 2 by 2 matrix \(\begin{bmatrix} m &amp; \bm{\Sigma}t_i \\ \bm{\Sigma}t_i &amp; \bm{\Sigma}t_i^2 \end{bmatrix}\) and \(A^\mathrm{T}\bm{b}\) is the vector \(\begin{bmatrix*}[l] \bm{\Sigma}b_i \\ \bm{\Sigma}t_ib_i \end{bmatrix*}\).</li>
 </ol>
@@ -2063,13 +2015,13 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Orthonormal-Bases-and-Gram-Schmidt">Orthonormal Bases and Gram-Schmidt</h3>
-<ol>
-<li>The columns \(\bm{q}_1,\ldots,\bm{q}_n\) are orthonormal if \(\bm{q}_i^\mathrm{T}\bm{q}_j=\left\{\begin{array}{l} \text{0 for $i\neq j$} \\ \text{1 for $i=j$} \end{array}\right\}\). Then \(\boxed{Q^\mathrm{T}Q=I}\).</li>
-<li>If \(Q\) is also square, then \(QQ^\mathrm{T}=I\) and \(\boxed{Q^\mathrm{T}=Q^{-1}}\). \(Q\) is an “orthogonal matrix”.</li>
-<li>The least squares solution to \(Q\bm{x}=\bm{b}\) is \(\widehat{\bm{x}}=Q^\mathrm{T}\bm{b}\). Projection of \(\bm{b}\): \(\bm{p}=QQ^\mathrm{T}\bm{b}=P\bm{b}\).</li>
-<li>The <strong>Gram-Schmidt</strong> process takes independent \(\bm{a}_i\) to orthonormal \(\bm{q}_i\). Start with \(\bm{q}_1=\bm{a}_1/\|\bm{a}_1\|\).</li>
-<li>\(\bm{q}_i\) is \((\bm{a}_i-\text{projection }\bm{p}_i)/\|\bm{a}_i-\bm{p}_i\|\); projection \(\bm{p}_i=(\bm{a}_i^\mathrm{T}\bm{q}_1)\bm{q}_1+\cdots+(\bm{a}_i^\mathrm{T}\bm{q}_{i-1})\bm{q}_{i-1}\).<details>
+
+<h3 id="Orthonormal-Bases-and-Gram-Schmidt"><a href="#Orthonormal-Bases-and-Gram-Schmidt" class="headerlink" title="Orthonormal Bases and Gram-Schmidt"></a>Orthonormal Bases and Gram-Schmidt</h3><ol>
+<li>The columns \(\bm{q}_1,\ldots,\bm{q}_n\) are orthonormal if \(\bm{q}_i^\mathrm{T}\bm{q}_j&#x3D;\left\{\begin{array}{l} \text{0 for $i\neq j$} \\ \text{1 for $i&#x3D;j$} \end{array}\right\}\). Then \(\boxed{Q^\mathrm{T}Q&#x3D;I}\).</li>
+<li>If \(Q\) is also square, then \(QQ^\mathrm{T}&#x3D;I\) and \(\boxed{Q^\mathrm{T}&#x3D;Q^{-1}}\). \(Q\) is an &quot;orthogonal matrix&quot;.</li>
+<li>The least squares solution to \(Q\bm{x}&#x3D;\bm{b}\) is \(\widehat{\bm{x}}&#x3D;Q^\mathrm{T}\bm{b}\). Projection of \(\bm{b}\): \(\bm{p}&#x3D;QQ^\mathrm{T}\bm{b}&#x3D;P\bm{b}\).</li>
+<li>The <strong>Gram-Schmidt</strong> process takes independent \(\bm{a}_i\) to orthonormal \(\bm{q}_i\). Start with \(\bm{q}_1&#x3D;\bm{a}_1&#x2F;\|\bm{a}_1\|\).</li>
+<li>\(\bm{q}_i\) is \((\bm{a}_i-\text{projection }\bm{p}_i)&#x2F;\|\bm{a}_i-\bm{p}_i\|\); projection \(\bm{p}_i&#x3D;(\bm{a}_i^\mathrm{T}\bm{q}_1)\bm{q}_1+\cdots+(\bm{a}_i^\mathrm{T}\bm{q}_{i-1})\bm{q}_{i-1}\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   The one and only idea of the Gram-Schmidt process is that <em><strong>subtract from every new vector its projections in the directions already set</strong></em>.
   <br>
@@ -2100,9 +2052,8 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     \bm{a}_3-\bm{q}_1(\bm{q}_1^\mathrm{T}\bm{a}_3)-\bm{q}_2(\bm{q}_2^\mathrm{T}\bm{a}_3)
   \end{alignedat}
   $$
-</details>
-</li>
-<li>Each \(\bm{a}_i\) will be a combination of \(\bm{q}_1\) and \(\bm{q}_i\). Then \(\bm{A=QR}\): orthogonal \(Q\) and triangular \(R\).</li>
+</details></li>
+<li>Each \(\bm{a}_i\) will be a combination of \(\bm{q}_1\) and \(\bm{q}_i\). Then \(\bm{A&#x3D;QR}\): orthogonal \(Q\) and triangular \(R\).</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -2166,11 +2117,10 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h2 id="Chapter-5-Determinants">Chapter 5 Determinants</h2>
-<h3 id="The-properties-of-Determinants">The properties of Determinants</h3>
-<ol>
-<li>The <strong>determinant</strong> of \(A=\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}\) is \(\bm{ad-bc}\). Singular matrix \(A=\begin{bmatrix} a &amp; xa \\ c &amp; xc \end{bmatrix}\) has \(\bm{\det=0}\)</li>
-<li>\(\begin{array}{l} \textbf{Row exchange} \\ \textbf{reverses signs} \end{array} PA=\begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}=\begin{bmatrix} c &amp; d \\ a &amp; b \end{bmatrix}\quad\text{has }\det PA=bc-ad=\bm{-\det A}\).</li>
+
+<h2 id="Chapter-5-Determinants"><a href="#Chapter-5-Determinants" class="headerlink" title="Chapter 5 Determinants"></a>Chapter 5 Determinants</h2><h3 id="The-properties-of-Determinants"><a href="#The-properties-of-Determinants" class="headerlink" title="The properties of Determinants"></a>The properties of Determinants</h3><ol>
+<li>The <strong>determinant</strong> of \(A&#x3D;\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}\) is \(\bm{ad-bc}\). Singular matrix \(A&#x3D;\begin{bmatrix} a &amp; xa \\ c &amp; xc \end{bmatrix}\) has \(\bm{\det&#x3D;0}\)</li>
+<li>\(\begin{array}{l} \textbf{Row exchange} \\ \textbf{reverses signs} \end{array} PA&#x3D;\begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}&#x3D;\begin{bmatrix} c &amp; d \\ a &amp; b \end{bmatrix}\quad\text{has }\det PA&#x3D;bc-ad&#x3D;\bm{-\det A}\).</li>
 <li>The determinant of \(\begin{bmatrix} xa+yA &amp; xb+yB \\ c &amp; d \end{bmatrix}\) is \(x(ad-bc)+y(Ad-Bc)\). \(\begin{array}{l} \textbf{Det is linear in} \ \textbf{row 1 by itself.} \end{array}\)<figure class="highlight diff">
   <table>
     <tr>
@@ -2198,10 +2148,9 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
       </td>
     </tr>
   </table>
-</figure>
-</li>
-<li><strong>Elimination</strong> \(EA=\begin{bmatrix} a &amp; b \\ 0 &amp; d-\dfrac{c}{a}b \end{bmatrix}\quad\bm{\det EA}=a(d-\dfrac{c}{a}b)=\textbf{product of pivots}=\bm{\det A}\).</li>
-<li>If \(A\) is \(n\) by \(n\) then the four statements above remain true: \(\bm{\det=0}\) when \(A\) is singular, <strong>det reverses sign</strong> when row are exchanged, <strong>det is linear in row 1 by itself,</strong> \(\det=\textbf{product of the pivots}\). Always \(\bm{\det BA=(\det B)(\det A)}\) and \(\bm{\det A^\textbf{\textrm{T}}=\det A}\). This is an amazing number.</li>
+</figure></li>
+<li><strong>Elimination</strong> \(EA&#x3D;\begin{bmatrix} a &amp; b \\ 0 &amp; d-\dfrac{c}{a}b \end{bmatrix}\quad\bm{\det EA}&#x3D;a(d-\dfrac{c}{a}b)&#x3D;\textbf{product of pivots}&#x3D;\bm{\det A}\).</li>
+<li>If \(A\) is \(n\) by \(n\) then the four statements above remain true: \(\bm{\det&#x3D;0}\) when \(A\) is singular, <strong>det reverses sign</strong> when row are exchanged, <strong>det is linear in row 1 by itself,</strong> \(\det&#x3D;\textbf{product of the pivots}\). Always \(\bm{\det BA&#x3D;(\det B)(\det A)}\) and \(\bm{\det A^\textbf{\textrm{T}}&#x3D;\det A}\). This is an amazing number.</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -2292,13 +2241,13 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Permutations-and-Cofactors">Permutations and Cofactors</h3>
-<ol>
+
+<h3 id="Permutations-and-Cofactors"><a href="#Permutations-and-Cofactors" class="headerlink" title="Permutations and Cofactors"></a>Permutations and Cofactors</h3><ol>
 <li><strong>2 by 2</strong>: \(ad-bc\) has \(2!\) terms with \(\pm\) signs. <strong>\(\bm{n}\) by \(\bm{n}\): \(\bm{\det A}\) adds \(\bm{n!}\) with \(\bm{\pm}\) signs.</strong></li>
-<li>For \(n=3\), \(\det A\) adds \(3!=6\) terms. Two terms are \(+a_{12}a_{23}a_{31}\) and \(-a_{13}a_{22}a_{31}\).</li>
+<li>For \(n&#x3D;3\), \(\det A\) adds \(3!&#x3D;6\) terms. Two terms are \(+a_{12}a_{23}a_{31}\) and \(-a_{13}a_{22}a_{31}\).</li>
 <li>That minus sign came because the column order 3, 2, 1 needs one exchange to recover 1, 2, 3.</li>
-<li>The six terms include \(+a_{11}a_{22}a_{33}-a_{11}a_{23}a_{32}=a_{11}(\bm{a_{22}a_{33}-a_{23}a_{32}})=a_{11}(\textbf{cofactor }\bm{C_{11}})\).</li>
-<li>Always \(\det A=a_{11}C_{11}+a_{12}C_{12}+\cdots+a_{1n}C_{1n}\). Cofactors are determinants of size \(n-1\).<figure class="highlight diff">
+<li>The six terms include \(+a_{11}a_{22}a_{33}-a_{11}a_{23}a_{32}&#x3D;a_{11}(\bm{a_{22}a_{33}-a_{23}a_{32}})&#x3D;a_{11}(\textbf{cofactor }\bm{C_{11}})\).</li>
+<li>Always \(\det A&#x3D;a_{11}C_{11}+a_{12}C_{12}+\cdots+a_{1n}C_{1n}\). Cofactors are determinants of size \(n-1\).<figure class="highlight diff">
   <table>
     <tr>
       <td class="gutter">
@@ -2327,8 +2276,7 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
       </td>
     </tr>
   </table>
-</figure>
-</li>
+</figure></li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -2432,9 +2380,9 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Cramer’s-Rule-Inverses-and-Volumes">Cramer’s Rule, Inverses, and Volumes</h3>
-<ol>
-<li>\(A^{-1}\) <strong>equals</strong> \(C^\mathrm{T}/\det A\). Then \((A^{-1})_{ij}=\text{cofactor $\bm{C_{ji}}$ divided by the determinant of $A$}\).<details>
+
+<h3 id="Cramer-s-Rule-Inverses-and-Volumes"><a href="#Cramer-s-Rule-Inverses-and-Volumes" class="headerlink" title="Cramer&#39;s Rule, Inverses, and Volumes"></a>Cramer&#39;s Rule, Inverses, and Volumes</h3><ol>
+<li>\(A^{-1}\) <strong>equals</strong> \(C^\mathrm{T}&#x2F;\det A\). Then \((A^{-1})_{ij}&#x3D;\text{cofactor $\bm{C_{ji}}$ divided by the determinant of $A$}\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   <ol>
     <li>
@@ -2479,9 +2427,8 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
       $$
     </li>
   </ol>
-</details>
-</li>
-<li><strong>Cramer’s Rule</strong> computes \(\bm{x}=A^{-1}\bm{b}\) from \(x_j=\det(\text{$A$ with column $j$ changed to $\bm{b}$})/\det A\).<details>
+</details></li>
+<li><strong>Cramer&#39;s Rule</strong> computes \(\bm{x}&#x3D;A^{-1}\bm{b}\) from \(x_j&#x3D;\det(\text{$A$ with column $j$ changed to $\bm{b}$})&#x2F;\det A\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   Replacing the first column of \(I\) by \(\bm{x}\) gives a matrix with determinant \(x_1\). When multiply it by \(A\), <em>the first column becomes \(A\bm{x}\) which is \(\bm{b}\).</em> The other columns of \(B_1\) are copied from \(A\):
   $$
@@ -2515,11 +2462,10 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     & \rarr x_2=\frac{\det B_2}{\det A}
   \end{alignedat}
   $$
-</details>
-</li>
-<li><strong>Area of parallelogram</strong> \(=|ad-bc|\) if the four corners are \((0,0)\), \((a,b)\), \((c,d)\), and \((a+c,b+d)\).</li>
-<li><strong>Volume of box</strong> \(=|\det A|\) if the rows of \(A\) (or the columns of \(A\)) give the sides of the box.</li>
-<li>The <strong>cross product</strong> \(\bm{w}=\bm{u}\times\bm{v}\) is \(\det\begin{bmatrix} \bm{i} &amp; \bm{j} &amp; \bm{k} \\ u_1 &amp; u_2 &amp; u_3 \\ v_1 &amp; v_2 &amp; v_3 \end{bmatrix}\). \(\begin{array}{l} \text{Notice $\bm{v}\times\bm{u}=-(\bm{u}\times\bm{v})$.} \\ \text{$w_1$, $w_2$, $w_3$ are cofactors of row 1.} \\ \text{Notice $\bm{w}^\mathrm{T}\bm{u}=0$ and $\bm{w}^\mathrm{T}\bm{v}=0$.} \end{array}\)</li>
+</details></li>
+<li><strong>Area of parallelogram</strong> \(&#x3D;|ad-bc|\) if the four corners are \((0,0)\), \((a,b)\), \((c,d)\), and \((a+c,b+d)\).</li>
+<li><strong>Volume of box</strong> \(&#x3D;|\det A|\) if the rows of \(A\) (or the columns of \(A\)) give the sides of the box.</li>
+<li>The <strong>cross product</strong> \(\bm{w}&#x3D;\bm{u}\times\bm{v}\) is \(\det\begin{bmatrix} \bm{i} &amp; \bm{j} &amp; \bm{k} \\ u_1 &amp; u_2 &amp; u_3 \\ v_1 &amp; v_2 &amp; v_3 \end{bmatrix}\). \(\begin{array}{l} \text{Notice $\bm{v}\times\bm{u}&#x3D;-(\bm{u}\times\bm{v})$.} \\ \text{$w_1$, $w_2$, $w_3$ are cofactors of row 1.} \\ \text{Notice $\bm{w}^\mathrm{T}\bm{u}&#x3D;0$ and $\bm{w}^\mathrm{T}\bm{v}&#x3D;0$.} \end{array}\)</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -2585,12 +2531,11 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h2 id="Chapter-6-Eigenvalues-and-Eigenvectors">Chapter 6 Eigenvalues and Eigenvectors</h2>
-<h3 id="Introduction-to-Eigenvalues">Introduction to Eigenvalues</h3>
-<ol>
-<li>An <strong>eigenvector</strong> \(\bm{x}\) lies along the same line as \(A\bm{x}\): \(\boxed{A\bm{x}=\lambda\bm{x}}\). The <strong>eigenvalue</strong> is \(\lambda\).</li>
-<li>If \(A\bm{x}=\lambda\bm{x}\) then \(A^2\bm{x}=\lambda^2\bm{x}\) and \(A^{-1}\bm{x}=\lambda^{-1}\bm{x}\) and \((A+cI)\bm{x}=(\lambda+c)\bm{x}\): the same \(\bm{x}\).</li>
-<li>If \(A\bm{x}=\lambda\bm{x}\) then \((A-\lambda I)\bm{x}=\bm{x}\) and \(A-\lambda I\) is singular and \(\boxed{\bm{\det(A-\lambda I)=0}}\). \(n\) eigenvalues.   <figure class="highlight diff">
+
+<h2 id="Chapter-6-Eigenvalues-and-Eigenvectors"><a href="#Chapter-6-Eigenvalues-and-Eigenvectors" class="headerlink" title="Chapter 6 Eigenvalues and Eigenvectors"></a>Chapter 6 Eigenvalues and Eigenvectors</h2><h3 id="Introduction-to-Eigenvalues"><a href="#Introduction-to-Eigenvalues" class="headerlink" title="Introduction to Eigenvalues"></a>Introduction to Eigenvalues</h3><ol>
+<li>An <strong>eigenvector</strong> \(\bm{x}\) lies along the same line as \(A\bm{x}\): \(\boxed{A\bm{x}&#x3D;\lambda\bm{x}}\). The <strong>eigenvalue</strong> is \(\lambda\).</li>
+<li>If \(A\bm{x}&#x3D;\lambda\bm{x}\) then \(A^2\bm{x}&#x3D;\lambda^2\bm{x}\) and \(A^{-1}\bm{x}&#x3D;\lambda^{-1}\bm{x}\) and \((A+cI)\bm{x}&#x3D;(\lambda+c)\bm{x}\): the same \(\bm{x}\).</li>
+<li>If \(A\bm{x}&#x3D;\lambda\bm{x}\) then \((A-\lambda I)\bm{x}&#x3D;\bm{x}\) and \(A-\lambda I\) is singular and \(\boxed{\bm{\det(A-\lambda I)&#x3D;0}}\). \(n\) eigenvalues.   <figure class="highlight diff">
   <table>
     <tr>
       <td class="gutter">
@@ -2662,10 +2607,9 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
   \text{We reach $(\lambda_1-\lambda_2)\cdots(\lambda_1-\lambda_n)c_1\bm{x}_1=\bm{0}$ which forces $c_1=0$.}
   $$
   Since the \(\lambda\)'s are different and \(\bm{x}_1\neq\bm{0}\), we are forced to the conclusion that \(c_1=0\). Then from \(c_2\bm{x}_2+\cdots+c_n\bm{x}_n=\bm{0}\) we can proof \(c_2=0\) and eventually all the \(c\)'s equal to zero. When the \(\lambda\)'s are all different, the eigenvectors are independent.
-</details>
-</li>
-<li>Check \(\lambda\)'s by \(\det A=(\lambda_1)(\lambda_2)\cdots(\lambda_n)\) and diagonal sum \(a_{11}+a_{22}+\cdots+a_{nn}=\text{sum of $\lambda$'s}\).</li>
-<li>Projections have \(\lambda=1\) and \(0\). Reflections have \(1\) and \(-1\). Rotations have \(e^{i\theta}\) and \(e^{-i\theta}\): <em>complex!</em><details>
+</details></li>
+<li>Check \(\lambda\)&#39;s by \(\det A&#x3D;(\lambda_1)(\lambda_2)\cdots(\lambda_n)\) and diagonal sum \(a_{11}+a_{22}+\cdots+a_{nn}&#x3D;\text{sum of $\lambda$&#39;s}\).</li>
+<li>Projections have \(\lambda&#x3D;1\) and \(0\). Reflections have \(1\) and \(-1\). Rotations have \(e^{i\theta}\) and \(e^{-i\theta}\): <em>complex!</em><details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   For a two-dimensionl rotation matrix \(R=\begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}\), solve \(\det(R-\lambda I)=0\):
   $$
@@ -2677,8 +2621,7 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
   \end{alignedat}
   $$
   Last stage comes from Euler's formula \(e^{ix}=\cos x+i\sin x\) and \(e^{-ix}=e^{i(-x)}=\cos(-x)+i\sin(-x)=\cos x-i\sin x\)
-</details>
-</li>
+</details></li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -2801,26 +2744,23 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Diagonalizing-a-Matrix">Diagonalizing a Matrix</h3>
-<ol>
-<li>The columns of \(AX=X\Lambda\) are \(A\bm{x}_k=\lambda_k\bm{x}_k\). The eigenvalue matrix \(\Lambda\) is diagonal.</li>
-<li>\(\bm{n}\) independent eigenvectors in \(X\) diagonalize \(A\): \(\boxed{\bm{A=X\Lambda X^{-1}}\text{ and }\bm{\Lambda=X^{-1}AX}}\).</li>
-<li>The eigenvector matrix \(X\) also diagonalizes all powers \(A^k\): \(\boxed{\bm{A^k=X\Lambda^kX^{-1}}}\).</li>
-<li>Solve \(\bm{u}_{k+1}=A\bm{u}_k\) by \(\bm{u}_k=A^k\bm{u}_0=X\Lambda^kX^{-1}\bm{u}_0=\boxed{\bm{c_1(\lambda_1)^kx_1+\cdots+c_n(\lambda_n)^kx_n}}\).<details>
+
+<h3 id="Diagonalizing-a-Matrix"><a href="#Diagonalizing-a-Matrix" class="headerlink" title="Diagonalizing a Matrix"></a>Diagonalizing a Matrix</h3><ol>
+<li>The columns of \(AX&#x3D;X\Lambda\) are \(A\bm{x}_k&#x3D;\lambda_k\bm{x}_k\). The eigenvalue matrix \(\Lambda\) is diagonal.</li>
+<li>\(\bm{n}\) independent eigenvectors in \(X\) diagonalize \(A\): \(\boxed{\bm{A&#x3D;X\Lambda X^{-1}}\text{ and }\bm{\Lambda&#x3D;X^{-1}AX}}\).</li>
+<li>The eigenvector matrix \(X\) also diagonalizes all powers \(A^k\): \(\boxed{\bm{A^k&#x3D;X\Lambda^kX^{-1}}}\).</li>
+<li>Solve \(\bm{u}_{k+1}&#x3D;A\bm{u}_k\) by \(\bm{u}_k&#x3D;A^k\bm{u}_0&#x3D;X\Lambda^kX^{-1}\bm{u}_0&#x3D;\boxed{\bm{c_1(\lambda_1)^kx_1+\cdots+c_n(\lambda_n)^kx_n}}\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   Write \(\bm{u}_0\) as a combination \(c_1\bm{x}_1+\cdots+c_n\bm{x}_n=X\bm{c}\), then \(\bm{u}_k=A^k\bm{u}_0=X\Lambda^kX^{-1}\bm{u}_0=X\Lambda^kX^{-1}X\bm{c}=(X\Lambda^k)\bm{c}=c_1(\lambda_1)^k\bm{x}_1+\cdots+c_n(\lambda_n)^k\bm{x}_n\)
-</details>
-</li>
-<li><strong>No equal eigenvalues</strong> ⇒ \(X\) is invertible and \(A\) can be diagonalized.<br>
-<strong>Equal eigenvalues</strong> ⇒ \(A\) <em>might</em> have too few independent eigenvectors. Then \(X^{-1}\) fails.</li>
-<li>Every matrix \(C=B^{-1}AB\) has the <strong>same eigenvalues</strong> as \(A\). These \(C\)'s are “<strong>similar</strong>” to \(A\).<details>
+</details></li>
+<li><strong>No equal eigenvalues</strong> &rArr; \(X\) is invertible and \(A\) can be diagonalized.<br><strong>Equal eigenvalues</strong> &rArr; \(A\) <em>might</em> have too few independent eigenvectors. Then \(X^{-1}\) fails.</li>
+<li>Every matrix \(C&#x3D;B^{-1}AB\) has the <strong>same eigenvalues</strong> as \(A\). These \(C\)&#39;s are &quot;<strong>similar</strong>&quot; to \(A\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   Suppose \(A\bm{x}=\lambda\bm{x}\). Then \(C=B^{-1}AB\) has the same eigenvalue \(\lambda\) with the new eigenvector \(B^{-1}\bm{x}\):
   $$
   \textbf{Same $\bm{\lambda}\quad C(B^{-1}\bm{x})=(B^{-1}AB)(B^{-1}\bm{x})=B^{-1}A\bm{x}=B^{-1}\lambda\bm{x}=\lambda(B^{-1}\bm{x})$.}
   $$
-</details>
-</li>
+</details></li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -2907,9 +2847,9 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Systems-of-Differential-Equations">Systems of Differential Equations</h3>
-<ol>
-<li>If \(A\bm{x}=\lambda\bm{x}\) then \(\bm{u}(t)=e^{\lambda t}\bm{x}\) will solve \(\dfrac{\mathrm{d}\bm{u}}{\mathrm{d}t}=A\bm{u}\). Each \(\lambda\) and \(\bm{x}\) give a solution \(e^{\lambda t}\bm{x}\).<details>
+
+<h3 id="Systems-of-Differential-Equations"><a href="#Systems-of-Differential-Equations" class="headerlink" title="Systems of Differential Equations"></a>Systems of Differential Equations</h3><ol>
+<li>If \(A\bm{x}&#x3D;\lambda\bm{x}\) then \(\bm{u}(t)&#x3D;e^{\lambda t}\bm{x}\) will solve \(\dfrac{\mathrm{d}\bm{u}}{\mathrm{d}t}&#x3D;A\bm{u}\). Each \(\lambda\) and \(\bm{x}\) give a solution \(e^{\lambda t}\bm{x}\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   \(\bm{u}=e^{\lambda t}\bm{x}\) is true in \(\dfrac{\mathrm{d}\bm{u}}{\mathrm{d}t}=A\bm{u}\) if \(A\bm{x}=\lambda\bm{x}\).:
   $$
@@ -2924,9 +2864,8 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
   $$
   \bm{u}(0)=c_1e^{\lambda_1\cdot 0}\bm{x}_1+\cdots+c_ne^{\lambda_n\cdot 0}x_n=c_1\bm{x}_1+\cdots+c_n\bm{x}_n
   $$
-</details>
-</li>
-<li>If \(A=X\Lambda X^{-1}\) then \(\boxed{\bm{u}(t)=e^{At}\bm{u}(0)=Xe^{\Lambda t}X^{-1}\bm{u}(0)=c_1e^{\lambda_1 t}\bm{x}_1+\cdots+c_ne^{\lambda_n t}\bm{x}_n}\).<details>
+</details></li>
+<li>If \(A&#x3D;X\Lambda X^{-1}\) then \(\boxed{\bm{u}(t)&#x3D;e^{At}\bm{u}(0)&#x3D;Xe^{\Lambda t}X^{-1}\bm{u}(0)&#x3D;c_1e^{\lambda_1 t}\bm{x}_1+\cdots+c_ne^{\lambda_n t}\bm{x}_n}\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   To prove \(\bm{u}(t)=e^{At}C\) (\(\bm{u}\) is \(n\) by \(1\) and \(e^{At}\) is \(n\) by \(n\) which is same as \(A\), \(C\) is \(n\) by \(1\)) satisfies the \(\dfrac{\mathrm{d}\bm{u}}{\mathrm{d}t}=A\bm{u}\), we need some truth of \(e^{At}\):
   $$
@@ -2977,11 +2916,10 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
   & =c_1e^{\lambda_1 t}\bm{x}_1+\cdots+c_ne^{\lambda_n t}\bm{x}_n
   \end{alignedat}
   $$
-</details>
-</li>
+</details></li>
 <li>\(A\) is <strong>stable</strong> and \(\bm{u}(t)\rarr\bm{0}\) and \(e^{At}\rarr 0\) when all eigenvalues of \(A\) have real part \(\lt 0\).</li>
-<li>Matrix exponential \(e^{At}=I+At+\cdots+(At)^n/n!+\cdots=Xe^{\Lambda t}X^{-1}\) if \(A\) is diagonalizable.</li>
-<li>\(\begin{array}{l} \textbf{Second order equation} \\ \textbf{First order system} \end{array} u^{\prime\prime}+Bu^\prime+Cu=0\) is equivalent to \(\begin{bmatrix} u \\ u^\prime \end{bmatrix}^\prime=\begin{bmatrix*}[r] 0 &amp; 1 \\ -C &amp; -B \end{bmatrix*}\begin{bmatrix} u \\ u^\prime \end{bmatrix}\).</li>
+<li>Matrix exponential \(e^{At}&#x3D;I+At+\cdots+(At)^n&#x2F;n!+\cdots&#x3D;Xe^{\Lambda t}X^{-1}\) if \(A\) is diagonalizable.</li>
+<li>\(\begin{array}{l} \textbf{Second order equation} \\ \textbf{First order system} \end{array} u^{\prime\prime}+Bu^\prime+Cu&#x3D;0\) is equivalent to \(\begin{bmatrix} u \\ u^\prime \end{bmatrix}^\prime&#x3D;\begin{bmatrix*}[r] 0 &amp; 1 \\ -C &amp; -B \end{bmatrix*}\begin{bmatrix} u \\ u^\prime \end{bmatrix}\).</li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -3190,10 +3128,10 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
     </li>
   </ol>
 </details>
-<h3 id="Symmetric-Matrices">Symmetric Matrices</h3>
-<ol>
+
+<h3 id="Symmetric-Matrices"><a href="#Symmetric-Matrices" class="headerlink" title="Symmetric Matrices"></a>Symmetric Matrices</h3><ol>
 <li>A symmetric matrix \(S\) has \(n\) real eigenvalues \(\lambda_i\) and \(n\) <strong>orthonormal eigenvectors</strong> \(\bm{q}_1,\ldots,\bm{q}_n\).</li>
-<li>Every real symmetric \(S\) can be diagonalized: \(\boxed{S=Q\Lambda Q^{-1}=\bm{Q\Lambda Q^\mathrm{T}}}\).<details>
+<li>Every real symmetric \(S\) can be diagonalized: \(\boxed{S&#x3D;Q\Lambda Q^{-1}&#x3D;\bm{Q\Lambda Q^\mathrm{T}}}\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   Schur's Theorem: If \(A\) is a square real matrix with real eigenvalues, then there is an orthogonal matrix \(Q\) and an upper triangular matrix \(T\) such that \(A=QTQ^\mathrm{T}\).
   <br>
@@ -3318,8 +3256,7 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
   =I
   $$
   Continue the process above we will eventually get what we want, the \(A=QTQ\).
-</details>
-</li>
+</details></li>
 <li>The number of positive eigenvalues of \(S\) equals the number of positive pivots.<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   From <a target="_blank" rel="noopener" href="https://math.stackexchange.com/a/57958">this answer</a>.
@@ -3330,17 +3267,15 @@ The outer product is \(\bm{xy^\mathrm{T}}=\text{column times row}=(n\times 1)(1\
   $$
   \Lambda=(Q^\mathrm{T}L)D(L^\mathrm{T}Q)\quad(\text{$Q^\mathrm{T}L$ and $L^\mathrm{T}Q$ are transpose of each other})
   $$
-  We can see that \(D\) share the signs of positive eigenvalues with \(\Lambda\).
-</li>
-<li>Antisymmetric matrices \(A=-A^\mathrm{T}\) have <em>imaginary</em> \(\lambda\)'s and <em>orthonormal (complex)</em> \(\bm{q}\)'s.</li>
-<li>Section 9.2 explains why the test \(S=S^\mathrm{T}\) becomes \(\bm{S=\overline{S}^\mathrm{T}}\) for <em>complex matrices</em>.<div>
+  We can see that \(D\) share the signs of positive eigenvalues with \(\Lambda\).</li>
+<li>Antisymmetric matrices \(A&#x3D;-A^\mathrm{T}\) have <em>imaginary</em> \(\lambda\)&#39;s and <em>orthonormal (complex)</em> \(\bm{q}\)&#39;s.</li>
+<li>Section 9.2 explains why the test \(S&#x3D;S^\mathrm{T}\) becomes \(\bm{S&#x3D;\overline{S}^\mathrm{T}}\) for <em>complex matrices</em>.<div>
 $$
 \text{$S=\begin{bmatrix} 0 & i \\ -i & 0 \end{bmatrix}=\overline{S}^\mathrm{T}$ has real $\lambda=1,-1$.}
 \qquad
 \text{$A=\begin{bmatrix} 0 & i \\ i & 0 \end{bmatrix}=-\overline{A}^\mathrm{T}$ has $\lambda=i,-i$.}
 $$
-</div>
-</li>
+</div></li>
 </ol>
 <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary>
@@ -3398,29 +3333,26 @@ $$
     </li>
   </ol>
 </details>
-<h3 id="Positive-Definite-Matrices">Positive Definite Matrices</h3>
-<ol>
+
+<h3 id="Positive-Definite-Matrices"><a href="#Positive-Definite-Matrices" class="headerlink" title="Positive Definite Matrices"></a>Positive Definite Matrices</h3><ol>
 <li><strong>Symmetric \(\bm{S}\):</strong> \(\text{all eigenvalues$\bm{\gt 0\space\hArr}$ all pivots $\bm{\gt 0\space\hArr}$ all upper left determinants $\bm{\gt 0}$}\).</li>
 <li>The matrix \(S\) is then <strong>positive definite</strong>. The energy test is \(\bm{x}^\mathrm{T}S\bm{x}\gt 0\) for all vectors \(\bm{x}\neq\bm{0}\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   From \(S\bm{x}=\lambda\bm{x}\), multiply by \(\bm{x}^\mathrm{T}\) to get \(\bm{x}^\mathrm{T}S\bm{x}=\lambda\bm{x}^\mathrm{T}\bm{x}=\lambda\|\bm{x}\|^2\). The right side is positive for all nonzero vectors while the \(\lambda\) is positive.
-</details>
-</li>
-<li>One more test for positive definiteness: \(S=A^\mathrm{T}A\) with independent columns in \(A\).<details>
+</details></li>
+<li>One more test for positive definiteness: \(S&#x3D;A^\mathrm{T}A\) with independent columns in \(A\).<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   Take energy test we get \(\bm{x}^\mathrm{T}S\bm{x}=\bm{x}^\mathrm{T}A^\mathrm{T}A\bm{x}=(A\bm{x})^\mathrm{T}(A\bm{x})=\|A\bm{x}\|^2\geq 0\), \(A\bm{x}\) never equal to zero if \(A\) has independent columns and \(x\neq 0\).
-</details>
-</li>
-<li><strong>Positive semidefinite</strong> \(S\) allows \(\lambda=0\), \(\text{pivot}=0\), \(\text{determinant}=0\), \(\text{energy }\bm{x}^\mathrm{T}S\bm{x}=0\).</li>
-<li>The equation \(\bm{x}^\mathrm{T}S\bm{x}=1\) gives an ellipse in \(\mathbf{R}^n\) when \(S\) is symmetric positive definite.<details>
+</details></li>
+<li><strong>Positive semidefinite</strong> \(S\) allows \(\lambda&#x3D;0\), \(\text{pivot}&#x3D;0\), \(\text{determinant}&#x3D;0\), \(\text{energy }\bm{x}^\mathrm{T}S\bm{x}&#x3D;0\).</li>
+<li>The equation \(\bm{x}^\mathrm{T}S\bm{x}&#x3D;1\) gives an ellipse in \(\mathbf{R}^n\) when \(S\) is symmetric positive definite.<details>
   <summary><span class="list-summary">&dagger; WHY &dagger;</span></summary>
   The graph of \(\bm{x}^\mathrm{T}S\bm{x}=1\) is an ellipse. For example, a 2 by 2 positve definite symmetric matrix \(S=Q\Lambda Q^\mathrm{T}\):
   $$
   \bm{x}^\mathrm{T}S\bm{x}=1\harr\begin{bmatrix} x & y \end{bmatrix}Q\Lambda Q^\mathrm{T}\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} X & Y \end{bmatrix}\Lambda\begin{bmatrix} X \\ Y \end{bmatrix}=\lambda_1X^2+\lambda_2Y^2=1
   $$
   Which is similar to the ellipse standard equation \(x^2/a^2+y^2/b^2=1\). Here it comes with \(x=X\) and \(y=Y\) and \(a=1/\sqrt{\lambda_1}\) and \(b=1/\sqrt{\lambda_2}\)
-</details>
-</li>
+</details></li>
 </ol>
 <!-- <details>
   <summary><span class="list-summary">&dagger; WORKED EXAMPLES &dagger;</span></summary> -->
@@ -3499,8 +3431,8 @@ $$
     </li>
   </ol>
 <!-- </details> -->
-<h2 id="LINEAR-ALGEBRA-IN-A-NUTSHELL">LINEAR ALGEBRA IN A NUTSHELL</h2>
-<div style="text-align:center"><strong>((<em>The matrix \(A\) is \(n\) by \(n\)</em>))</strong></div>
+
+<h2 id="LINEAR-ALGEBRA-IN-A-NUTSHELL"><a href="#LINEAR-ALGEBRA-IN-A-NUTSHELL" class="headerlink" title="LINEAR ALGEBRA IN A NUTSHELL"></a>LINEAR ALGEBRA IN A NUTSHELL</h2><div style="text-align:center"><strong>((<em>The matrix \(A\) is \(n\) by \(n\)</em>))</strong></div>
 <div>
 $$
 \begin{array}{ll}
@@ -3522,7 +3454,7 @@ A\text{ has $n$ (positive) singular values} & A\text{ has $r\lt n$ singular valu
 \end{array}
 $$
 </div>
-</div><div class="article-licensing box"><div class="licensing-title"><p>Introduction to Linear Algebra</p><p><a href="http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/">http://blog.ndoskrnl.net/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Ndoskrnl</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-02-24</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2024-01-29</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/mathematics/">mathematics</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/zh-cn/daily-life/2021/suspicious-stew/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">suspicious-stew</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/zh-cn/learn/mathematics/2021/postgraduate-advanced-mathematics-2/"><span class="level-item">postgraduate-advanced-mathematics-2</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Chapter-1-Introduction-to-Vectors"><span class="level-left"><span class="level-item">1</span><span class="level-item">Chapter 1 Introduction to Vectors</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Vectors-and-Linear-Combinations"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">Vectors and Linear Combinations</span></span></a></li><li><a class="level is-mobile" href="#Lengths-and-Dot-Products"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">Lengths and Dot Products</span></span></a></li><li><a class="level is-mobile" href="#Matrices"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">Matrices</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Chapter-2-Solving-Linear-Equations"><span class="level-left"><span class="level-item">2</span><span class="level-item">Chapter 2 Solving Linear Equations</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Vectors-and-Linear-Equations"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">Vectors and Linear Equations</span></span></a></li><li><a class="level is-mobile" href="#The-Idea-of-Elimination"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">The Idea of Elimination</span></span></a></li><li><a class="level is-mobile" href="#Elimination-Using-Matrices"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">Elimination Using Matrices</span></span></a></li><li><a class="level is-mobile" href="#Rules-for-Matrix-Operations"><span class="level-left"><span class="level-item">2.4</span><span class="level-item">Rules for Matrix Operations</span></span></a></li><li><a class="level is-mobile" href="#Inverse-Matrices"><span class="level-left"><span class="level-item">2.5</span><span class="level-item">Inverse Matrices</span></span></a></li><li><a class="level is-mobile" href="#Elimination-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mo-mo-mrow-math-Factorization-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-A-mi-mo-mo-mi-L-mi-mi-U-mi-mrow-math"><span class="level-left"><span class="level-item">2.6</span><span class="level-item">Elimination = Factorization: A=LU</span></span></a></li><li><a class="level is-mobile" href="#Transposes-and-Permutations"><span class="level-left"><span class="level-item">2.7</span><span class="level-item">Transposes and Permutations</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Chapter-3-Vector-Spaces-and-Subspaces"><span class="level-left"><span class="level-item">3</span><span class="level-item">Chapter 3 Vector Spaces and Subspaces</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Spaces-of-Vectors"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">Spaces of Vectors</span></span></a></li><li><a class="level is-mobile" href="#The-Nullspace-of-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-A-mi-mrow-math-Solving-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-A-mi-mi-mathvariant-bold-italic-x-mi-mo-mo-mi-mathvariant-bold-0-mi-mrow-math-and-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-R-mi-mi-mathvariant-bold-italic-x-mi-mo-mo-mi-mathvariant-bold-0-mi-mrow-math"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">The Nullspace of A: Solving Ax=0 and Rx=0</span></span></a></li><li><a class="level is-mobile" href="#The-Complete-Solution-to-math-xmlns-http-www-w3-org-1998-Math-MathML-mrow-mi-A-mi-mi-mathvariant-bold-italic-x-mi-mo-mo-mi-mathvariant-bold-italic-b-mi-mrow-math"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">The Complete Solution to Ax=b</span></span></a></li><li><a class="level is-mobile" href="#Independence-Basis-and-Dimension"><span class="level-left"><span class="level-item">3.4</span><span class="level-item">Independence, Basis and Dimension</span></span></a></li><li><a class="level is-mobile" href="#Dimensions-of-the-Four-Subspaces"><span class="level-left"><span class="level-item">3.5</span><span class="level-item">Dimensions of the Four Subspaces</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Chapter-4-Orthogonality"><span class="level-left"><span class="level-item">4</span><span class="level-item">Chapter 4 Orthogonality</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Orthogonality-of-the-Four-Subspaces"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">Orthogonality of the Four Subspaces</span></span></a></li><li><a class="level is-mobile" href="#Projections"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">Projections</span></span></a></li><li><a class="level is-mobile" href="#Least-Squares-Approximations"><span class="level-left"><span class="level-item">4.3</span><span class="level-item">Least Squares Approximations</span></span></a></li><li><a class="level is-mobile" href="#Orthonormal-Bases-and-Gram-Schmidt"><span class="level-left"><span class="level-item">4.4</span><span class="level-item">Orthonormal Bases and Gram-Schmidt</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Chapter-5-Determinants"><span class="level-left"><span class="level-item">5</span><span class="level-item">Chapter 5 Determinants</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#The-properties-of-Determinants"><span class="level-left"><span class="level-item">5.1</span><span class="level-item">The properties of Determinants</span></span></a></li><li><a class="level is-mobile" href="#Permutations-and-Cofactors"><span class="level-left"><span class="level-item">5.2</span><span class="level-item">Permutations and Cofactors</span></span></a></li><li><a class="level is-mobile" href="#Cramer’s-Rule-Inverses-and-Volumes"><span class="level-left"><span class="level-item">5.3</span><span class="level-item">Cramer’s Rule, Inverses, and Volumes</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Chapter-6-Eigenvalues-and-Eigenvectors"><span class="level-left"><span class="level-item">6</span><span class="level-item">Chapter 6 Eigenvalues and Eigenvectors</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Introduction-to-Eigenvalues"><span class="level-left"><span class="level-item">6.1</span><span class="level-item">Introduction to Eigenvalues</span></span></a></li><li><a class="level is-mobile" href="#Diagonalizing-a-Matrix"><span class="level-left"><span class="level-item">6.2</span><span class="level-item">Diagonalizing a Matrix</span></span></a></li><li><a class="level is-mobile" href="#Systems-of-Differential-Equations"><span class="level-left"><span class="level-item">6.3</span><span class="level-item">Systems of Differential Equations</span></span></a></li><li><a class="level is-mobile" href="#Symmetric-Matrices"><span class="level-left"><span class="level-item">6.4</span><span class="level-item">Symmetric Matrices</span></span></a></li><li><a class="level is-mobile" href="#Positive-Definite-Matrices"><span class="level-left"><span class="level-item">6.5</span><span class="level-item">Positive Definite Matrices</span></span></a></li></ul></li><li><a class="level is-mobile" href="#LINEAR-ALGEBRA-IN-A-NUTSHELL"><span class="level-left"><span class="level-item">7</span><span class="level-item">LINEAR ALGEBRA IN A NUTSHELL</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/computer/"><span class="level-start"><span class="level-item">computer</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile" href="/categories/daily-life/"><span class="level-start"><span class="level-item">daily-life</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/learn/"><span class="level-start"><span class="level-item">learn</span></span><span class="level-end"><span class="level-item tag">14</span></span></a><ul><li><a class="level is-mobile" href="/categories/learn/mathematics/"><span class="level-start"><span class="level-item">mathematics</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/minecraft/"><span class="level-start"><span class="level-item">minecraft</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/electronic-and-information-engineering/"><span class="tag">electronic-and-information-engineering</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mathematics/"><span class="tag">mathematics</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/postgraduate/"><span class="tag">postgraduate</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/senior-high-schoool/"><span class="tag">senior-high-schoool</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Comet_symbol.svg" alt="钱桑の记事本&gt;_" height="28"></a><p class="is-size-7"><span>&copy; 2024 Ndoskrnl</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+</div><div class="article-licensing box"><div class="licensing-title"><p>Introduction to Linear Algebra</p><p><a href="https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/">https://magic0whi.github.io/zh-cn/learn/mathematics/2021/introduction-to-linear-algebra/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Ndoskrnl</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-02-24</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2024-03-16</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/mathematics/">mathematics</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/zh-cn/daily-life/2021/suspicious-stew/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">suspicious-stew</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/zh-cn/learn/mathematics/2021/postgraduate-advanced-mathematics-2/"><span class="level-item">postgraduate-advanced-mathematics-2</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><ul class="menu-list"><li><a class="level is-mobile" href="#Chapter-1-Introduction-to-Vectors"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">Chapter 1 Introduction to Vectors</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Vectors-and-Linear-Combinations"><span class="level-left"><span class="level-item">1.1.1</span><span class="level-item">Vectors and Linear Combinations</span></span></a></li><li><a class="level is-mobile" href="#Lengths-and-Dot-Products"><span class="level-left"><span class="level-item">1.1.2</span><span class="level-item">Lengths and Dot Products</span></span></a></li><li><a class="level is-mobile" href="#Matrices"><span class="level-left"><span class="level-item">1.1.3</span><span class="level-item">Matrices</span></span></a></li></ul></li></ul><li><a class="level is-mobile" href="#The-3-components-of-A-bm-x-are-dot-products-of-the-3-rows-of-A-with-the-vector-bm-x-textbf-Row-at-a-time-qquad-begin-bmatrix-1-2-3-4-5-6-end-bmatrix-begin-bmatrix-7-8-end-bmatrix"><span class="level-left"><span class="level-item">2</span><span class="level-item">The 3 components of \(A\bm{x}\) are dot products of the 3 rows of \(A\) with the vector \(\bm{x}\):$$\textbf{Row at a time}\qquad\begin{bmatrix} 1 &amp; 2 \ 3 &amp; 4 \ 5 &amp; 6 \end{bmatrix}\begin{bmatrix} 7 \ 8 \end{bmatrix}</span></span></a></li><li><a class="level is-mobile" href="#begin-bmatrix-1-cdot-7-2-cdot-8-3-cdot-7-4-cdot-8-5-cdot-7-6-cdot-8-end-bmatrix"><span class="level-left"><span class="level-item">3</span><span class="level-item">\begin{bmatrix} 1\cdot 7+2\cdot 8 \ 3\cdot 7+4\cdot 8 \ 5\cdot 7+6\cdot 8 \end{bmatrix}</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Chapter-2-Solving-Linear-Equations"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">Chapter 2 Solving Linear Equations</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Vectors-and-Linear-Equations"><span class="level-left"><span class="level-item">3.1.1</span><span class="level-item">Vectors and Linear Equations</span></span></a></li><li><a class="level is-mobile" href="#The-Idea-of-Elimination"><span class="level-left"><span class="level-item">3.1.2</span><span class="level-item">The Idea of Elimination</span></span></a></li><li><a class="level is-mobile" href="#Elimination-Using-Matrices"><span class="level-left"><span class="level-item">3.1.3</span><span class="level-item">Elimination Using Matrices</span></span></a></li><li><a class="level is-mobile" href="#Rules-for-Matrix-Operations"><span class="level-left"><span class="level-item">3.1.4</span><span class="level-item">Rules for Matrix Operations</span></span></a></li><li><a class="level is-mobile" href="#Inverse-Matrices"><span class="level-left"><span class="level-item">3.1.5</span><span class="level-item">Inverse Matrices</span></span></a></li><li><a class="level is-mobile" href="#Elimination-Factorization-A-LU"><span class="level-left"><span class="level-item">3.1.6</span><span class="level-item">Elimination = Factorization: A=LU</span></span></a></li><li><a class="level is-mobile" href="#Transposes-and-Permutations"><span class="level-left"><span class="level-item">3.1.7</span><span class="level-item">Transposes and Permutations</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Chapter-3-Vector-Spaces-and-Subspaces"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">Chapter 3 Vector Spaces and Subspaces</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Spaces-of-Vectors"><span class="level-left"><span class="level-item">3.2.1</span><span class="level-item">Spaces of Vectors</span></span></a></li><li><a class="level is-mobile" href="#The-Nullspace-of-A-Solving-Ax-0-and-Rx-0"><span class="level-left"><span class="level-item">3.2.2</span><span class="level-item">The Nullspace of A: Solving Ax=0 and Rx=0</span></span></a></li><li><a class="level is-mobile" href="#The-Complete-Solution-to-Ax-b"><span class="level-left"><span class="level-item">3.2.3</span><span class="level-item">The Complete Solution to Ax=b</span></span></a></li><li><a class="level is-mobile" href="#Independence-Basis-and-Dimension"><span class="level-left"><span class="level-item">3.2.4</span><span class="level-item">Independence, Basis and Dimension</span></span></a></li><li><a class="level is-mobile" href="#Dimensions-of-the-Four-Subspaces"><span class="level-left"><span class="level-item">3.2.5</span><span class="level-item">Dimensions of the Four Subspaces</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Chapter-4-Orthogonality"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">Chapter 4 Orthogonality</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Orthogonality-of-the-Four-Subspaces"><span class="level-left"><span class="level-item">3.3.1</span><span class="level-item">Orthogonality of the Four Subspaces</span></span></a></li><li><a class="level is-mobile" href="#Projections"><span class="level-left"><span class="level-item">3.3.2</span><span class="level-item">Projections</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="#Then-the-projection-of-bm-b-onto-the-column-space-of-A-is-the-vector-bm-p-A-A-mathrm-T-A-1-A-mathrm-T-bm-b-dagger-WHY-dagger-As-we-know-a-subspace-can-be-described-as-the-column-space-of-a-matrix-A-when-projection-onto-a-subspace-we-are-actually-looking-for-the-combination-of-the-columns-of-A-that-is-closest-to-a-given-vector-bm-b-bm-p-widehat-x-1-bm-a-1-cdots-widehat-x-n-bm-a-n-A-widehat-bm-x-qquad-text-Here-widehat-bm-x-comes-a-vector-The-error-vector-bm-b-A-widehat-bm-x-is-perpendicular-to-the-subspace-which-means-every-columns-of-A-times-bm-e-is-zero-begin-bmatrix-bm-a-1-mathrm-T-vdots-bm-a-n-mathrm-T-end-bmatrix-begin-bmatrix-bm-b-A-widehat-bm-x-end-bmatrix"><span class="level-left"><span class="level-item">4</span><span class="level-item">Then the projection of \(\bm{b}\) onto the column space of \(A\) is the vector \(\bm{p}=A(A^\mathrm{T}A)^{-1}A^\mathrm{T}\bm{b}\).  † WHY †    As we know a subspace can be described as the column space of a matrix (A), when projection onto a subspace, we are actually looking for the combination of the columns of (A) that is closest to a given vector (\bm{b}):  $$  \bm{p}=\widehat{x}_1\bm{a}_1+\cdots+\widehat{x}_n\bm{a}_n=A\widehat{\bm{x}}  \qquad  \text{Here $\widehat{\bm{x}}$ comes a vector}  $$  The error vector (\bm{b}-A\widehat{\bm{x}}) is perpendicular to the subspace, which means every columns of (A) times (\bm{e}) is zero:  $$  \begin{bmatrix}    \bm{a}_1^\mathrm{T} \    \vdots \    \bm{a}_n^\mathrm{T}  \end{bmatrix}  \begin{bmatrix}    \bm{b}-A\widehat{\bm{x}}  \end{bmatrix}</span></span></a><ul class="menu-list"><ul class="menu-list"><li><a class="level is-mobile" href="#Least-Squares-Approximations"><span class="level-left"><span class="level-item">4.1.1</span><span class="level-item">Least Squares Approximations</span></span></a></li><li><a class="level is-mobile" href="#Orthonormal-Bases-and-Gram-Schmidt"><span class="level-left"><span class="level-item">4.1.2</span><span class="level-item">Orthonormal Bases and Gram-Schmidt</span></span></a></li></ul><li><a class="level is-mobile" href="#Chapter-5-Determinants"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">Chapter 5 Determinants</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#The-properties-of-Determinants"><span class="level-left"><span class="level-item">4.2.1</span><span class="level-item">The properties of Determinants</span></span></a></li><li><a class="level is-mobile" href="#Permutations-and-Cofactors"><span class="level-left"><span class="level-item">4.2.2</span><span class="level-item">Permutations and Cofactors</span></span></a></li><li><a class="level is-mobile" href="#Cramer-s-Rule-Inverses-and-Volumes"><span class="level-left"><span class="level-item">4.2.3</span><span class="level-item">Cramer&#039;s Rule, Inverses, and Volumes</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Chapter-6-Eigenvalues-and-Eigenvectors"><span class="level-left"><span class="level-item">4.3</span><span class="level-item">Chapter 6 Eigenvalues and Eigenvectors</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Introduction-to-Eigenvalues"><span class="level-left"><span class="level-item">4.3.1</span><span class="level-item">Introduction to Eigenvalues</span></span></a></li><li><a class="level is-mobile" href="#Diagonalizing-a-Matrix"><span class="level-left"><span class="level-item">4.3.2</span><span class="level-item">Diagonalizing a Matrix</span></span></a></li><li><a class="level is-mobile" href="#Systems-of-Differential-Equations"><span class="level-left"><span class="level-item">4.3.3</span><span class="level-item">Systems of Differential Equations</span></span></a></li><li><a class="level is-mobile" href="#Symmetric-Matrices"><span class="level-left"><span class="level-item">4.3.4</span><span class="level-item">Symmetric Matrices</span></span></a></li><li><a class="level is-mobile" href="#Positive-Definite-Matrices"><span class="level-left"><span class="level-item">4.3.5</span><span class="level-item">Positive Definite Matrices</span></span></a></li></ul></li><li><a class="level is-mobile" href="#LINEAR-ALGEBRA-IN-A-NUTSHELL"><span class="level-left"><span class="level-item">4.4</span><span class="level-item">LINEAR ALGEBRA IN A NUTSHELL</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/computer/"><span class="level-start"><span class="level-item">computer</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile" href="/categories/daily-life/"><span class="level-start"><span class="level-item">daily-life</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/learn/"><span class="level-start"><span class="level-item">learn</span></span><span class="level-end"><span class="level-item tag">14</span></span></a><ul><li><a class="level is-mobile" href="/categories/learn/mathematics/"><span class="level-start"><span class="level-item">mathematics</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/minecraft/"><span class="level-start"><span class="level-item">minecraft</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/electronic-and-information-engineering/"><span class="tag">electronic-and-information-engineering</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mathematics/"><span class="tag">mathematics</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/postgraduate/"><span class="tag">postgraduate</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/senior-high-schoool/"><span class="tag">senior-high-schoool</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Comet_symbol.svg" alt="钱桑の记事本&gt;_" height="28"></a><p class="is-size-7"><span>&copy; 2024 Ndoskrnl</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
             article: {
                 highlight: {
                     clipboard: true,
