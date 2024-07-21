@@ -1,0 +1,2073 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>postgraduate-advanced-mathematics - Proteus Chan の Notebook</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Proteus Chan の Notebook"><meta name="msapplication-TileImage" content="/img/favicon.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Proteus Chan の Notebook"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="同济高等数学笔记整合(上) 考研用 基于 wmathor&amp;#x2F;Postgraduate-Advanced-Mathematics 不定积分是为定积分服务的, 它的目的是找原函数"><meta property="og:type" content="blog"><meta property="og:title" content="postgraduate-advanced-mathematics"><meta property="og:url" content="https://magic0whi.github.io/learn/postgraduate-advanced-mathematics/"><meta property="og:site_name" content="Proteus Chan の Notebook"><meta property="og:description" content="同济高等数学笔记整合(上) 考研用 基于 wmathor&amp;#x2F;Postgraduate-Advanced-Mathematics 不定积分是为定积分服务的, 它的目的是找原函数"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://magic0whi.github.io/img/og_image.png"><meta property="article:published_time" content="2021-01-19T01:08:57.000Z"><meta property="article:modified_time" content="2024-07-21T10:39:03.137Z"><meta property="article:author" content="Proteus Chan"><meta property="article:tag" content="mathematics"><meta property="article:tag" content="postgraduate"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://magic0whi.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://magic0whi.github.io/learn/postgraduate-advanced-mathematics/"},"headline":"postgraduate-advanced-mathematics","image":["https://magic0whi.github.io/img/og_image.png"],"datePublished":"2021-01-19T01:08:57.000Z","dateModified":"2024-07-21T10:39:03.137Z","author":{"@type":"Person","name":"Proteus Chan"},"publisher":{"@type":"Organization","name":"Proteus Chan の Notebook","logo":{"@type":"ImageObject","url":"https://magic0whi.github.io/img/Comet_symbol.svg"}},"description":"同济高等数学笔记整合(上) 考研用 基于 wmathor&#x2F;Postgraduate-Advanced-Mathematics 不定积分是为定积分服务的, 它的目的是找原函数"}</script><link rel="canonical" href="https://magic0whi.github.io/learn/postgraduate-advanced-mathematics/"><link rel="icon" href="/img/favicon.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Comet_symbol.svg" alt="Proteus Chan の Notebook" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/peers">Peers</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-01-19T01:08:57.000Z" title="1/19/2021, 1:08:57 AM">2021-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-07-21T10:39:03.137Z" title="7/21/2024, 10:39:03 AM">2024-07-21</time></span><span class="level-item"><a class="link-muted" href="/categories/learn/">learn</a><span> / </span><a class="link-muted" href="/categories/learn/mathematics/">mathematics</a></span><span class="level-item">2 小时 read (About 14401 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">postgraduate-advanced-mathematics</h1><div class="content"><p>同济高等数学笔记整合(上) 考研用<br>
+基于 <a target="_blank" rel="noopener" href="https://github.com/wmathor/Postgraduate-Advanced-Mathematics">wmathor/Postgraduate-Advanced-Mathematics</a><br>
+不定积分是为定积分服务的, 它的目的是找原函数</p>
+<span id="more"></span>
+<h2 id="函数与极限">函数与极限</h2>
+<h3 id="函数">函数</h3>
+<ol>
+<li>函数:<br>
+有集合 \(D\) 和 \(x\)、\(y\) 两个变量.<br>
+若对任意 \(x\in D\), 总存在唯一确定的解 \(y\) 与 \(x\) 对应,<br>
+称 \(y\) 为 \(x\) 的函数, 记作 \(y=f(x)\), \(D\) 为 \(x\) 的定义域</li>
+<li>反函数:<br>
+\(y=f(x)\enspace(x\in D)\) 严格单调 <strong>(单调函数必有单调反函数)</strong><br>
+若 \(y=f(x) \implies x=\varphi(y)\)<br>
+则 \(\varphi(y)\) 就是 \(f(x)\) 的反函数</li>
+<li>基本初等函数:
+<ol>
+<li>幂函数 \(x^a\)</li>
+<li>指数函数 \(a^x\enspace(a&gt;0\) 且 \(a\neq 1)\)</li>
+<li>对数函数 \(\log_a{x}\enspace(a&gt;0\) 且 \(a\neq 1)\)</li>
+<li>三角函数 \(\sin x,\cos x,\tan x,\cot x,\sec x,\csc x\)</li>
+</ol>
+</li>
+<li>初等函数: 由常数、基本初等函数经过四则运算、复合运算而成的式子</li>
+</ol>
+<h4 id="初等性质">初等性质</h4>
+<ol>
+<li>
+<p>奇偶性<br>
+设 \(y=f(x)\enspace\) (\(x\in D\), \(D\) 关于原点对称)<br>
+若对于 \(\forall x\in D\), 有<br>
+\(f(-x)=-f(x)\), 则为奇函数;<br>
+\(f(-x)=f(x)\), 则为偶函数</p>
+</li>
+<li>
+<p>单调性<br>
+设 \(y=f(x)\enspace(x\in D)\)<br>
+若 \(\exist x_1,x_2\in D\) 且 \(x_1&lt;x_2\) 时 , 有 \(f(x_1)&lt;f(x_2)\), 称 \(f(x)\) 在 \(D\) 上严格单调递增;<br>
+若 \(\exist x_1,x_2\in D\) 且 \(x_1&lt;x_2\) 时 , 有 \(f(x_1)&gt;f(x_2)\), 称 \(f(x)\) 在 \(D\) 上严格单独递减</p>
+
+</li>
+<li>
+<p>有界性<br>
+设 \(y=f(x)\enspace(x\in D)\), 函数的界 \(M\)<br>
+若 \(\exist M&gt;0\), 对于 \(\forall x\in D\), 有 \(|f(x)|\leqslant M\), 称 \(f(x)\) 在 \(D\) 上有界</p>
+
+<p>若 \(\forall x\in D\), \(f(x)\geqslant M_1\), 有下界<br>
+若 \(\forall x\in D\), \(f(x)\leqslant M_2\), 有上界<br>
+如: \(|f(x)|\leqslant 3\hArr\begin{cases} f(x)\geqslant -3 \\ f(x)\leqslant 3 \end{cases}\)</p>
+</li>
+<li>
+<p>周期性<br>
+设 \(y=f(x)\enspace(x\in D)\)<br>
+若 \(\exist T&gt;0\), 对于 \(\forall x\in D\enspace(x+T\in D)\), 有 \(f(x+T)=f(x)\), 称 \(f(x)\) 为周期函数</p>
+</li>
+</ol>
+<h3 id="数列极限">数列极限</h3>
+<ol>
+<li>数列收敛定义 (\(\epsilon−N\)):<br>
+设数列 \(\{a_n\}\), \(A\) 为极限值, 最大误差 \(\varepsilon\), 数列在元素 \(a_N\) 后极限有效(即之后数列元素与极限值的差值 \(\leqslant\varepsilon\)),<br>
+若 \(\forall\varepsilon&gt;0\), \(\exist N&gt;0\), 当 \(n&gt;N\) 时 \(|a_n-A|&lt;\varepsilon\)<br>
+称数列 \(\{a_n\}\) 收敛于极限 \(A\), 记作 \(\lim\limits_{n\to\infty}=A\) 或 \(a_n\to A\enspace(n\to\infty)\)<br>
+例:<br>
+设通项公式 \(a_n=\frac{n+1}{2n}\), 具体值为 \(\frac{3}{4},\frac{2}{3},\frac{5}{8},\frac{3}{5},\dots\), 观察得极限 \(a_n\to\frac{1}{2}\)<br>
+设 \(\varepsilon=\frac{1}{10}&gt;0\), 则 \(|a_n-\frac{1}{2}|=\frac{1}{2n}&lt;\frac{1}{10}\rArr n&gt;5\).<br>
+同理:<br>
+若 \(\varepsilon=\frac{1}{100}&gt;0\), 则 \(\frac{1}{2n}&lt;\frac{1}{100}\rArr n&gt;50\)<br>
+若 \(\varepsilon=\frac{1}{1000}&gt;0\), 则 \(\frac{1}{2n}&lt;\frac{1}{1000}\rArr n&gt;500\)<br>
+由此发现该数列有极限: \(\lim\limits_{n\to\infty}a_n=\frac{1}{2}\)</li>
+<li>性质
+<ol>
+<li>唯一性: 数列有极限必唯一
+<blockquote>
+<p>证明: (反证法)<br>
+设数列有两个极限 \(\lim\limits_{n\to\infty}a_n=A\), \(\lim\limits_{n\to\infty}a_n=B\), 且 \(A\neq B\)<br>
+不妨设 \(A&gt;B\), \(\varepsilon=-\frac{A+B}{2}\)<br>
+\(\because\lim\limits_{n\to\infty}a_n=A\)<br>
+\(\therefore\exist N_1&gt;0\), 当 \(n&gt;N_1\) 时,<br>
+\(\mskip{1em}\)➀ \(|a_n-A|&lt;\varepsilon\Harr\frac{3A+B}{2}&lt;a_n&lt;\frac{A-B}{2}\)<br>
+\(\because\lim\limits_{n\to\infty}a_n=B\)<br>
+\(\therefore\exist N_2&gt;0\), 当 \(n&gt;N_2\) 时,<br>
+\(\mskip{1em}\)➁ \(|a_n-B|&lt;\varepsilon\Harr\frac{A-B}{2}&lt;a_n&lt;\frac{-A+B}{2}\)<br>
+取 \(N=\operatorname{max}\{N_1,N_2\}\), 当 \(n&lt;N_2\) 时, ➀、➁ 都成立, 但这两个不等式没有交集, 矛盾, 所以 \(A&gt;B\) 不对, 同理 \(B&gt;A\) 也不对.<br>
+\(\therefore A=B\), 极限值只有一个.</p>
+</blockquote>
+</li>
+<li>有界性: 有极限一一定有界, 有界不一定有极限(必须得是单调有界)<br>
+若 \(\lim\limits_{n\to\infty}a_n=A\), 则 \(\exist M&gt;0\), 使得 \(|a_n|\leqslant M\), <strong>反之不成立</strong>.
+<blockquote>
+<p>证明:</p>
+<ul>
+<li>\(\rArr\)<br>
+取任意 \(\varepsilon&gt;0\)<br>
+\(\because\lim\limits_{n\to\infty}a_n=A\)<br>
+\(\therefore\exist N&gt;0\), 当 \(n&gt;N\) 时 , \(|a_n-A|&lt;\varepsilon\)<br>
+\(\because||a_n|-|A||\leqslant|a_n-A|\) (三角不等式)<br>
+\(\therefore\) 当 \(n&gt;N\) 时, \(||a_n|-|A||&lt;\varepsilon\rArr|a_n|&lt;\varepsilon+|A|\)<br>
+取 \(M=\operatorname{max}\{|a_1|,|a_2|,\dots,|a_n|,\varepsilon+|A|\}\), 对于 \(\forall n\), 有 \(|a_n|\leqslant M\)</li>
+<li>\(\nLeftarrow\)<br>
+取 \(a_n=1+(-1)^n\), 有 \(|a_n|\leqslant 2\), 但 \(\lim\limits_{n\to\infty}a_n\) 不存在</li>
+</ul>
+</blockquote>
+</li>
+<li>保号性:<br>
+若 \(\lim\limits_{n\to\infty}a_n=A\begin{cases} &gt;0 \\ &lt;0 \end{cases}\), 则 \(\exist N&gt;0\), 当 \(n&gt;N\) 时, \(a_n\begin{cases} &gt;0 \\ &lt;0 \end{cases}\)
+<blockquote>
+<p>证明:</p>
+<ol>
+<li>若 \(A&gt;0\), 取 \(\varepsilon=\frac{A}{2}&gt;0\)<br>
+\(\because\lim\limits_{n\to\infty}a_n=A\)<br>
+\(\therefore\exist N&gt;0\), 当 \(n&gt;N\) 时,<br>
+\(\mskip{1em}|a_n-A|&lt;\frac{A}{2}\hArr\frac{A}{2}&lt;a_n&lt;\frac{3A}{2}\rArr a_n&gt;\frac{A}{2}&gt;0\)</li>
+<li>若 \(A&lt;0\), 取 \(\varepsilon=-\frac{A}{2}&gt;0\)<br>
+\(\because\lim\limits_{n\to\infty}a_n=A\)<br>
+\(\therefore\exist N&gt;0\), 当 \(n&gt;N\) 时,<br>
+\(\mskip{1em}|a_n-A|&lt;-\frac{A}{2}\hArr\frac{3A}{2}&lt;a_n&lt;\frac{A}{2}\rArr a_n&lt;\frac{A}{2}&lt;0\)</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="函数极限">函数极限</h3>
+<ol>
+<li>定义
+<ul>
+<li>\(\varepsilon-\delta\) 语言定义法: (\(\varepsilon\) 为值域的误差, \(\delta\) 为定义域的误差)<br>
+若 \(\forall\varepsilon&gt;0\), \(\exist\delta&gt;0\), 当 \(|x-a|&lt;\delta\) 时 \(|f(x)-A|&lt;\varepsilon\),<br>
+称 \(f(x)\) 当 \(x\to 0\) 时以 \(A\) 为极限<br>
+记作 \(\lim\limits_{x\to a}f(x)=A\) 或 \(f(x)\to A\enspace(x\to a)\)</li>
+<li>\(\varepsilon-X\) 语言定义法: (\(X\) 为定义域极限存在临界点)<br>
+若 \(\forall\varepsilon&gt;0\), \(\exist X&gt;0\)
+<ol>
+<li>当 \(x&gt;X\) 时, \(|f(x)-A|&lt;\varepsilon\), \(\lim\limits_{x\to+\infty}f(x)=A\)</li>
+<li>当 \(x&lt;-X\) 时, \(|f(x)-A|&lt;\varepsilon\), \(\lim\limits_{x\to-\infty}f(x)=A\)</li>
+<li>当 \(|x|&gt;X\) 时, \(|f(x)-A|&lt;\varepsilon\), \(\lim\limits_{x\to\infty}f(x)=A\)</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>性质
+<ol>
+<li>唯一性(函数有极限必唯一)
+<blockquote>
+<p>证明:<br>
+设 \(\lim\limits_{x\to a}f(x)=A\), \(\lim\limits_{x\to a}f(x)=B\)<br>
+不妨设 \(A&gt;B\), 取 \(\varepsilon=\frac{A-B}{2}&gt;0\)<br>
+\(\because\lim\limits_{x\to a}f(x)=A\)<br>
+\(\therefore\exist\delta_1&gt;0\), 当 \(|x-a|&lt;\delta_1\) 时,<br>
+\(\mskip{1em}\)➀ \(|f(x)-A|&lt;\frac{A-B}{2}\hArr\frac{A+B}{2}&lt;f(x)&lt;\frac{3A-B}{2}\)<br>
+又 \(\because\lim\limits_{x\to a}f(x)=B\)<br>
+\(\therefore\exist\delta_2&gt;0\), 当 \(|x-a|&lt;\delta_2\) 时,<br>
+\(\mskip{1em}\)➁ \(|f(x)-B|&lt;\frac{A-B}{2} \hArr \frac{3B-A}{2}&lt;f(x)&lt;\frac{A+B}{2}\)<br>
+取 \(\delta=\operatorname{min}\{\delta_1,\delta_2\}\), 当 \(|x-a|&lt;\delta\) 时 ➀、➁ 皆成立, 矛盾.<br>
+\(\therefore A&gt;B\) 不对, 同理 \(A&lt;B\) 也不对.<br>
+\(\therefore A=B\), 极限值只有一个.</p>
+</blockquote>
+</li>
+<li>局部有界性:<br>
+设 \(\lim\limits_{x\to a}f(x)=A\), \(\exist\delta&gt;0\)、\(M&gt;0\), 当 \(|x-a|&lt;\delta\) 时, \(|f(x)|\leqslant M\)
+<blockquote>
+<p>证明:<br>
+取任意 \(\varepsilon&gt;0\)<br>
+\(\because\lim\limits_{x\to a}f(x)=A\)<br>
+\(\therefore\exist\delta&gt;0\), 当 \(|x-a|&lt;\delta\) 时, \(|f(x)-A|&lt;\varepsilon\)<br>
+又 \(\because||f(x)|-|A||\leqslant|f(x)-A|\) (三角不等式)<br>
+\(\therefore\) 当 \(|x-a|&lt;\delta\) 时,<br>
+\(\mskip{1em}||f(x)|-|A||&lt;\varepsilon\rArr|f(x)|&lt;\varepsilon+|A|(=M)\)<br>
+\(\therefore\) 当 \(|x-a|&lt;\delta\) 时, \(|f(x)|\leqslant M\)</p>
+</blockquote>
+</li>
+<li>保号性:<br>
+设 \(\lim\limits_{x\to a}f(x)=A\begin{cases} &gt;0 \\ &lt;0 \end{cases}\), 则 \(\exist\delta&gt;0\), 当 \(|x-a|&lt;\delta\) 时, \(f(x)\begin{cases} &gt;0 \\ &lt;0 \end{cases}\)
+<blockquote>
+<p>证明:</p>
+<ol>
+<li>若 \(A&gt;0\), 取 \(\varepsilon=\frac{A}{2}&gt;0\)<br>
+\(\because\lim\limits_{x\to a}f(x)=A\)<br>
+\(\therefore\exist\delta&gt;0\), 当 \(|x-a|&lt;\delta\) 时 \(|f(x)-A|&lt;\frac{A}{2}\rArr f(x)&gt;\frac{A}{2}&gt;0\)</li>
+<li>若 \(A&lt;0\), 取 \(\varepsilon=-\frac{A}{2}&gt;0\)<br>
+\(\because\lim\limits_{x\to a}f(x)=A\)<br>
+\(\therefore\exist\delta&gt;0\), 当 \(|x-a|&lt;\delta\) 时 \(|f(x)-A|&lt;-\frac{A}{2}\rArr f(x)&lt;\frac{A}{2}&lt;0\)</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>Notes:
+<ol>
+<li>\(\{x|0&lt;|x-a|&lt;\delta\}\) 可表示为 \(\mathring{\bigcup}(a\cdot\delta)\) (读作 \(a\) 的去心 \(\delta\) 邻域)
+</li>
+<li>\(x\to a\) 时 \(\begin{cases} x\to a^- \\ x\to a^+ \end{cases}\)</li>
+<li>左极限与右极限<br>
+若 \(\forall\varepsilon&gt;0\), \(\exist\delta&gt;0\)
+<ol>
+<li>当 \(x\in(a-\delta,a)\) 时 \(|f(x)-A|&lt;\varepsilon\),<br>
+此时 \(A\) 称为 \(f(x)\) 在 \(x=a\) 处左极限,<br>
+记为 \(\lim\limits_{x\to a^-}f(x)=A\) 或 \(f(a-0)=A\)</li>
+<li>当 \(x\in(a,a+\delta)\) 时 \(|f(x)-B)|&lt;\varepsilon\),<br>
+此时 \(B\) 称为 \(f(x)\) 在 \(x=a\) 处右极限,<br>
+记为 \(\lim\limits_{x\to a^+}f(x)=B\) 或 \(f(a+0)=B\)</li>
+</ol>
+</li>
+<li>\(\lim\limits_{x\to a}f(x)\) 意味着左右极限存在且相等</li>
+<li>\(\lim\limits_{x\to a}f(x)\) 与 \(f(a)\) 无关 (除非该点连续)<br>
+如:
+<ol>
+<li>分段函数 \(f(x)=\begin{cases} x-1 &amp; x&lt;0 \\ 0 &amp; x=0 \\ 2x-1 &amp; x&gt;0 \end{cases}\), 它的极限为 \(\begin{cases} \lim\limits_{x\to 0^+}f(x)=-1 \\ \lim\limits_{x\to 0^-}f(x)=-1 \end{cases}\rArr\lim\limits_{x\to 0}f(x)=-1\), 但 \(f(0)=0\)</li>
+<li>\(\lim\limits_{x\to 2}\frac{x^2-4}{x-2}=\lim\limits_{x\to 2}(x+2)=4\), 但 \(f(2)\) 时分母为零</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="无穷小与无穷大">无穷小与无穷大</h3>
+<ol>
+<li>无穷小
+<ol>
+<li>\(\varepsilon-\delta\) 定义: 若 \(\forall\varepsilon&gt;0\), \(\exist\delta&gt;0\), 当 \(|x-x_0|&lt;\delta\) 时 , \(|\alpha(x)-0|   &lt;\varepsilon\), 称 \(\alpha(x)\) 在 \(x\to x_0\) 时无穷小, 记 \(\lim\limits_{x\to x_0}\alpha(x)=0\)</li>
+<li>常规性质:
+<ol>
+<li>若 \(\alpha\to 0\), \(\beta\to 0\), 则 \(\begin{cases} \alpha\pm\beta\to 0 \\ k\alpha\to 0 \\ \alpha\beta\to0 \end{cases}\)</li>
+<li>无穷小乘有界函数还是无穷小: \(\alpha\to 0\), \(|\beta|\leqslant M\), 则 \(\alpha\beta\to 0\)</li>
+<li>(重要)任意极限加无穷小还是原极限 \(\lim\limits_{x\to x_0}f(x)=A \hArr \lim\limits_{x\to x_0}f(x)=A+\alpha\enspace(\alpha\to 0)\)</li>
+</ol>
+</li>
+<li>注意: 0 是无穷小, 但无穷小不一定为 0</li>
+</ol>
+</li>
+<li>无穷大
+<ul>
+<li>\(\varepsilon-\delta\) 定义: 若 \(\forall M&gt;0\), \(\exist\delta&gt;0\), 当 \(|x-x_0|&lt;\delta\) 时, \(|f(x)|\geqslant M\),<br>
+称 \(f(x)\) 在 \(x\to x_0\) 时无穷大, 记作 \(\lim\limits_{x\to x_0}f(x)=\infty\)</li>
+<li>\(\varepsilon-X\) 定义: 若 \(\forall M&gt;0\), \(\exist X&gt;0\), 当 \(x&gt;X\) 时, \(|f(x)|\geqslant M\),<br>
+称 \(f(x)\) 在 \(x\to +\infty\) 时无穷大, 记作 \(\lim\limits_{x\to+\infty}f(x)=\infty\)</li>
+</ul>
+</li>
+<li>无穷小与无穷大的关系: \(\lim\limits_{x\to x_0}f(x)=0\hArr\lim\limits_{x\to x_0}\frac{1}{f(x)}=\infty\)</li>
+</ol>
+<h3 id="极限的运算法则">极限的运算法则</h3>
+<ol>
+<li>四则极限法则<br>
+有 \(\lim\limits_{x\to x_0}f(x)=A\), \(\lim\limits_{x\to x_0}g(x)=B\)
+<ol>
+<li>加减: \(\lim\limits_{x\to x_0}[f(x)\pm g(x)]=\lim\limits_{x\to x_0}f(x)\pm\lim\limits_{x\to x_0}g(x)=A\pm B\)</li>
+<li>数乘: \(\lim\limits_{x\to x_0}kf(x)=k\lim\limits_{x\to x_0}f(x)=kA\)</li>
+<li>乘法: \(\lim\limits_{x\to x_0}[f(x)g(x)]=\lim\limits_{x\to x_0}f(x)\cdot\lim\limits_{x\to x_0}g(x)=AB\)</li>
+<li>除法: \(\lim\limits_{x\to x_0}\frac{f(x)}{g(x)}=\frac{\lim\limits_{x\to x_0}f(x)}{\lim\limits_{x\to x_0}g(x)}=\frac{A}{B}\)<br>
+若最后是无穷大比无穷大, 极限除法的值以最高阶系数为准:<br>
+设 \(P(x)=a_nx^n+\dots+a_1x+a_0\), \(Q(x)=b_mx^m+\dots+b_1x+b_0\)<br>
+则 \(\lim\limits_{x\to\infty}\frac{P(x)}{Q(x)}=\begin{cases} \frac{a_n}{b_m} &amp; n=m \\ \infty &amp; n&gt;m \\ 0 &amp; n&lt;m \end{cases}\)</li>
+</ol>
+</li>
+<li>复合函数极限法则:<br>
+设 \(u=\varphi(x)\neq a\), \(\lim\limits_{u\to a}f(u)=A\), \(\lim\limits_{x\to x_0}\varphi(x)=a\), 则 \(\lim\limits_{x\to x_0}f[g(x)]=A\)</li>
+</ol>
+<h3 id="极限存在法则和两个重要极限">极限存在法则和两个重要极限</h3>
+<ol>
+<li>极限存在准则
+<ol>
+<li>夹逼定理
+<ol>
+<li>数列型:<br>
+若 \(\begin{cases} a_n\leqslant b_n\leqslant c_n \\ \lim\limits_{n\to\infty}a_n=\lim\limits_{n\to\infty}c_n=A \end{cases}\)<br>
+则 \(\lim\limits_{n\to\infty}b_n=A\)
+<blockquote>
+<p>证明方法: 利用 \(\varepsilon−N\) 定义推出 \(A-\varepsilon&lt;b_n&lt;A+\varepsilon\rArr|b_n-A|&lt;\varepsilon\)</p>
+</blockquote>
+</li>
+<li>函数型:<br>
+设 \(\begin{cases} f(x)\leqslant g(x)\leqslant h(x) \\ \lim f(x)=\lim h(x)=A \end{cases}\)<br>
+则 \(\lim g(x)=A\)</li>
+</ol>
+</li>
+<li>单调有界数列必有极限
+<ul>
+<li>\(\{a_n\}\) 有界 \(\hArr\{a_n\}\) 有上下界</li>
+<li>若 \(\{a_n\}\) 单调递增: \(\begin{cases} \text{有上界}\rArr\lim\limits_{n\to\infty}a_n \text{存在} \\ \text{无上界}\rArr\lim\limits_{n\to\infty}a_n\text{不存在} \end{cases}\)</li>
+<li>若 \(\{a_n\}\) 单调递减: \(\begin{cases} \text{有下界}\rArr\lim\limits_{n\to\infty}a_n \text{存在} \\ \text{无下界}\rArr\lim\limits_{n\to\infty}a_n\text{不存在} \end{cases}\)</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>两个重要极限
+<ol>
+<li>
+<p>\(\lim\limits_{x\to 0}\frac{\sin x}{x}=1\)<br>
+证明:</p>
+
+<p>设 \(0&lt;x&lt;\frac{\pi}{2}\)<br>
+\(S_{\triangle AOB}=\frac{1}{2}\sin x\)<br>
+\(S_{扇形AOB}=\frac{1}{2}x\)<br>
+\(S_{RT\triangle AOC}=\frac{1}{2}\tan x\)<br>
+\(\therefore\) 结合图片和三者面积公式可得 \(\sin x&lt;x&lt;\tan x \rArr 1&lt;\frac{x}{\sin x}&lt;\frac{1}{\cos x}\)<br>
+\(\because\lim\limits_{x\to0}\cos x=1\)<br>
+\(\therefore\lim\limits_{x\to0}\frac{1}{\cos x}=1\), \(\lim\limits_{x\to0}1=1\rArr\lim\limits_{x\to 0}\frac{x}{\sin x}=1\) (夹逼定理) \(\rArr\lim\limits_{x\to 0}\frac{\sin x}{x}=1\)</p>
+</li>
+<li>
+<p>欧拉数 \(e\) 的定义: \(\lim\limits_{n\to\infty}(1+\frac{1}{n})^n=e\)</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="无穷小的比较">无穷小的比较</h3>
+<ol>
+<li>无穷小的比较<br>
+\(\alpha\to 0\), \(\beta\to 0\)<br>
+若 \(\lim\frac{\beta}{\alpha}=0\), 称 \(\beta\) 为 \(\alpha\) 的高阶无穷小, 记 \(\beta=o(\alpha)\)<br>
+若 \(\lim\frac{\beta}{\alpha}=\infty\), 称 \(\beta\) 为 \(\alpha\) 的低阶无穷小<br>
+若 \(\lim\frac{\beta}{\alpha^k}=k\enspace(k\neq 0,\infty)\), 称 \(\beta\) 为 \(\alpha\) 的 \(k\) 阶无穷小<br>
+若 \(\lim\frac{\beta}{\alpha}=k\enspace(k\neq 0,\infty)\), 称 \(\beta\) 为 \(\alpha\) 的同阶无穷小, 记 \(\beta=O(\alpha)\)<br>
+若 \(\lim\frac{\beta}{\alpha}=1\), 称 \(\beta\) 为 \(\alpha\) 的等价无穷小, 记 \(\beta\sim\alpha\)<br>
+等价无穷小是同阶无穷小的充分不必要条件</li>
+<li>等价无穷小的性质<br>
+\(\alpha\to 0\), \(\beta\to 0\)
+<ol>
+<li>\(\alpha\sim\beta\hArr\beta=\alpha+o(\alpha)\)</li>
+<li>若 \(\alpha\sim\alpha_1\), \(\beta\sim\beta_1\), \(\lim\frac{\beta_1}{\alpha_1}=A\), 则 \(\lim\frac{\beta}{\alpha}=A\)</li>
+</ol>
+</li>
+<li>常用等价无穷小 (\(x\to 0\))
+<ol>
+<li>\(x\sim\sin x\), \(x\sim\tan x\), \(x\sim\arcsin x\), \(x\sim\arctan x\), \(x\sim\ln(1+x)\), \(x\sim e^x-1\)</li>
+<li>\(1-\cos x\sim\frac{x^2}{2}\)</li>
+<li>\((1+x)^a-1\sim ax\)</li>
+</ol>
+</li>
+</ol>
+<h3 id="函数的连续性与间断点">函数的连续性与间断点</h3>
+<p>函数连续是极限存在的充分不必要条件, 因为间断不代表极限不存在</p>
+<ol>
+<li>连续
+<ol>
+<li>
+<p>函数在一点连续: \(\lim\limits_{x\to a}f(x)=f(a)\) 或 \(f(a-0)=f(a+0)=f(a)\)<br>
+若 \(f(a-0)=f(a)\), 称 \(f(a)\) 在 \(x=a\) 左连续<br>
+若 \(f(a+0)=f(a)\), 称 \(f(a)\) 在 \(x=a\) 右连续</p>
+</li>
+<li>
+<p>函数在闭区间连续:<br>
+\(f(x)\) 在 \([a,b]\) 上有定义, 若:</p>
+<ol>
+<li>\(f(x)\) 在 \((a,b)\) 内处处连续</li>
+<li>\(f(a)=f(a+0)\), \(f(b)=f(b-0)\)</li>
+</ol>
+<p>则称 \(f(x)\) 在 \([a,b]\) 上连续, 记 \(f(x)\in C[a,b]\)</p>
+</li>
+</ol>
+</li>
+<li>间断点及分类
+<ol>
+<li>间断: 若 \(\lim\limits_{x\to a}f(x)\neq f(a)\), 称 \(f(x)\) 在 \(x=a\) 间断</li>
+<li>分类:
+<ol>
+<li>第一类间断点: \(f(a-0)\), \(f(a+0)\) 皆存在
+<ul>
+<li>
+<p>可去间断点: \(f(a-0)=f(a+0)\neq f(a)\)</p>
+
+</li>
+<li>
+<p>跳跃间断点: \(f(a-0)\neq f(a+0)\)</p>
+
+<p>如 \(\lim\limits_{x\to 0^-}e^\frac{1}{x}=0\), \(\lim\limits_{x\to 0^+}e^\frac{1}{x}=+\infty\)</p>
+</li>
+</ul>
+</li>
+<li>第二类间断点: \(f(a-0)\), \(f(a+0)\) 至少一个不存在</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="连续函数运算及初等函数连续性">连续函数运算及初等函数连续性</h3>
+<ol>
+<li>连续函数运算
+<ol>
+<li>
+<p>四则运算<br>
+\(f(x)\), \(g(x)\) 在 \(x=x_0\) 处连续, 则</p>
+<ol>
+<li>\(f(x)\pm g(x)\) 在 \(x=x_0\) 处连续</li>
+<li>\(f(x)g(x)\) 在 \(x=x_0\) 处连续</li>
+<li>\(\frac{f(x)}{g(x)}\) 在 \(x=x_0\) 处连续 \((g(x)\neq 0)\)</li>
+</ol>
+<p>(证明思路是证明该点处极限与函数实际取该点值相等, 也就是上节讲到的函数连续定义)</p>
+</li>
+<li>
+<p>复合运算<br>
+\(f(u)\), \(u=\varphi(x)\neq a\)<br>
+若 \(\lim\limits_{u\to a}f(u)=f(a)\), \(\lim\limits_{x\to x_0}\varphi(x)=a\), 则 \(\lim\limits_{x\to x_0}f[\varphi(x)]=f[\lim\limits_{x\to x_0}\varphi(x)]=f(a)\)</p>
+</li>
+</ol>
+</li>
+<li>初等函数连续性: 基本初等函数、初等函数在其定义域内连续</li>
+</ol>
+<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
+<ol>
+<li>最值定理<br>
+\(f(x)\in C[a,b]\)<br>
+\(f(x)\) 在 \([a,b]\) 上取到最小值 \(m\) 和最大值 \(M\)<br>
+即 \(\exist x_1,x_2\in[a,b]\), 使 \(f(x_1)=m\), \(f(x_2)=M\)</li>
+<li>有界定理<br>
+\(f(x)\in C[a,b]\)<br>
+\(\exist k&gt;0\), 使 \(\forall x\in[a,b]\) 有 \(|f(x)|\leqslant k\)</li>
+<li>零点定理<br>
+\(f(x)\in C[a,b]\)<br>
+若 \(f(a)f(b)&lt;0\)<br>
+\(\exist c\in[a,b]\) 使 \(f(c)=0\)</li>
+<li>介值定理<br>
+\(f(x)\in C[a,b]\)<br>
+\(\forall\eta\in[m,M]\), \(\exist\xi\in[a,b]\) 使 \(f(\xi)=\eta\)</li>
+</ol>
+<h2 id="导数与微分">导数与微分</h2>
+<h3 id="导数的概念">导数的概念</h3>
+<ol>
+<li>
+<p>导数定义<br>
+设 \(y=f(x)\enspace(x\in D)\), \(\Delta y=f(x_0+\Delta x)-f(x_0)\enspace(x_0,(x_0+\Delta x)\in D)\)<br>
+若 \(\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}\) 存在, 称 \(f(x)\) 在 \(x=x_0\) 处可导, 该极限称为 \(f(x)\) 在 \(x=x_0\) 处的导数, 记 \(f^\prime(x_0)\) 或 \(\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x=x_0}\)</p>
+<div>
+$$
+f^\prime(x_0)=\lim\limits_{\Delta x\to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}=\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}
+$$
+</div>
+<p>(证明方法: 代入 \(\Delta x=x-x_0\))</p>
+</li>
+<li>
+<p>导函数定义: \(f^\prime(x)=\lim\limits_{\Delta x\to0}\frac{f(x+\Delta x)-f(x)}{\Delta x}=\frac{\mathrm{d}y}{\mathrm{d}x}\)</p>
+</li>
+<li>
+<p>注意:</p>
+<ol>
+<li>可导时左右导数存在且相等<br>
+左导数: \(\left.\begin{array}{c} \lim\limits_{\Delta x\to 0^-}\frac{\Delta y}{\Delta x} \\ \lim\limits_{x\to x_0^-}\frac{f(x)-f(x_0)}{x-x_0} \end{array}\right\} =f_-^\prime(x_0)\)<br>
+右导数: \(\left.\begin{array}{c} \lim\limits_{\Delta x\to 0^+}\frac{\Delta y}{\Delta x} \\ \lim\limits_{x\to x_0^+}\frac{f(x)-f(x_0)}{x-x_0} \end{array}\right\} =f_+^\prime(x_0)\)</li>
+<li>可导一定连续, 连续不一定可导.<br>
+(因为连续函数在点 \(f^\prime(x)=0\) 处不可导, 如正弦曲线的 \(y=1\) 处左右导数不同)</li>
+</ol>
+</li>
+</ol>
+<h4 id="常见初等函数的导函数">常见初等函数的导函数</h4>
+<ol>
+<li>\(C^\prime=0\)</li>
+<li>\((x^n)^\prime=nx^{n-1}\)</li>
+<li>\((a^x)^\prime=a^x\ln a\)<br>
+<strong>特别地</strong> \((e^x)^\prime=e^x\)</li>
+<li>\((\log_a x)^\prime=\frac{1}{x\ln a}\)<br>
+\((\ln x)^\prime=\frac{1}{x}\)</li>
+<li>\((\sin x)^\prime=\cos x\)<br>
+\((\cos x)^\prime=-\sin x\)<br>
+\((\tan x)^\prime=\sec^2x\)<br>
+\((\cot x)^\prime=-\csc^2x\)<br>
+\((\sec x)^\prime=\sec x\tan x\)<br>
+\((\csc x)^\prime=-\csc x\cot x\)</li>
+<li>\((\arcsin x)^\prime=\frac{1}{\sqrt{1-x^2}}\)<br>
+\((\arccos x)^\prime=-\frac{1}{\sqrt{1-x^2}}\)<br>
+\((\arctan x)^\prime=\frac{1}{1+x^2}\)<br>
+\((\operatorname{arccot}x)^\prime=-\frac{1}{1+x^2}\) <!-- katex好像没有\arccot --></li>
+<li>\((\sin x)^{(n)}=\sin(x+\frac{nx}{2})\)<br>
+\((\cos x)^{(n)}=\cos(x+\frac{nx}{2})\)<br>
+\((\frac{1}{ax+b})^{(n)}=(-1)^n n!\frac{a^n}{(ax+b)^{n+1}}\)</li>
+</ol>
+<blockquote>
+<p>证明:<br>
+第一步代入 \(f^\prime(x)=\lim\limits_{\Delta x\to0}\frac{f(x+\Delta x)-f(x)}{\Delta x}\)</p>
+<ol>
+<li>
+<p>\((x^n)^\prime=nx^{n-1}\) 会用到二项式展开式</p>
+</li>
+<li>
+<p>\((a^x)^\prime=a^x\ln a\) 会用到 \(x=e^{\ln x}\) 和 \(x\sim(e^x-1)\)</p>
+</li>
+<li>
+<p>\((\log_a x)^\prime=\frac{1}{x\ln a}\)</p>
+<div>
+$$
+f^\prime(x)=\dfrac{\mathrm{d}y}{\mathrm{d}x}
+=\overbrace{\dfrac{\log_a(x+\mathrm{d}x)-\log_a x}{\mathrm{d}x}=\dfrac{\log_a(\frac{x+\mathrm{d}x}{x})}{\mathrm{d}x}}^{\log_a \frac{M}{N}
+=\log_a M-\log_a N}=\dfrac{\log_a(1+\frac{\mathrm{d}x}{x})}{\mathrm{d}x}
+=\overbrace{\dfrac{\frac{\ln(1+\frac{\mathrm{d}x}{x})}{\ln a}}{\mathrm{d}x}}^{\log_a N=\frac{\log_b N}{\log_b a}}
+=\overbrace{\dfrac{\frac{\frac{\mathrm{d}x}{x}}{\ln a}}{\mathrm{d}x}}^{x\sim\ln(1+x)}=\dfrac{1}{x\ln a}
+$$
+</div>
+</li>
+<li>
+<div>
+$$
+\lim\limits_{\Delta x\to 0}\frac{\sin(x+\Delta x)-\sin x}{\Delta x}
+=\underbrace{\lim\limits_{\Delta x\to 0}\frac{\sin x\cos\Delta x+\cos x\sin\Delta x-\sin x}{\Delta x}}_{\text{和差角公式}}
+=\lim\limits_{\Delta x\to 0}\frac{\sin x(\cos\Delta x-1)}{\Delta x}+\cos x\lim\limits_{\Delta x\to 0}\underbrace{\frac{\sin\Delta x}{\Delta x}}_{x\sim\sin x}=\cos x 
+$$
+</div>
+<p>\((\cos x)^\prime\) 的证明也同理<br>
+后面的都是将其化为 \(\sin x\) 和 \(\cos x\) 的形式然后利用求导的四则运算法则证明 (如 \(\sec x=\frac{1}{\cos x}\)、\(\csc x=\frac{1}{\sin x}\))</p>
+</li>
+<li>
+<p>使用<a href="#%E5%8F%8D%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99">反函数求导法则</a>:<br>
+这里只证明 \(\arcsin x\)<br>
+\(f(x):y=\arcsin x\), \(\varphi(y):x=\sin y\)<br>
+\(f^\prime(x)=\frac{1}{\varphi^\prime(y)}\rArr(\arcsin x)^\prime=\dfrac{1}{\cos y}=\underbrace{\frac{1}{\sqrt{1-\sin^2 y}}}_{\text{平方关系式}}=\underbrace{\frac{1}{\sqrt{1-x^2}}}_{\text{带入} x=\sin y}\)</p>
+</li>
+<li>
+<p>使用高阶导数归纳法 <span id="induction_method"></span></p>
+<ol>
+<li>\(f(x)=\sin x\)<br>
+\(f^\prime(x)=\cos x=\sin(x+\frac{\pi}{2})\)<br>
+\(f^{\prime\prime}(x)=-\sin x=\sin(x+\frac{2\pi}{2})\)<br>
+\(f^{\prime\prime\prime}(x)=-\cos x=\sin(x+\frac{3\pi}{2})\)<br>
+\(f^{(4)}(x)=\sin x=\sin(x+\frac{4\pi}{2})\)<br>
+\(\therefore f^{(n)}(x)=\sin(x+\frac{nx}{2})\)<br>
+同理 \((\cos x)^{(n)}=\cos(x+\frac{nx}{2})\)</li>
+<li>\(f(x)=(2x+1)^{-1}\)<br>
+\(f^\prime(x)=(-1)(2x+1)^{-2}\times 2\)<br>
+\(f^{\prime\prime}(x)=(-1)(-2)(2x+1)^{-3}\times 2^2\)<br>
+\(\therefore f^{(n)}(x)=(-1)^n\times n! \times 2^n \times (2x+1)^{-(n+1)}\)</li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<h3 id="求导法则">求导法则</h3>
+<ol>
+<li>
+<p>四则法则<br>
+设 \(u(x)\), \(v(x)\) 可导, 则</p>
+<ol>
+<li>加减: \([u(x)\pm v(x)]^\prime=u^\prime(x)\pm v^\prime(x)\)</li>
+<li>数乘: \((ku)^\prime=ku^\prime\)</li>
+<li>乘: \([u(x)v(x)]^\prime=u^\prime(x)v(x)+u(x)v^\prime(x)\)</li>
+<li>除: \([\frac{u(x)}{v(x)}]^\prime=\frac{u^\prime(x)v(x)-u(x)v^\prime(x)}{v^2(x)}\enspace(v(x)\neq 0)\)<br>
+推论: \((uvw)^\prime=u^\prime vw+uv^\prime w+uvw^\prime\)</li>
+</ol>
+<blockquote>
+<p>证明:</p>
+<ol>
+<li>
+<p>令 \(\varphi(x)=u(x)+v(x)\)<br>
+\(\begin{array}{rl} \Delta\varphi &amp; =\varphi(x+\Delta x)-\varphi(x) \\ &amp; =u(x+\Delta x)+v(x+\Delta x)-u(x)-v(x) \\ &amp; =\Delta u+\Delta v \end{array}\)<br>
+\(\lim\limits_{\Delta x\to0}\frac{\Delta\varphi}{\Delta x}=\lim\limits_{\Delta x\to0}\frac{\Delta u}{\Delta x}+\lim\limits_{\Delta x\to 0}\frac{\Delta v}{\Delta x}=u^\prime(x)+v^\prime(x)\)</p>
+</li>
+<li>
+<p>令 \(\varphi(x)=u(x)v(x)\)</p>
+<div>
+$$
+\begin{array}{rl}
+ \footnotesize\Delta\varphi & \footnotesize=\varphi(x+\Delta x)-\varphi(x) \\
+ & \footnotesize=u(x+\Delta x)v(x+\Delta x)-u(x)v(x) \\
+ & \footnotesize=u(x+\Delta x)v(x+\Delta x)-u(x)v(x+\Delta x)+u(x)v(x+\Delta x)-u(x)v(x) \\
+ & \footnotesize=\Delta uv(x+\Delta x)+u(x)\Delta v
+\end{array}
+$$
+</div>
+<p>\(\begin{array}{rl} \lim\limits_{\Delta x\to 0}\frac{\Delta\varphi}{\Delta x} &amp; =\lim\limits_{\Delta x\to 0}\frac{\Delta u}{\Delta x}\cdot\lim\limits_{\Delta x\to 0}v(x+\Delta x)+u(x)\lim\limits_{\Delta x\to0}\frac{\Delta v}{\Delta x} \\ &amp; =u^\prime(x)v(x)+u(x)v^\prime(x) \end{array}\)<br>
+提示: \(\lim\limits_{\Delta x\to0}v(x+\Delta x)=v(x)\)</p>
+</li>
+<li>
+<p>令 \(\varphi(x)=\dfrac{u(x)}{v(x)}\enspace(v(x)\neq 0)\)</p>
+<div>
+$$
+\begin{array}{rl}
+ \footnotesize\Delta\varphi=\varphi(x+\Delta x)-\varphi(x) & =\frac{u(x+\Delta x)}{v(x+\Delta x)}-\frac{u(x)}{v(x)} \\
+ & =\frac{u(x+\Delta x)v(x)-v(x+\Delta x)u(x)}{v(x+\Delta x)v(x)} \\
+ & =\frac{[u(x+\Delta x)v(x)-u(x)v(x)]-[u(x)v(x+\Delta x)-u(x)v(x)]}{v(x+\Delta x)v(x)} \\
+ & =\frac{\Delta uv(x)-u(x)\Delta v}{v(x+\Delta x)v(x)}
+\end{array}
+$$
+</div>
+<p>\(\lim\limits_{\Delta x\to 0}\frac{\Delta\varphi}{\Delta x}=\frac{\lim\limits_{\Delta x\to 0}\frac{\Delta u}{\Delta x}\cdot v(x)-u(x)\cdot\lim\limits_{\Delta x\to0}\frac{\Delta v}{\Delta x}}{v(x)\lim\limits_{\Delta x\to0}v(x+\Delta x)}=\frac{u^\prime(x)v(x)-u(x)v^\prime(x)}{v^2(x)}\)<br>
+提示: \(\lim\limits_{\Delta x\to 0}v(x+\Delta x)=v(x)\)</p>
+</li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p>反函数求导法则<br>
+\(y=f(x)\) 可导且 \(f(x)^\prime\neq 0\) (导数不为零意味着严格单调, 即反函数存在条件),<br>
+则反函数 \(x=\varphi(y)\) 可导且 \(\varphi^\prime(y)=\frac{1}{f^\prime(x)}\)</p>
+<blockquote>
+<p>证明:<br>
+\(\varphi^\prime(y)=\lim\limits_{\Delta y\to 0}\frac{\Delta x}{\Delta y}=\lim\limits_{\Delta y\to 0}\frac{1}{\frac{\Delta y}{\Delta x}}=\underbrace{\lim\limits_{\Delta x\to 0}}_{\text{式➀}}\frac{1}{\frac{\Delta y}{\Delta x}}=\frac{1}{f^\prime(x)}\)<br>
+➀ \(\lim\limits_{\Delta x\to0}\frac{\Delta y}{\Delta x}\neq 0,\infty\rArr\Delta y=O(\Delta x)\) 同阶无穷小</p>
+</blockquote>
+</li>
+<li>
+<p>复合函数求导法则<br>
+(如何判断复合函数: 看其中一个函数的值域是否是另一个函数的定义域的子集)<br>
+\(y=f(u)\) 可导, \(u=\varphi(x)\) 可导且 \(\varphi^\prime(x)\neq 0\), 则 \(y=f(\varphi(x))\) 可导<br>
+有 \(f[\varphi(x)]^\prime=f^\prime[\varphi(x)]\varphi^\prime(x)\)</p>
+<blockquote>
+<p>证明:</p>
+<ul>
+<li>
+<p>用极限:</p>
+<div>
+$$
+\begin{array}{rl}
+f[\varphi(x)]^\prime & =\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x} \\
+& =\lim\limits_{\Delta x\to 0}(\frac{\Delta y}{\Delta u}\cdot\frac{\Delta u}{\Delta x}) \\
+& =\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta u}\cdot\lim\limits_{\Delta x\to 0}\frac{\Delta u}{\Delta x} \\
+& =\underbrace{\lim\limits_{\Delta u\to 0}}_{\text{式&#10112;}}\frac{\Delta y}{\Delta u}\cdot\lim\limits_{\Delta x\to 0}\frac{\Delta u}{\Delta x} \\
+& =f^\prime(u)\cdot\varphi^\prime(x)
+\end{array}
+$$
+</div>
+<p>➀ \(\varphi^\prime(x)=\lim\limits_{\Delta x\to 0}\frac{\Delta u}{\Delta x}\neq 0,\infty\rArr\Delta u=O(\Delta x)\) 同阶无穷小</p>
+</li>
+<li>
+<p>用微分: \(f[\varphi(x)]^\prime=\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\mathrm{d}y}{\mathrm{d}u}\cdot\frac{\mathrm{d}u}{\mathrm{d}x}=f^\prime(u)\cdot\varphi^\prime(x)=f^\prime[\varphi(x)]\varphi^\prime(x)\)</p>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h3 id="高阶导数">高阶导数</h3>
+<p>二阶及以上的导数称为高阶导数.</p>
+<ol>
+<li>二阶导数: 对导数再求导一次就是二阶导数<br>
+\(f^{\prime\prime}(x)=[f^\prime(x)]^\prime=\frac{\mathrm{d}(\frac{\mathrm{d}y}{\mathrm{d}x})}{\mathrm{d}x}=\frac{\mathrm{d}^2y}{\mathrm{d}x^2}\)<br>
+同理三阶导数 \(\frac{\mathrm{d}^3y}{\mathrm{d}x^3}\), \(n\) 阶导数 \(f^{(n)}=\frac{\mathrm{d}^ny}{\mathrm{d}x^n}\)</li>
+<li>高阶导数求导方法:
+<ol>
+<li><a href="#induction_method">归纳法</a></li>
+<li>公式法:<br>
+\((uv)^\prime=u^\prime v+uv^\prime\rArr(uv)^{\prime\prime}=(u^\prime v)^\prime+(uv^\prime)^\prime=u^{\prime\prime}v+2u^\prime v^\prime+uv^{\prime\prime}\)<br>
+(重要)莱布尼茨公式<br>
+\((uv)^{(n)}=C_n^0 u^{(n)}v+C_n^1 u^{(n-1)}v^\prime+C_n^2 u^{(n-2)}v^{\prime\prime}+\dots+C_n^n uv^{(n)}\)</li>
+</ol>
+</li>
+</ol>
+<h3 id="隐函数及由参数方程确定的函数求导">隐函数及由参数方程确定的函数求导</h3>
+<ol>
+<li>隐函数求导
+<ul>
+<li>
+<p>显函数: \(y=f(x)\)</p>
+</li>
+<li>
+<p>隐函数: \(F(x,y)=0\enspace\underrightarrow{\text{显式化}}\enspace y=f(x)\)</p>
+</li>
+<li>
+<p>方法:<br>
+\(F(x,y)=0\), 将 \(y\) 视作关于 \(x\) 的函数 (\(y=f(x)\)), 两边对 \(x\) 求导.<br>
+求导时 \(y^\prime=f^\prime(x)=\frac{\mathrm{d}y}{\mathrm{d}x}\), 最终将一边化为 \(\frac{\mathrm{d}y}{\mathrm{d}x}\)</p>
+<p>例: \(e^{x+y}=x^2+y+1\) 确定 \(y\) 为 \(x\) 的函数, 求 \(\frac{\mathrm{d}y}{\mathrm{d}x}\)<br>
+解: 两边对 \(x\) 求导得</p>
+<div>
+$$
+\begin{array}{rl}
+ & e^{x+y}(1+\frac{\mathrm{d}y}{\mathrm{d}x})=2x+\frac{\mathrm{d}y}{\mathrm{d}x} \\
+ \hArr & (e^{x+y}-1)\frac{\mathrm{d}y}{\mathrm{d}x}=2x-e^{x+y} \\
+ \hArr & \frac{\mathrm{d}y}{\mathrm{d}x}=\frac{2x-e^{x+y}}{e^{x+y}-1}
+\end{array}
+$$
+</div>
+</li>
+</ul>
+</li>
+<li>参数方程确定的函数求导<br>
+\(\begin{cases} x=\varphi(t) \\ y=\psi(t) \end{cases}\), 其中 \(\varphi(t) , \psi(t)\) 可导, 则 \(\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\psi^\prime(t)}{\varphi^\prime(t)}\enspace(\varphi(t)\neq 0)\)
+<blockquote>
+<p>证明:<br>
+\(\because\varphi^\prime(t)=\frac{\mathrm{d}x}{\mathrm{d}t}\), \(\psi^\prime(t)=\frac{\mathrm{d}y}{\mathrm{d}t}\)<br>
+\(\therefore\frac{\psi^\prime(t)}{\varphi^\prime(t)}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}=\frac{\mathrm{d}y}{\mathrm{d}x}\)</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="微分">微分</h3>
+<p>(一般情况下都是先有导数后求微分, 微分的主要应用是在知道导数的情况下求 \(\Delta y\) 的近似值 \(\mathrm{d}y\))</p>
+<ol>
+<li>微分定义
+<ol>
+<li>
+<p>什么是微分<br>
+\(y=f(x)\enspace(x\in D)\), \(\Delta y=f(x_0+\Delta x)-f(x_0)\enspace(x_0,(x_0+\Delta x)\in D)\)<br>
+若 \(\Delta x\to 0\) 时 , \(\Delta y\) 和 \(\Delta x\) 的关系能化为线性形式: \(\Delta y=A\Delta x+o(\Delta x)\)<br>
+则称该函数在点 \(x=x_0\) 可微, 记作 \(\left.\mathrm{d}y\right|_{x=x_0}=A\Delta x=A\mathrm{d}x\)</p>
+</li>
+<li>
+<p>定理: 可导 \(\hArr\) 可微</p>
+<blockquote>
+<p>证明:<br>
+设函数 \(f(x)\) 在 \(x=x_0\) 处可微, 则有 \(\Delta y=A\Delta x+o(\Delta x)\).<br>
+当 \(\Delta x\neq 0\) 时</p>
+<div>
+$$
+\begin{array}{rl}
+\frac{\Delta y}{\Delta x} & =A+\frac{o(\Delta x)}{\Delta x} \\
+\hArr\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x=x_0}=\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x} & =\lim\limits_{\Delta x\to 0}[A+\frac{o(\Delta x)}{\Delta x}]=A
+\end{array}
+$$
+</div>
+</blockquote>
+<p>由上述证明可知, 若函数 \(f(x)\) 在 \(x=x_0\) 处可微, 其微分为</p>
+<div>
+$$
+\left.\mathrm{d}y\right|_{x=x_0}=f^\prime(x_0)\Delta x
+$$
+</div>
+<p>\(\Delta y\) 可表示为该点的微分 \(\left.\mathrm{d}y\right|_{x=x_0}\) 加上 \(\Delta y\) 与 \(\left.\mathrm{d}y\right|_{x=x_0}\) 的差值:</p>
+<div>
+$$
+\begin{array}{rl}
+& \Delta y=\left.\mathrm{d}y\right|_{x=x_0}+(\Delta y-\left.\mathrm{d}y\right|_{x=x_0}) \\
+\rArr & \Delta y=f^\prime(x_0)\Delta x+\underbrace{[\Delta y-f^\prime(x_0)\Delta x]}_{\text{式&#10112;}}
+\end{array}
+$$
+</div>
+<p>当 \(\Delta x\to 0\) 时</p>
+<div>
+$$
+\begin{array}{rl}
+\text{&#10112;} & =\lim\limits_{\Delta x\to0}\Delta y-f^\prime(x_0)\lim\limits_{\Delta x\to 0}\Delta x \\
+& =\lim\limits_{\Delta x\to 0}\Delta y-\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}\cdot\lim\limits_{\Delta x\to 0}\Delta x \\
+& =\lim\limits_{\Delta x\to 0}(\frac{\Delta y\Delta x}{\Delta x}-\frac{\Delta y\Delta x}{\Delta x}) \\
+& =\lim\limits_{\Delta x\to 0}(\frac{0}{\Delta x})=0 \rArr o(\Delta x)
+\end{array}
+$$
+</div>
+</li>
+<li>
+<p>函数的微分: 结合导函数定义可得 \(\mathrm{d}y=f^\prime(x)\Delta x=f^\prime(x)\mathrm{d}x\)<br>
+(\(\mathrm{d}x=x^\prime\Delta x=\Delta x\))</p>
+</li>
+</ol>
+</li>
+<li>近似计算:<br>
+若要求 \(f(x)\) 的值, 可以找离 \(x\) 较近的点 \(x_0\), 它们的距离是 \(\Delta x\), 且 \(f(x_0)\) 的值已知<br>
+则 \(f(x)=f(x_0+\Delta x)=f(x_0)+\Delta y\approx f(x_0)+f^\prime(x_0)\Delta x\)
+<ul>
+<li>求近似值还可利用 0 的特殊性:<br>
+\(x\to 0\) 时, \(f(x)=f(0+x)\approx f(0)+f^\prime(0)x\)
+<ol>
+<li>\(\sqrt[n]{1+x}\approx 1+\frac{x}{n}\)</li>
+<li>\(e^x\approx 1+x\)</li>
+<li>\(\ln(1+x)\approx x\)</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>微分公式
+<ol>
+<li>\(\mathrm{d}(c)=c^\prime\mathrm{d}x=0\)</li>
+<li>\(\mathrm{d}(x^a)=ax^{a-1}\mathrm{d}x\)</li>
+<li>\(\mathrm{d}(a^x)=a^x\ln a\mathrm{d}x\)</li>
+<li>\(\mathrm{d}(\log_a x)=\frac{1}{x\ln a}\mathrm{d}x\)</li>
+<li>\(\mathrm{d}(\sin x)=\cos x\mathrm{d}x\)<br>
+\(\mathrm{d}(\cos x)=-\sin x\mathrm{d}x\)<br>
+\(\mathrm{d}(\tan x)=\sec^2 x\mathrm{d}x\)<br>
+\(\mathrm{d}(\cot x)=-csc^2 x\mathrm{d}x\)<br>
+\(\mathrm{d}(\sec x)=\sec x\tan x\mathrm{d}x\)<br>
+\(\mathrm{d}(\csc x)=-\csc x\cot x\mathrm{d}x\)</li>
+<li>\(\mathrm{d}(\arcsin x)=\frac{1}{\sqrt{1-x^2}}\mathrm{d}x\)<br>
+\(\mathrm{d}(\arccos x)=-\frac{1}{\sqrt{1-x^2}}\mathrm{d}x\)<br>
+\(\mathrm{d}(\arctan x)=\frac{1}{1+x^2}\mathrm{d}x\)<br>
+\(\mathrm{d}(\operatorname{arccot} x)=-\frac{1}{1+x^2}\mathrm{d}x\)</li>
+</ol>
+</li>
+<li>微分四则运算<br>
+设函数 \(u\), \(v\)
+<ol>
+<li>加减: \(\mathrm{d}(u\pm v)=\mathrm{d}u\pm\mathrm{d}v\)</li>
+<li>乘: \(\mathrm{d}(uv)=\mathrm{d}u\cdot v+u\cdot\mathrm{d}v\)</li>
+<li>除: \(\mathrm{d}(\frac{u}{v})=\frac{\mathrm{d}u\cdot v-u\cdot \mathrm{d}v}{v^2}\)</li>
+</ol>
+</li>
+<li>复合函数求微分<br>
+\(y=f(u)\), \(u=\varphi(x)\)<br>
+则 \(\mathrm{d}y=f^\prime[\varphi(x)]\varphi^\prime(x)\mathrm{d}x=f^\prime[\varphi(x)]\mathrm{d}\varphi(x)=f^\prime(u)\mathrm{d}u\)</li>
+</ol>
+<h2 id="微分中值定理及导数应用">微分中值定理及导数应用</h2>
+<h3 id="微分中值定理">微分中值定理</h3>
+<ol>
+<li>
+<p>罗尔中值定理</p>
+
+<p>若:</p>
+<ol>
+<li>\(f(x)\in C[a,b]\)</li>
+<li>\(f(x)\) 在 \((a,b)\) 内可导</li>
+<li>\(f(a)=f(b)\)</li>
+</ol>
+<p>则 \(\exist\xi\in(a,b)\), 使 \(f^\prime(\xi)=0\)</p>
+</li>
+<li>
+<p>拉格朗日中值定理</p>
+
+<p>若:</p>
+<ol>
+<li>\(f(x)\in C[a,b]\)</li>
+<li>\(f(x)\) 在 \((a,b)\) 内可导</li>
+</ol>
+<p>则 \(\exist\xi\in(a,b)\), 使 \(f^\prime(\xi)=\frac{f(b)-f(a)}{b-a}\)</p>
+<blockquote>
+<p>(几何意义为 \(a\), \(b\) 间存在某个点的斜率等于 \(a\), \(b\) 两点所成直线的斜率. 某点导数就是该点切线的斜率)<br>
+证明:<br>
+作虚线 \(L_{ab}\) 连接点 \(a\)、\(b\), 带入直线点斜式方程可得:<br>
+\(L_{ab}:y-f(a)=\frac{f(b)-f(a)}{b-a}(x-a)\hArr y=f(a)+\frac{f(b)-f(a)}{b-a}(x-a)\)<br>
+令 \(\varphi(x)=\text{曲}-\text{直}=f(x)-y=f(x)-f(a)-\frac{f(b)-f(a)}{b-a}(x-a)\)<br>
+\(\varphi(x)\in C[a,b]\), \(\varphi(x)\) 在 \((a,b)\) 内可导且 \(\varphi(a)=\varphi(b)=0\)<br>
+根据罗尔中值定理, \(\exist\xi\in(a,b)\), 使 \(\varphi^\prime(\xi)=0\)<br>
+\(\therefore\varphi^\prime(\xi)=f^\prime(\xi)-\frac{f(b)-f(a)}{b-a}=0\rArr f^\prime(\xi)=\frac{f(b)-f(a)}{b-a}\)</p>
+</blockquote>
+</li>
+<li>
+<p>柯西中值定理<br>
+若:</p>
+<ol>
+<li>\(f(x),g(x)\in C[a,b]\)</li>
+<li>\(f(x),g(x)\) 在 \((a,b)\) 内可导</li>
+<li>\(g^\prime(x)\neq 0\enspace(x\in(a,b))\)</li>
+</ol>
+<p>则 \(\exist\xi\in(a,b)\), 使 \(\frac{f^\prime(\xi)}{g^\prime(\xi)}=\frac{f(b)-f(a)}{g(b)-g(a)}\)</p>
+<blockquote>
+<p>证明:<br>
+构造辅助函数 \(\varphi(x)=f(x)-f(a)-\frac{f(b)-f(a)}{g(b)-g(a)}[g(x)-g(a)]\)<br>
+\(\varphi(x)\in C[a,b]\), \(\varphi(x)\) 在 \((a,b)\) 内可导且可知 \(\varphi(a)=\varphi(b)=0\)<br>
+\(\therefore\exist\xi\in(a,b)\), 使 \(\varphi^\prime(\xi)=0\)<br>
+\(\therefore\varphi^\prime(\xi)=f^\prime(\xi)-\frac{f(b)-f(a)}{g(b)-g(a)}g^\prime(\xi)=0\rArr\frac{f^\prime(\xi)}{g^\prime(\xi)}=\frac{f(b)-f(a)}{g(b)-g(a)}\)</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="洛必达法则">洛必达法则</h3>
+<ol>
+<li>
+<p>问题的起源: 求 \(\lim\limits_{x\to 0}\frac{\tan x-\sin x}{x^3}\)<br>
+解:<br>
+法1: 原式 \(=\lim\limits_{x\to 0}\frac{\tan x(1-\overbrace{\cos x)}^{\tan x=\frac{\sin x}{\cos x}}}{x^3}=\lim\limits_{x\to 0}\frac{x\cdot\frac{x^2}{2}}{x^3}=\frac{1}{2}\)<br>
+法2: 原式 \(=\lim\limits_{x\to 0}\frac{x-x}{x^3}=0\) (不行, 精确度不够)<br>
+同样使用等价无限小, 却得到了不同的结果.<br>
+说明对于存在 无穷小比无穷小(\(\frac{0}{0}\)) 的极限 , 用<strong>等价无穷小解极限有局限性</strong>, 分子分母经等价无穷小转化后不同阶, 导数精确度不够<br>
+洛必达法则的目标: 解 \(\frac{0}{0}\), \(\frac{\infty}{\infty}\) 类极限新方法</p>
+</li>
+<li>
+<p>洛必达法则:<br>
+若:</p>
+<ol>
+<li>\(f(x)\)、\(g(x)\) 在点 \(x=a\) 的去心邻域内可导且 \(g^\prime(x)\neq 0\)</li>
+<li>\(\frac{0}{0}\) 型: \(\lim\limits_{x\to a}f(x)=0\), \(\lim\limits_{x\to a}g(x)=0\)<br>
+\(\frac{\infty}{\infty}\) 型: \(\lim\limits_{x\to a}f(x)=\infty\), \(\lim\limits_{x\to a}g(x)=\infty\)</li>
+<li>\(\lim\limits_{x\to a}\frac{f^\prime(x)}{g^\prime(x)}=A\)</li>
+</ol>
+<p>则 \(\lim\limits_{x\to a}\frac{f(x)}{g(x)}=A\)</p>
+<blockquote>
+<p>洛必达法则证明: (利用柯西中值定理)</p>
+<ul>
+<li>
+<p>\(\lim\limits_{x\to a}f(x)=0\), \(\lim\limits_{x\to a}g(x)=0\)<br>
+\(\frac{f^\prime(\xi)}{g^\prime(\xi)}=\frac{f(x)-f(a)}{g(x)-g(a)}\enspace(\xi\in(a,x))\)<br>
+\(\therefore\lim\limits_{x\to a}\frac{f(x)-f(a)}{g(x)-g(a)}=\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}\frac{f^\prime(\xi)}{g^\prime(\xi)}=\lim\limits_{\xi\to a}\frac{f^\prime(\xi)}{g^\prime(\xi)}=A\)<br>
+(\(x\to a\), \(\xi\) 介于 \(a\) 与 \(x\) 之间 \(\rArr\xi\to a\))</p>
+</li>
+<li>
+<p>\(\lim\limits_{x\to a}f(x)=\infty\), \(\lim\limits_{x\to a}g(x)=\infty\)</p>
+<div>
+$$
+\begin{array}{rl}
+\frac{f(x)}{g(x)} & =\frac{f(x)-f(a)}{g(x)}+\frac{f(a)}{g(x)} \\
+& =\frac{g(x)-g(a)}{g(x)}\cdot\frac{f(x)-f(a)}{g(x)-g(a)}+\frac{f(a)}{g(x)} \\
+& =[1-\frac{g(a)}{g(x)}]\cdot\frac{f^\prime(\xi)}{g^\prime(\xi)}+\frac{f(a)}{g(x)}\enspace(\xi\in(a,x))
+\end{array}
+$$
+</div>
+<p>\(\hArr\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}[1-\frac{g(a)}{g(x)}]\cdot\lim\limits_{x\to a}\frac{f^\prime(\xi)}{g^\prime(\xi)}+\lim\limits_{x\to a}\frac{f(a)}{g(x)}\)<br>
+\(\because f(a)\)、\(g(a)\) 是定值 (因此远远小于 \(\infty\))<br>
+\(\therefore\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}\frac{f^\prime(\xi)}{g^\prime(\xi)}=A\)</p>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>注意</p>
+<ol>
+<li>若 \(\lim\limits_{x\to a}\frac{f^\prime(x)}{g^\prime(x)}\) 不存在, 只表明洛必达法则不能使用, 不代表极限 \(\lim\limits_{x\to a}\frac{f(x)}{g(x)}\) 不存在</li>
+<li>\(\lim\limits_{x\to+\infty}\frac{\ln x}{x^a}=0\enspace(a&gt;0)\)<br>
+\(\lim\limits_{x\to+\infty}\frac{x^a}{b^x}=0\enspace(a&gt;0,b&gt;1)\)</li>
+</ol>
+</li>
+</ol>
+<h3 id="泰勒公式">泰勒公式</h3>
+<ol>
+<li>泰勒公式<br>
+设 \(f(x)\) 在 \(x=x_0\) 邻域内 \(n+1\) 阶可导<br>
+则 \(f(x)=P_n(x)+R_n(x)\)<br>
+其中:<br>
+\(P_n(x)=f(x_0)+f^\prime(x_0)(x-x_0)+\frac{f^{\prime\prime}(x_0)}{2!}(x-x_0)^2+\dots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n\)<br>
+\(R_n(x)=o((x-x_0)^n)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}\enspace\) (\(\xi\) 介于 \(x_0\) 与 \(x\) 之间)<br>
+如果 \(x_0=0\), 这个式子被称为麦克劳林公式
+<blockquote>
+<p>泰勒公式证明:<br>
+设 \(\footnotesize f(x)=a_0+a_1(x-x_0)+a_2(x-x_0)^2+a_3(x-x_0)^3+\dots+a_n(x-x_0)^n\)<br>
+要使这个式子派用场, 得找到 \(a_0,a_1,\dots\) 这些系数的值, 怎么做呢?<br>
+要得到 \(a_0\), 可以使 \(x=x_0\), 这样其他项就消除了<br>
+那其他的 \(a_1,a_2,a_3\) 呢? 我们可以不断对该式求它的一阶, 二阶, 三阶, … 导数:<br>
+\(f^\prime(x)=a_1+2a_2(x-x_0)+3a_3(x-x_0)^2+\dots+na_n(x-x_0)^{n-1}\)<br>
+\(f^{\prime\prime}(x)=2a_2+3\cdot 2a_3(x-x_0)^2+\dots+n(n-1)(x-x_0)^{n-2}\)<br>
+\(\dots\)<br>
+发现规律了吗, 将 \(x=x_0\) 带入, 可以轻松得到对应项的系数值:<br>
+\(a_1=\frac{f^\prime(x_0)}{1}\), \(a_2=\frac{f^{\prime\prime}(x_0)}{1\cdot 2}\), \(a_3=\frac{f^{\prime\prime\prime}(x_0)}{1\cdot 2\cdot 3}\rArr a_n=\frac{f^{(n)}(x_0)}{n!}\)<br>
+然后式子就能写成 \(\footnotesize f(x)=f(x_0)+f^\prime(x_0)(x-x_0)+\frac{f^{\prime\prime}(x_0)}{2!}(x-x_0)^2+\dots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n\)</p>
+</blockquote>
+</li>
+</ol>
+<p>(常见泰勒展开式见章节: 无穷级数-&gt;函数展开成幂级数)</p>
+<h3 id="导数与函数单调性和曲线凹凸性的关系">导数与函数单调性和曲线凹凸性的关系</h3>
+<ol>
+<li>导数与函数单调性<br>
+导数可以判别函数的单调性:<br>
+\(f(x)\enspace(x\in[a,b])\) 在 \((a,b)\) 内可导
+<ol>
+<li>若 \(f^\prime(x)&gt;0\enspace(a&lt;x&lt;b)\), 则 \(f(x)\) 在 \([a,b]\) 上单调递增</li>
+<li>若 \(f^\prime(x)&lt;0\enspace(a&lt;x&lt;b)\), 则 \(f(x)\) 在 \([a,b]\) 上单调递减</li>
+</ol>
+</li>
+<li>导数与曲线凹凸性
+<ol>
+<li>曲线凹凸性的定义:
+<ol>
+<li>
+<p>若 \(\forall x_1,x_2\in D\) 且 \(x_1\neq x_2\), 有<br>
+\(f(\frac{x_1+x_2}{2})&lt;\frac{f(x_1)+f(x_2)}{2}\)<br>
+则 \(f(x)\) 在 \(D\) 内为凹函数</p>
+
+</li>
+<li>
+<p>若 \(\forall x_1,x_2\in D\) 且 \(x_1\neq x_2\), 有<br>
+\(f(\frac{x_1+x_2}{2})&gt;\frac{f(x_1)+f(x_2)}{2}\)<br>
+则 \(f(x)\) 在 \(D\) 内为凸函数</p>
+
+</li>
+</ol>
+</li>
+<li>二阶导数判别法:<br>
+\(f(x)\enspace(x\in[a,b])\) 在 \((a,b)\) 内二阶可导
+<ol>
+<li>若 \(f^{\prime\prime}(x)&gt;0\enspace(a&lt;x&lt;b)\), 则 \(y=f(x)\) 图像在 \([a,b]\) 上是凹的</li>
+<li>若 \(f^{\prime\prime}(x)&lt;0\enspace(a&lt;x&lt;b)\), 则 \(y=f(x)\) 图像在 \([a,b]\) 上是凸的</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="极值与最值">极值与最值</h3>
+<p>一个函数中, 极大值、极小值可以有很多, 但最大值、最小值只能有一个</p>
+<ol>
+<li>极大值与极小值
+<ol>
+<li>定义:<br>
+设 \(y=f(x)\enspace(x,x_0\in D)\)<br>
+若 \(\exist\delta&gt;0\), 当 \(0&lt;|x-x_0|&lt;\delta\) 时
+<ol>
+<li>有 \(f(x)&gt;f(x_0)\), 称 \(x_0\) 为极小点, \(f(x_0)\) 为极小值</li>
+<li>有 \(f(x)&lt;f(x_0)\), 称 \(x_0\) 为极大点, \(f(x_0)\) 为极大值</li>
+</ol>
+</li>
+<li>求极值的步骤:
+<ol>
+<li>法一(利用目标点附近导数)
+<ol>
+<li>若同时满足 \(\begin{array}{cc} x&lt;x_0 &amp; f^\prime(x)&lt;0 \\ x&gt;x_0 &amp; f^\prime(x)&gt;0 \end{array}\) 则 \(x=x_0\) 为极小点</li>
+<li>若同时满足 \(\begin{array}{cc} x&lt;x_0 &amp; f^\prime(x)&gt;0 \\ x&gt;x_0 &amp; f^\prime(x)&lt;0 \end{array}\) 则 \(x=x_0\) 为极大点</li>
+</ol>
+</li>
+<li>法二(利用二阶导数)<br>
+设 \(f^\prime(x_0)=0\), \(f^{\prime\prime}(x_0)\begin{cases} &gt;0 &amp; x_0 \text{为极小点} \\ &lt; 0 &amp; x_0 \text{为极大点} \end{cases}\)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>最大值与最小值<br>
+设 \(f(x)\in C[a,b]\)<br>
+则极小值和极大值可在 \(f(a)\)、\(f(b)\) 和其他使 \(f^\prime(x)=0\text{或不存在}\) 的点之中找到</li>
+</ol>
+<h3 id="函数图像描绘">函数图像描绘</h3>
+<ol>
+<li>渐近线<br>
+设函数 \(f(x)\)
+<ol>
+<li>
+<p>水平渐近线:</p>
+
+<p>若 \(\lim\limits_{x\to\infty}f(x)=A\)<br>
+称 \(f(x)\) 有水平渐近线 \(y=A\)</p>
+</li>
+<li>
+<p>垂直渐近线:</p>
+
+<p>若 \(\lim\limits_{x\to a}f(x)=\infty\)<br>
+称 \(f(x)\) 有垂直渐近线 \(x=a\)</p>
+</li>
+<li>
+<p>斜渐近线:<br>
+若</p>
+<ol>
+<li>\(\lim\limits_{x\to\infty}\frac{f(x)}{x}=k \quad\) (可以理解为斜率)</li>
+<li>\(\lim\limits_{x\to\infty}[f(x)-kx]=b\)</li>
+</ol>
+<p>称 \(f(x)\) 有斜渐近线 \(y=kx+b\)</p>
+</li>
+</ol>
+</li>
+<li>作图<br>
+(根据一阶和二阶导数的值描绘函数曲线)<br>
+设函数 \(f(x)\enspace(x\in D)\)</li>
+<li>在定义域内:<br>
+找出 \(f^\prime(x)=0\text{或不存在}\) 的所有点<br>
+找出 \(f^{\prime\prime}(x)=0\text{或不存在}\) 的所有点</li>
+<li>画渐近线</li>
+<li>作表
+<table>
+<thead>
+<tr>
+<th>\(x\)</th>
+<th>()</th>
+<th>?</th>
+<th>()</th>
+<th>?</th>
+<th>\(\dots\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\(f^\prime(x)\)</td>
+<td>\(+\)</td>
+<td></td>
+<td>\(-\)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\(f^{\prime\prime}(x)\)</td>
+<td>\(+\)</td>
+<td></td>
+<td>\(+\)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\(f(x)\)</td>
+<td>\(\nearrow\)</td>
+<td>极大</td>
+<td>\(\searrow\)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>在坐标系上找到关键点, 描图</li>
+</ol>
+<h3 id="弧微分与曲率">弧微分与曲率</h3>
+<ol>
+<li>
+<p>弧微分<br>
+前面的微分能让我们求 \(\Delta y\) 的近似值, 也就是从 \(x\) 到 \(x_0\) 后 \(y\) 轴的偏移量近似值<br>
+但如果我们想要求从 \(x\) 到 \(x_0\) 间这段函数曲线长度的近似值(即弧微分)呢?</p>
+
+<p>两种弧微分形式:</p>
+<ol>
+<li>普通函数<br>
+\(L:f(x)\)<br>
+\(\mathrm{d}s=\sqrt{(\mathrm{d}x)^2+(\frac{\mathrm{d}y}{\mathrm{d}x})^2(\mathrm{d}x)^2}=\sqrt{1+(\frac{\mathrm{d}y}{\mathrm{d}x})^2}\mathrm{d}x=\sqrt{1+[f^\prime(x)]^2}\mathrm{d}x\)</li>
+<li>参数方程<br>
+\(L:\begin{cases} x=\varphi(t) \\ y=\psi(t) \end{cases}\)<br>
+\(\footnotesize\mathrm{d}s=\sqrt{(\mathrm{d}x)^2+(\mathrm{d}y)^2}=\sqrt{[\varphi^\prime(t)]^2(\mathrm{d}t)^2+[\psi^\prime(t)]^2(\mathrm{d}t)^2}=\sqrt{[\varphi^\prime(t)]^2+[\psi^\prime(t)]^2}\mathrm{d}t\)</li>
+</ol>
+</li>
+<li>
+<p>曲率与曲率半径</p>
+<ol>
+<li>曲率大小的因素:
+<ol>
+<li>
+<p><strong>角度一定, 弯曲度与两点间的弧长成反比</strong></p>
+
+<p>\(\Delta\alpha\) 一定, \(|\stackrel\frown{M_1N_1}|&lt;|\stackrel\frown{M_2N_2}|\)</p>
+</li>
+<li>
+<p><strong>弧长一定, 弯曲度与切线夹角成正比</strong></p>
+
+<p>\(|\stackrel\frown{MN}|\) 一定, \(\Delta\alpha_1&gt;\Delta\alpha_2\)</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>曲率定义:</p>
+
+<p>设 \(L:f(x)\), \(|\stackrel\frown{MM^\prime}|=\Delta s\)</p>
+<ul>
+<li>平均曲率 \(\bar{k}=\dfrac{|\Delta\alpha|}{|\Delta s|}\)</li>
+<li>某点曲率 \(k=\lim\limits_{\Delta x\to 0}|\frac{\Delta\alpha}{\Delta s}|=|\frac{\mathrm{d}\alpha}{\mathrm{d}s}|=\frac{|f^{\prime\prime}(x)|}{(1+[f^\prime(x)]^2)^\frac{3}{2}}\)
+<blockquote>
+<p>证明:</p>
+
+<p>可知 \(f^\prime(x)=\lim\limits_{\Delta x\to 0}\tan\alpha\), 两边对 \(x\) 求导得 \(f^{\prime\prime}(x)=\sec^2\alpha\cdot\frac{\mathrm{d}\alpha}{\mathrm{d}x}\)<br>
+\(\because\sec^2\alpha=1+\tan^2\alpha=1+[f^\prime(x)]^2\)<br>
+\(\therefore\frac{\mathrm{d}\alpha}{\mathrm{d}x}=\frac{f^{\prime\prime}(x)}{1+[f^\prime(x)]^2}\rArr\mathrm{d}\alpha=\frac{f^{\prime\prime}(x)}{1+[f^\prime(x)]^2}\mathrm{d}x\)</p>
+</blockquote>
+</li>
+<li>曲率半径: \(R=\frac{1}{k}\)</li>
+</ul>
+</li>
+</ol>
+<h2 id="不定积分">不定积分</h2>
+<h3 id="不定积分的概念与性质">不定积分的概念与性质</h3>
+<ol>
+<li>原函数:<br>
+设 \(f(x)\), \(F(x)\enspace(x\in I)\)<br>
+若 \(\forall x\in I\), 有 \(F^\prime(x)=f(x)\), 称 \(F(x)\) 为 \(f(x)\) 的<strong>其中一个</strong>原函数<br>
+注意:
+<ol>
+<li>一个函数若有原函数, 则一定有无数个原函数<br>
+设 \(F^\prime(x)=f(x)\)<br>
+则 \(F(x)+C\) 为 \(f(x)\) 的一切原函数</li>
+<li>一个函数的的任意两个原函数之差 \(\in C\)</li>
+</ol>
+</li>
+<li>不定积分<br>
+\(F(x)+C\) 为 \(f(x)\) 的所有原函数<br>
+则称 \(F(x)+C\) 就是 \(f(x)\) 的不定积分, 记作 \(\int f(x)\mathrm{d}x\)</li>
+<li>不定积分公式
+<ol>
+<li>\(\int k\mathrm{d}x=kx+C\)</li>
+<li>\(\int x^a\mathrm{d}x=\begin{cases} \frac{1}{a+1}x^{a+1}+C &amp; (a\neq -1) \\ \ln|x|+C &amp; (a=-1) \end{cases}\)</li>
+<li>\(\int a^x\mathrm{d}x=\frac{a^x}{\ln a}+C\)</li>
+<li>\(\int\sin x\mathrm{d}x=-\cos x+C\)<br>
+\(\int\cos x\mathrm{d}x=\sin x+C\)<br>
+\(\int\tan x\mathrm{d}x=-\ln|\cos x|+C\)<br>
+\(\int\cot x\mathrm{d}x=\ln|\sin x|+C\)<br>
+\(\int\csc x\mathrm{d}x=\ln|\csc x-\cot x|+C=\ln|\tan\frac{x}{2}|+C\)<br>
+\(\int\sec x\mathrm{d}x=\ln|\sec x+\tan x|+C\)<br>
+\(\int\sec^2x\mathrm{d}x=\tan x+C\)<br>
+\(\int\csc^2x\mathrm{d}x=-\cot x+C\)<br>
+\(\int\sec x\tan x\mathrm{d}x=\sec x+C\)<br>
+\(\int\csc x\cot x\mathrm{d}x=-\csc x+C\)</li>
+<li>\(\int\frac{1}{\sqrt{1-x^2}}\mathrm{d}x=\arcsin x+C\)<br>
+\(\int\frac{1}{\sqrt{a^2-x^2}}\mathrm{d}x=\arcsin\frac{x}{a}+C\)<br>
+\(\int\frac{1}{1+x^2}\mathrm{d}x=\arctan x+C\)<br>
+\(\int\frac{1}{a^2+x^2}\mathrm{d}x=\frac{1}{a}\arctan\frac{x}{a}+C\)<br>
+\(\int\frac{1}{x^2-a^2}\mathrm{d}x=\frac{1}{2a}\ln|\frac{x-a}{x+a}|+C\)<br>
+\(\int\frac{1}{\sqrt{x^2+a^2}}\mathrm{d}x=\ln(x+\sqrt{x^2+a^2})+C\)<br>
+\(\int\frac{1}{\sqrt{x^2-a^2}}\mathrm{d}x=\ln|x+\sqrt{x^2-a^2}|+C\)<br>
+\(\int\frac{1}{\sqrt{a^2-x^2}}\mathrm{d}x=\frac{a^2}{2}\arcsin\frac{x}{a}+\frac{1}{2}x\sqrt{a^2-x^2}+C\)</li>
+</ol>
+<blockquote>
+<p>证明:</p>
+<ol>
+<li>
+<p>\(\footnotesize\int x^a\mathrm{d}x\enspace(a=-1)\rArr\begin{cases} \int\frac{1}{x}\mathrm{d}x=\ln(-x)+C &amp; (x&lt;0) \\ \int\frac{1}{x}\mathrm{d}x=\ln(x)+C &amp; (x&gt;0) \end{cases}\rArr\ln|x|+C\)</p>
+</li>
+<li>
+<p>\(\int\tan x\mathrm{d}x=\int\frac{\sin x}{\cos x}\mathrm{d}x=-\int\frac{1}{\cos x}\mathrm{d}(\cos x)=-\ln|\cos x|+C\)</p>
+</li>
+<li>
+<p>\(\int\cot x\mathrm{d}x=\int\frac{\cos x}{\sin x}\mathrm{d}x=\int\frac{1}{\sin x}\mathrm{d}(\sin x)=\ln|\sin x|+C\)</p>
+</li>
+<li>
+<p>这里只证明 \(\int\frac{1}{\sqrt{x^2+a^2}}\mathrm{d}x\)</p>
+
+<p>令 \(x=a\tan t\) (第二类换元积分法)</p>
+<div>
+$$
+\begin{array}{rl}
+ \text{原式}=\int\frac{a\sec^2t}{a\sec t}\mathrm{d}t & =\int\sec t\mathrm{d}t \\
+ & =\ln|\sec t+\tan t|+C \\
+ & =\ln|\frac{\sqrt{x^2+a^2}}{a}+\frac{x}{a}|+C \\
+ & =\ln|x+\sqrt{x^2+a^2}|\cdot\frac{1}{a}+C \\
+ & =\ln|x+\sqrt{x^2+a^2}|+\ln\frac{1}{a}+C \\
+ & =\ln|x+\sqrt{x^2+a^2}|+C\enspace(\ln\frac{1}{a}\text{并入}C) \\
+ & =\ln|x+\sqrt{x^2+a^2}|+C \\
+ & =\ln(x+\sqrt{x^2+a^2})+C
+\end{array}
+$$
+</div>
+</li>
+</ol>
+</blockquote>
+</li>
+<li>不定积分性质
+<ol>
+<li>\(\int[f(x)\pm g(x)]\mathrm{d}x=\int f(x)\mathrm{d}x+\int g(x)\mathrm{d}x\)</li>
+<li>\(\int af(x)\mathrm{d}x=a\int f(x)\mathrm{d}x\)</li>
+</ol>
+</li>
+</ol>
+<h3 id="不定积分的换元积分法与分部积分法">不定积分的换元积分法与分部积分法</h3>
+<ol>
+<li>
+<p>换元积分法</p>
+<ol>
+<li>第一类换元积分法<br>
+\(f(u)\) 存在原函数 \(F(u)\) 且 \(\varphi(x)\) 可导, 则<br>
+\(\footnotesize\int f[\varphi(x)]\underbrace{\varphi^\prime(x)\mathrm{d}x}_{f^\prime(x)\mathrm{d}x=\mathrm{d}f(x)}=\int\underbrace{f[\varphi(x)]\mathrm{d}\varphi(x)}_{\text{设}\varphi(x)=t}=\int f(t)\mathrm{d}t=F(t)+C=F[\varphi(x)]+C\)</li>
+<li>第二类换元积分法<br>
+\(x=\psi(t)\) 可导且 \(\psi^\prime(t)\neq 0\)<br>
+\(\footnotesize\int f(x)\mathrm{d}x=\int f[\psi(t)]\mathrm{d}\psi(t)=\int f[\psi(t)]\psi^\prime(t)\mathrm{d}t=\int g(t)\mathrm{d}t=G(t)+C=G[\psi^{-1}(x)]+C\)<br>
+例: \(\int\frac{1}{\sqrt{x}+\sqrt[3]{x}}\mathrm{d}x\)<br>
+解:<br>
+令 \(x=t^6\)<div>
+$$
+\begin{array}{rl}
+ \text{原式} & =6\int\frac{t^5}{t^3+t^2}\mathrm{d}t \\
+ & =6\int\frac{(t^3+1)-1}{t+1}\mathrm{d}t \\
+ & =6\int\frac{t^3+t^2+1-t^2}{t+1}-\frac{1}{t+1}\mathrm{d}t \\
+ & =6\int\frac{t^2(t+1)+(1+t)(1-t)}{t+1}-\frac{1}{t+1}\mathrm{d}t \\
+ & =6\int(t^2-t+1)-\frac{1}{t+1}\mathrm{d}t \\
+ & =6[\frac{1}{3}t^3-\frac{1}{2}t^2+t-\ln|t+1|]+C \\
+ & =2t^3-3t^2+6t-6\ln|t+1|+C \\
+ & =2\sqrt{x}-3\sqrt[3]{x}+6\sqrt[6]{x}-6\ln|\sqrt[6]{x}+1|+C
+\end{array}
+$$
+</div>
+</li>
+</ol>
+</li>
+<li>
+<p>分部积分法<br>
+先用换元积分法将积分式变成 \(\int u\mathrm{d}v\) 的形式<br>
+然后用分部积分公式: \(\int u\mathrm{d}v=uv-\int v\mathrm{d}u\)</p>
+<blockquote>
+<p>证明:<br>
+\(uv=\int(uv)^\prime\mathrm{d}x=\int u^\prime v\mathrm{d}x+\int uv^\prime\mathrm{d}x=\int v\mathrm{d}u+\int u\mathrm{d}v\)</p>
+</blockquote>
+<p>例: \(\int x^2\ln x\mathrm{d}x\)<br>
+解:</p>
+<div>
+$$
+\begin{aligned}
+ \int x^2\ln x\mathrm{d}x & =\int\ln x\mathrm{d}(\frac{1}{3}x^3) \\
+ & =\frac{1}{3}x^3\ln x-\int\frac{1}{3}x^3\mathrm{d}(\ln x) \\
+ & =\frac{1}{3}x^3\ln x-\frac{1}{3}\int x^2\mathrm{d}x \\
+ & =\frac{1}{3}x^3\ln x-\frac{1}{9}x^3+C
+\end{aligned}
+$$
+</div>
+</li>
+</ol>
+<h2 id="定积分">定积分</h2>
+<h3 id="定积分的概念与性质">定积分的概念与性质</h3>
+<ol>
+<li>
+<p>定积分定义<br>
+设 \(f(x)\) 在 \([a,b]\) 上有界, \(x_1,x_2,\dots,x_n\) 为 \([a,b]\) 间的分段点</p>
+<ol>
+<li>\(a=x_0&lt;x_1&lt;x_2&lt;\dots&lt;x_n=b\), \(\Delta x_i=x_i-x_{i-1}\enspace(1\leqslant i\leqslant n)\)</li>
+<li>\(\exist s_i\in[x_{i-1},x_i]\), \(\displaystyle\sum_{i=1}^n f(\xi_i)\Delta x_i\)</li>
+<li>\(\lambda=\operatorname{max}\{\Delta x_1,\Delta x_2,\dots,\Delta x_n\}\)</li>
+</ol>
+<p>若 \(\displaystyle\lim\limits_{\lambda\to 0}\sum_{i=1}^n f(\xi_i)\Delta x_i\) 存在, 称 \(f(x)\) 在 \([a,b]\) 上可积<br>
+称该极限为 \(f(x)\) 在 \([a,b]\) 上的定积分, 记作 \(\int_a^b f(x)\mathrm{d}x\)<br>
+即 \(\lim\limits_{\lambda\to 0}\displaystyle\sum_{i=1}^n\textstyle f(\xi_1)\Delta x_i=\int_a^b f(x)\mathrm{d}x\)</p>
+<p>注:</p>
+<ol>
+<li>\(L:y=f(x)\geqslant 0\enspace(x\in[a,b])\)<br>
+则 \(A=\int_a^b f(x)\mathrm{d}x\)<br>
+例: 物理中知道速度函数和时间求位移(\(v\) 为速度, \(t\) 为时间)<br>
+设 \(v=V(t)\enspace(t\in[a,b])\)<br>
+则 \(S=\int_a^b V(t)\mathrm{d}t\)</li>
+<li>\(\displaystyle\lim\limits_{\lambda\to 0}\sum_{i=1}^n f(\xi_1)\Delta x_i\) 与 \([a,b]\) 分法及 \(\xi_i\) 取法无关</li>
+<li>\(f(x)\) 在 \([a,b]\) 上有界不一定可积<br>
+如分段函数 \(f(x)=\begin{cases} 1 &amp; x\in Q \\ 0 &amp; x\in R-Q \end{cases}\)</li>
+<li>若 \(f(x)\in C[a,b]\), 则 \(f(x)\) 在 \([a,b]\) 上可积<br>
+若 \(f(x)\) 在 \([a,b]\) 上只有有限个第一类间断点, 则 \(f(x)\) 在 \([a,b]\) 上可积</li>
+</ol>
+</li>
+<li>
+<p>定积分的一般性质</p>
+<ol>
+<li>
+<p>\(\int_a^a f(x)\mathrm{d}x=0\)<br>
+\(\int_a^b f(x)\mathrm{d}x=-\int_b^a f(x)\mathrm{d}x\)</p>
+</li>
+<li>
+<p>\(\int_a^b[f(x)\pm g(x)]\mathrm{d}x=\int_a^b f(x)\mathrm{d}x\pm\int_a^b g(x)\mathrm{d}x\)</p>
+</li>
+<li>
+<p>\(\int_a^b kf(x)\mathrm{d}x=k\int_a^b f(x)\mathrm{d}x\)</p>
+</li>
+<li>
+<p>\(\int_a^b f(x)\mathrm{d}x=\int_a^c f(x)\mathrm{d}x+\int_c^b f(x)\mathrm{d}x\enspace(a&lt;b)\)<br>
+(即使 \(c&lt;a&lt;b\) 也成立, 因为 \(\int_a^c\) 是负的, 正好减去了 \(\int_c^b\) 多出来的, \(a&lt;b&lt;c\) 同理)</p>
+</li>
+<li>
+<p>\(\int_a^b 1\mathrm{d}x=b-a\)</p>
+</li>
+<li>
+<p>定积分间的比较</p>
+<ol>
+<li>\(f(x)\geqslant 0\enspace(a\leqslant x\leqslant b)\), 则 \(\int_a^b f(x)\mathrm{d}x\geqslant 0\)</li>
+<li>\(f(x)\geqslant g(x)\enspace(a\leqslant x\leqslant b)\), 则 \(\int_a^b f(x)\mathrm{d}x\geqslant\int_a^b g(x)\mathrm{d}x\)</li>
+<li>若 \(f(x)\)、\(|f(x)|\) 在 \([a,b]\) 上可积, 则 \(|\int_a^b f(x)\mathrm{d}x|\leqslant\int_a^b|f(x)|\mathrm{d}x\)</li>
+</ol>
+</li>
+<li>
+<p>积分中值定理</p>
+
+<p>设 \(f(x)\in C[a,b]\), 则 \(\exist\xi\in[a,b]\), 使 \(\underbrace{\int_a^b f(x)\mathrm{d}x}_{\text{曲边梯形面积}}=\underbrace{f(\xi)(b-a)}_{\text{矩形面积}}\)</p>
+<blockquote>
+<p>证明:<br>
+\(\because f(x)\in C[a,b]\)<br>
+\(\therefore\exist m,M\in[a,b]\), 使 \(m(b-a)\leqslant\int_a^b f(x)\mathrm{d}x\leqslant M(b-a)\)<br>
+\(\rArr m\leqslant\frac{1}{b-a}\int_a^b f(x)\mathrm{d}x\leqslant M\)<br>
+\(\therefore\exist\xi\in[a,b]\), 使 \(f(\xi)=\frac{1}{b-a}\int_a^b f(x)\mathrm{d}x\rArr\int_a^b f(x)\mathrm{d}x=(b-a)f(\xi)\) (介值定理)</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="积分基本定理">积分基本定理</h3>
+<ol>
+<li>积分上限函数及其与目标函数的关系:<br>
+设 \(f(x)\in C[a,b]\), 令 \(\varPhi(x)=\int_a^x f(t)\mathrm{d}t\), 则 \(\varPhi^\prime(x)=\frac{\mathrm{d}}{\mathrm{d}x}\int_a^x f(t)\mathrm{d}t=f(x)\)<br>
+复合函数推论: \(\varPhi[\varphi(x)]^\prime=\frac{\mathrm{d}}{\mathrm{d}x}\int_a^{\varphi(x)}f(t)\mathrm{d}t=\frac{\mathrm{d}}{\mathrm{d}\varphi(x)}\int_a^{\varphi(x)}f(t)\mathrm{d}t\cdot\frac{\varphi(x)}{x}=f[\varphi(x)]\varphi^\prime(x)\)
+<blockquote>
+<p>证明:<br>
+\(\footnotesize\Delta\varPhi=\varPhi(x+\Delta x)-\varPhi(x)=\int_a^{x+\Delta x}f(t)\mathrm{d}t-\int_a^x f(t)\mathrm{d}t=\int_x^{x+\Delta x}f(t)\mathrm{d}t\)<br>
+\(\because f(x)\in C[a,b]\rArr f(x)\in C[x,x+\Delta x]\)<br>
+\(\therefore\exist\xi\in[x,x+\Delta x]\), 使(积分中值定理)</p>
+<div>
+$$
+\begin{array}{rl}
+\footnotesize f(\xi)\Delta x=\int_x^{x+\Delta x}f(t)\mathrm{d}t=\Delta\varPhi & \rArr\frac{\Delta\varPhi}{\Delta x}=f(\xi) \\
+& \rArr\footnotesize\lim\limits_{\Delta x\to 0}\frac{\Delta\varPhi}{\Delta x}=\lim\limits_{\Delta x\to 0}f(\xi)=\lim\limits_{\xi\to x}f(\xi)=f(x) \\
+& \rArr\varPhi^\prime(x)=f(x)
+\end{array}
+$$
+</div>
+</blockquote>
+</li>
+<li>定积分与不定积分的比较:<br>
+\(\int f(x)\neq\int f(t)\enspace(x\) 与 \(t\) 可能是不同的函数, 他们的值域不同, 导致积结果不同)<br>
+\(\int_a^b f(x)\mathrm{d}x=\int_a^b f(t)\mathrm{d}t\enspace\) (\(x\) 与 \(t\) 可能是不同的函数, 但积分范围被限制在 \([a,b]\), 即 \(x,t\in[a,b]\), 所以相等)<br>
+因此: 定积分由上下限、函数关系确定, 与积分变量无关<br>
+即 \(\varPhi(x)=\int_a^x f(x)\mathrm{d}x=\int_a^x f(t)\mathrm{d}t\enspace\) (注意自变量的 \(x\) 与积分上限的 \(x\) 不同)</li>
+<li>牛顿莱布尼茨公式<br>
+\(f(x)\in C[a,b]\), \(F(x)\) 为 \(f(x)\) 的一个原函数, 则 \(\int_a^b f(x)\mathrm{d}x=F(b)-F(a)=\left.F(x)\right|_a^b\)
+<blockquote>
+<p>证明:<br>
+\(\because F^\prime(x)=f(x)\), \(\varPhi^\prime(x)=f(x)\)<br>
+(\(F(x)\) 与 \(\varPhi(x)\) 皆为 \(f(x)\) 的原函数)<br>
+\(\therefore \begin{cases} F(a)-\varPhi(a)=C_0 \\ F(b)-\varPhi(b)=C_0 \end{cases}\rArr F(a)-\varPhi(a)=F(b)-\varPhi(b)\)<br>
+\(\because\varPhi(a)=\int_a^a f(t)\mathrm{d}t=0\)<br>
+\(\therefore F(a)=F(b)-\varPhi(b)\hArr\int_a^b f(x)\mathrm{d}x=\varPhi(b)=F(b)-F(a)\)</p>
+</blockquote>
+</li>
+<li>积分中值定理的推广<br>
+\(f(x)\in C[a,b]\), 则 \(\exist\xi\in(a,b)\) (这里变成了闭区间), 使 \(\int_a^b f(x)\mathrm{d}x=f(\xi)(b-a)\)
+<blockquote>
+<p>证明: 设 \(F(x)=\int_a^x f(t)\mathrm{d}t\), \(F^\prime(x)=f(x)\)<br>
+\(\exist\xi\in(a,b)\) 使 \(F^\prime(\xi)=\frac{F(b)-F(a)}{b-a}\) (拉格朗日中值定理)<br>
+\(\footnotesize\therefore\int_a^b f(x)\mathrm{d}x=F(b)-F(a)=F^\prime(\xi)(b-a)=f(\xi)(b-a)\enspace(\xi\in(a,b))\)</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="定积分的换元积分法与分部积分法">定积分的换元积分法与分部积分法</h3>
+<ol>
+<li>
+<p>换元积分法<br>
+若 \(f(x)\in C[a,b]\), \(x=\varphi(t)\) 满足:</p>
+<ol>
+<li>\(\varphi(t)\) 为单调函数且 \(\varphi(\alpha)=a\), \(\varphi(\beta)=b\)</li>
+<li>\(x=\varphi(t)\) 连续可导</li>
+</ol>
+<p>则 \(\int_a^b f(x)\mathrm{d}x=\int_\alpha^\beta f[\varphi(t)]\varphi^\prime(t)\mathrm{d}t\)</p>
+<blockquote>
+<p>证明:<br>
+设 \(F(x)\) 为 \(f(x)\) 的原函数</p>
+<div>
+$$
+\begin{array}{rl}
+\int_\alpha^\beta f[\varphi(t)]\varphi^\prime(t)\mathrm{d}t & =\int_\alpha^\beta f[\varphi(t)]\mathrm{d}\varphi(t) \\
+& =F[\varphi(\beta)]-F[\varphi(\alpha)] \\
+& =F(b)-F(a) \\
+& =\int_a^b f(x)\mathrm{d}x
+\end{array}
+$$
+</div>
+</blockquote>
+</li>
+<li>
+<p>分部积分法<br>
+\(\int_a^b u\mathrm{d}v=(uv)|_a^b-\int_a^b v\mathrm{d}u\)</p>
+<blockquote>
+<p>证明: \(\left.uv\right|_a^b=\int_a^b(uv)^\prime\mathrm{d}x=\int_a^b u^\prime v\mathrm{d}x+\int_a^b uv^\prime\mathrm{d}x=\int_a^b v\mathrm{d}u+\int_a^b u\mathrm{d}v\)</p>
+</blockquote>
+<p>例: 导出 \(I_n=\int_0^\frac{\pi}{2}\sin^n x\mathrm{d}x\) (\(n\) 为非负整数)的递推公式<br>
+解: 易见 \(I_0=\int_0^\frac{\pi}{2}1\mathrm{d}x=\frac{\pi}{2}\), \(I_1=\int_0^\frac{\pi}{2}\sin x\mathrm{d}x=1\). 当 \(n\geqslant 2\) 时</p>
+<div>
+$$
+\begin{array}{rl}
+I_n=\int_0^\frac{\pi}{2}\sin^n x\mathrm{d}x & =\int_0^\frac{\pi}{2}\sin^{n-1}x\cdot\sin x\mathrm{d}x \\
+& =\int_0^\frac{\pi}{2}\sin^{n-1}x[-(\cos x)^\prime]\mathrm{d}x \\
+& =-\int_0^\frac{\pi}{2}\sin^{n-1}x\mathrm{d}\cos x \\
+& =\left.-(\sin^{n-1}x\cdot\cos x)\right|_0^\frac{\pi}{2}+\int_0^\frac{\pi}{2}\cos x\mathrm{d}\sin^{n-1}x \\
+& =\int_0^\frac{\pi}{2}\cos x(\sin^{n-1}x)^\prime\mathrm{d}x \\
+& =\int_0^\frac{\pi}{2}\cos x\cdot\sin^{n-1\prime}x(\sin x)^\prime\mathrm{d}x \\
+& =(n-1)\int_0^\frac{\pi}{2}\sin^{n-2}x\cos^2 x\mathrm{d}x \\
+& =(n-1)\int_0^\frac{\pi}{2}\sin^{n-2}x(1-\sin^2 x)\mathrm{d}x \\
+& =(n-1)[\int_0^\frac{\pi}{2}\sin^{n-2}\mathrm{d}x-\int_0^\frac{\pi}{2}\sin^n x\mathrm{d}x] \\
+& =(n-1)(I_{n-2}-I_n)
+\end{array}
+$$
+</div>
+<p>从而得到递推公式 \(I_n=\frac{n-1}{n}I_{n-2}\)</p>
+</li>
+</ol>
+<h3 id="反常积分">反常积分</h3>
+<ol>
+<li>正常积分标准:
+<ol>
+<li>区间有限</li>
+<li>\(f(x)\) 在区间上连续或有限个第一类间断点</li>
+</ol>
+</li>
+<li>积分区间无限
+<ol>
+<li>\(f(x)\in C[a,+\infty)\)<br>
+有 \(\int_a^{+\infty} f(x)\mathrm{d}x=\lim\limits_{b\to+\infty}[F(b)-F(a)]\)
+<ol>
+<li>若 \(\lim\limits_{b\to+\infty}[F(b)-F(a)]\) 存在, 称 \(\int_a^{+\infty} f(x)\mathrm{d}x\) 收敛</li>
+<li>若 \(\lim\limits_{b\to+\infty}[F(b)-F(a)]\) 不存在, 称 \(\int_a^{+\infty} f(x)\mathrm{d}x\) 发散</li>
+</ol>
+</li>
+<li>\(f(x)\in C(-\infty,a]\)<br>
+有 \(\lim\limits_{b\to-\infty}[F(a)-F(b)]=\int_{-\infty}^a f(x)\mathrm{d}x\)
+<ol>
+<li>若 \(\lim\limits_{b\to-\infty}[F(a)-F(b)]\) 存在, 称 \(\int_{-\infty}^a f(x)\mathrm{d}x\) 收敛</li>
+<li>若 \(\lim\limits_{b\to-\infty}[F(a)-F(b)]\) 不存在, 称 \(\int_{-\infty}^a f(x)\mathrm{d}x\) 发散</li>
+</ol>
+</li>
+<li>\(f(x)\in C(-\infty,+\infty)\)<br>
+若 \(\int_{-\infty}^{+\infty}f(x)\mathrm{d}x\) 收敛 \(\hArr\int_{-\infty}^{a}f(x)\mathrm{d}x\) 与 \(\int_{a}^{+\infty}f(x)\mathrm{d}x\) 收敛<br>
+且 \(\int_{-\infty}^{+\infty}f(x)\mathrm{d}x=\int_{-\infty}^a f(x)\mathrm{d}x+\int_a^{+\infty}f(x)\mathrm{d}x\)</li>
+<li>Gamma 函数 \(\Gamma\)<br>
+定义: \(\Gamma(\alpha)=\int_0^{+\infty}x^{\alpha-1}\cdot e^{-x}\mathrm{d}x\)<br>
+特性:
+<ol>
+<li>\(\Gamma(\alpha+1)=\alpha\Gamma(\alpha)\)</li>
+<li>\(\Gamma(n+1)=n!\enspace(n\in Z)\)</li>
+<li>\(\Gamma(\frac{1}{2})=\sqrt{\pi}\)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>无界函数反常积分
+<ol>
+<li>左无界: \(f(x)\in c(a,b]\) 且 \(f(a+0)=\infty\enspace\) (\(a\) 称作瑕点)<br>
+\(\forall\varepsilon&gt;0\), \(\lim\limits_{\varepsilon\to 0^+}[F(b)-F(a+\varepsilon)]=\int_{a+\varepsilon}^b f(x)\mathrm{d}x\)
+<ol>
+<li>若 \(\lim\limits_{\epsilon\to 0^+}[F(b)-F(a+\varepsilon)]\) 存在, 称 \(\int_a^b f(x)\mathrm{d}x\) 收敛</li>
+<li>若 \(\lim\limits_{\varepsilon\to 0^+}[F(b)-F(a+\varepsilon)]\) 不存在, 称 \(\int_a^b f(x)\mathrm{d}x\) 发散</li>
+</ol>
+</li>
+<li>右无界: \(f(x)\in c[a,b)\) 且 \(f(b-0)=\infty\)<br>
+\(\forall\varepsilon&gt;0\), \(F(b-\varepsilon)-F(a)=\int_a^{b-\varepsilon}f(x)\mathrm{d}x\)
+<ol>
+<li>若 \(\lim\limits_{\epsilon\to 0^+}[F(b-\varepsilon)-F(a)]\) 存在, 称 \(\int_a^b f(x)\mathrm{d}x\) 收敛</li>
+<li>若 \(\lim\limits_{\epsilon\to 0^+}[F(b-\varepsilon)-F(a)]\) 不存在, 称 \(\int_a^b f(x)\mathrm{d}x\) 发散</li>
+</ol>
+</li>
+<li>中无界: \(f(x)\in c[a,c)\cup(c,b]\) 且 \(\lim\limits_{x\to c}f(x)=\infty\)<br>
+若 \(\int_a^b f(x)\mathrm{d}x\) 收敛 \(\hArr\int_a^c f(x)\mathrm{d}x\) 与 \(\int_c^b f(x)\mathrm{d}x\) 收敛<br>
+且 \(\int_a^b f(x)\mathrm{d}x=\int_a^c f(x)\mathrm{d}x+\int_c^b f(x)\mathrm{d}x\)</li>
+</ol>
+</li>
+</ol>
+<h2 id="定积分应用">定积分应用</h2>
+<ol>
+<li>
+<p>元素法<br>
+经典积分思想: 分成无数细小的段然后加起来<br>
+元素法思想:</p>
+
+<ol>
+<li>取 \([x,x+\mathrm{d}x]\subset[a,b]\)</li>
+<li>\(\mathrm{d}A=f(x)\mathrm{d}x\)</li>
+<li>\(A=\int_a^b\mathrm{d}A=\int_a^b f(x)\mathrm{d}x\)</li>
+</ol>
+<p>例: 求 \(L:x^2+y^2=R^2\) 围成的面积</p>
+
+<p>解:</p>
+<ol>
+<li>取 \([x,x+\mathrm{d}x]\subset[0,R]\)</li>
+<li>\(\mathrm{d}A_1=\sqrt{R^2-x^2}\mathrm{d}x\)</li>
+<li>\(A_1=\int_0^R\sqrt{R^2-x^2}\mathrm{d}x\)</li>
+<li>设 \(x=R\sin t\), 则有<br>
+\(\int_0^\frac{\pi}{2}\sqrt{R^2-R^2\sin^2t}(R\cos t)\mathrm{d}t\)<br>
+\(=\int_0^\frac{\pi}{2}R^2\sqrt{1-\sin^2t}\cos t\mathrm{d}t\)<br>
+\(=\int_0^\frac{\pi}{2}R^2\cos^2t\mathrm{d}t\)<br>
+\(=R^2\int_0^\frac{\pi}{2}\cos^2t\mathrm{d}t\)<br>
+\(=R^2\times\frac{1}{2}I_0=\frac{\pi}{4}R^2\)<br>
+\(\therefore A=4A_1=\pi R^2\)</li>
+</ol>
+</li>
+<li>
+<p>几何应用(元素法的拓展)</p>
+<ol>
+<li>
+<p>面积</p>
+<ol>
+<li>
+<p>贴 \(x\) 轴曲面</p>
+
+<ol>
+<li>取 \([x,x+\mathrm{d}x]\subset[a,b]\)</li>
+<li>\(\mathrm{d}A=f(x)\mathrm{d}x\)</li>
+<li>\(A=\int_a^b f(x)\mathrm{d}x\)</li>
+</ol>
+</li>
+<li>
+<p>浮空曲边</p>
+
+<ol>
+<li>取 \([x,x+\mathrm{d}x]\subset[a,b]\)</li>
+<li>\(\mathrm{d}A=[f(x)-g(x)]\mathrm{d}x\)</li>
+<li>\(A=\int_a^b[f(x)-g(x)]\mathrm{d}x\)</li>
+</ol>
+</li>
+<li>
+<p>曲边扇形面积(以下内容为弧度制)<br>
+\(L:R=r(\theta)\enspace(\theta\in[\alpha,\beta])\)</p>
+
+<ol>
+<li>取 \([\theta,\theta+\mathrm{d}\theta]\subset[\alpha,\beta]\)</li>
+<li>\(\mathrm{d}A=\frac{1}{2}r^2(\theta)\mathrm{d}\theta\) (曲边扇形面积公式)</li>
+<li>\(A=\int_\alpha^\beta\mathrm{d}A=\int_\alpha^\beta\frac{1}{2}r^2(\theta)\mathrm{d}\theta\)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>体积</p>
+<ol>
+<li>
+<p>旋转体的体积</p>
+<ol>
+<li>
+<p>\(V_x\) (绕 \(x\) 轴旋转)</p>
+
+<ol>
+<li>取 \([x,x+\mathrm{d}x]\subset[a,b]\)</li>
+<li>\(\mathrm{d}V_x=\pi f^2(x)\mathrm{d}x\)</li>
+<li>\(V_x=\pi\int_a^b f^2(x)\mathrm{d}x\)</li>
+</ol>
+</li>
+<li>
+<p>\(V_y\) (绕 \(y\) 轴旋转)</p>
+
+
+<ol>
+<li>取 \([x,x+\mathrm{d}x]\subset[a,b]\)</li>
+<li>\(\mathrm{d}V_y=2\pi|x|\cdot|f(x)|\cdot\mathrm{d}x\)</li>
+<li>\(V_y=2\pi\int_a^b |x|\cdot|f(x)|\mathrm{d}x\)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>截口面积已知求几何体体积<br>
+有关于底面积的函数 \(A(x)\)</p>
+
+<ol>
+<li>取 \([x,x+\mathrm{d}x]\subset[a,b]\)</li>
+<li>\(\mathrm{d}V=A(x)\mathrm{d}x\)</li>
+<li>\(V=\int_a^b A(x)\mathrm{d}x\)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>弧长</p>
+
+<ol>
+<li>\(L:y=f(x)\enspace(a\leqslant x\leqslant b)\)
+<ol>
+<li>取 \([x,x+\mathrm{d}x]\subset[a,b]\)</li>
+<li>\(\mathrm{d}s=\sqrt{(\mathrm{d}x)^2+(\mathrm{d}y)^2}=\sqrt{1+(\frac{\mathrm{d}y}{\mathrm{d}x})^2}\mathrm{d}x=\sqrt{1+[f^\prime(x)]^2}\mathrm{d}x\)</li>
+<li>\(l=\int_a^b\mathrm{d}s\mathrm{d}x=\int_a^b\sqrt{1+[f^\prime(x)]^2}\mathrm{d}x\)</li>
+</ol>
+</li>
+<li>\(L:\begin{cases} x=\varphi(t) \\ y=\psi(t) \end{cases}\enspace(\alpha\leqslant t\leqslant\beta)\)
+<ol>
+<li>取 \([t,t+\mathrm{d}t]\subset[\alpha,\beta]\)</li>
+<li>\(\mathrm{d}s=\sqrt{(\mathrm{d}x)^2+(\mathrm{d}y)^2}=\sqrt{[\varphi^\prime(t)]^2+[\psi^\prime(t)]^2}\mathrm{d}t\)</li>
+<li>\(l=\int_\alpha^\beta\mathrm{d}s\mathrm{d}t=\int_\alpha^\beta\sqrt{[\varphi^\prime(x)]^2+[\psi^\prime(x)]^2}\mathrm{d}t\)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="微分方程">微分方程</h2>
+<p>解微分方程的目的即根据已知微分条件求目标函数</p>
+<h3 id="微分方程的基本概念">微分方程的基本概念</h3>
+<ol>
+<li>微分方程: 含有导数或微分的方程<br>
+常微分方程: 只含一个自变量, 一个函数的微分方程, 如 \(f^\prime(x)+7f(x)=0\)<br>
+这里探讨的范围仅限于常微分方程</li>
+<li>微分方程的阶: 在微分方程中, 导数或微分的最高阶数</li>
+<li>微分方程的解:<br>
+已知 \(y\) 关于 \(x\) 的微分方程 \(F(y^{(n)},y^{(n-1)},\dots,y^\prime,y,x)=0\)<br>
+若代入函数 \(y=\varphi(x)\) 能够满足 \(F(y^{(n)},y^{(n-1)},\dots,y^\prime,y,x)=0\)<br>
+称 \(y=\varphi(x)\) 为该微分方程的解
+<ol>
+<li>通解: 设 \(n\) 阶微分方程 \(F(y^{(n)},y^{(n-1)},\dots,y^\prime,y,x)=0\), 若该方程的解含 \(n\) 个相互独立的任意常数, 称该解为通解<br>
+如 \(y=C_1e^x+C_2e^{2x}\) 为 \(y^{\prime\prime}-3y^\prime+2y=0\) 的通解</li>
+<li>特解: 不含任意常数的解</li>
+</ol>
+</li>
+</ol>
+<h3 id="可分离变量微分方程">可分离变量微分方程</h3>
+<ol>
+<li>定义: 形如 \(\frac{\mathrm{d}y}{\mathrm{d}x}=\varphi_1(x)\varphi_2(y)\)</li>
+<li>解法<br>
+\(\frac{\mathrm{d}y}{\mathrm{d}x}=\varphi_1(x)\varphi_2(y)\rArr\frac{\mathrm{d}y}{\varphi_2(y)}=\varphi_1(x)\mathrm{d}x\)<br>
+两边积分:<br>
+\(\int\frac{\mathrm{d}y}{\varphi_2(y)}=\int\varphi_1(x)\mathrm{d}x+C\) (注意微分方程中自变量一端要加 \(C\))</li>
+</ol>
+<h3 id="齐次微分方程">齐次微分方程</h3>
+<ol>
+<li>定义: 形如 \(\frac{\mathrm{d}y}{\mathrm{d}x}=\varphi(\frac{y}{x})\)</li>
+<li>解法<br>
+换元法, 设 \(u=\frac{y}{x}\), 则 \(y=ux\rArr y^\prime=u^\prime x+ux^\prime\rArr\frac{\mathrm{d}y}{\mathrm{d}x}=x\frac{\mathrm{d}u}{\mathrm{d}x}+u\)<br>
+将 \(\frac{\mathrm{d}y}{\mathrm{d}x}=x\frac{\mathrm{d}u}{\mathrm{d}x}+u\) 和 \(u=\frac{y}{x}\) 代入方程两边得到 \(x\frac{\mathrm{d}u}{\mathrm{d}x}+u=\varphi(u)\)<br>
+然后就可以分离变量, 最后两边积分:<br>
+\(\frac{\mathrm{d}x}{x}=\frac{\mathrm{d}u}{\varphi(u)-u}\rArr\int\frac{\mathrm{d}x}{x}=\int\frac{\mathrm{d}u}{\varphi(u)-u}+C\)</li>
+</ol>
+<h3 id="一阶线性微分方程">一阶线性微分方程</h3>
+<ol>
+<li>一阶齐次线性方程
+<ol>
+<li>定义: 形如 \(\frac{\mathrm{d}y}{\mathrm{d}x}+P(x)y=0\)</li>
+<li>解法及通解公式
+<ul>
+<li>
+<p>情况1 \(y=0\) 为方程的解</p>
+</li>
+<li>
+<p>情况2 \(y\neq 0\) 时, 先分离变量, 然后两边积分, 再套用积分公式求解:</p>
+<div>
+$$
+\begin{aligned}
+ \frac{1}{y}\mathrm{d}y=-P(x)\mathrm{d}x & \rArr\int\frac{1}{y}\mathrm{d}y=\int-P(x)\mathrm{d}x \\
+ & \rArr\ln|y|=-\int P(x)\mathrm{d}x+C_0 \\
+ & \rArr|y|=e^{-\int P(x)\mathrm{d}x+C_0} \\
+ & \rArr y=\pm e^{C_0}\cdot e^{-\int P(x)\mathrm{d}x}=Ce^{-\int P(x)\mathrm{d}x}
+\end{aligned}
+$$
+</div>
+<p>通解 \(y=Ce^{-\int P(x)\mathrm{d}x}\)</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>一阶非齐线性微分方程
+<ol>
+<li>定义: 形如 \(\frac{\mathrm{d}y}{\mathrm{d}x}+P(x)y=Q(x)\)</li>
+<li>解法<br>
+通过常数易变法, 将上面齐次方程通解中的常数项换成关于 \(x\) 的函数 \(C=u(x)\), 得到 ➀ \(y=u(x)e^{-\int P(x)\mathrm{d}x}\)<br>
+然后对 \(y\) 求导: (这里注意 \(e^{-\int P(x)\mathrm{d}x}\) 是复合函数)<br>
+➁ \(y^\prime=\frac{\mathrm{d}y}{\mathrm{d}x}=u^\prime(x)e^{-\int P(x)\mathrm{d}x}-u(x)P(x)e^{-\int P(x)\mathrm{d}x}\)<br>
+将 ➀、➁ 代入一阶非齐线性微分方程:<br>
+\(u^\prime(x)e^{-\int P(x)\mathrm{d}x}-u(x)P(x)e^{-\int P(x)\mathrm{d}x}+P(x)u(x)e^{-\int P(x)\mathrm{d}x}=Q(x)\)<br>
+\(\rArr u^\prime(x)e^{-\int P(x)\mathrm{d}x}=Q(x)\)<br>
+\(\rArr u^\prime(x)=Q(x)e^{\int P(x)\mathrm{d}x}\)<br>
+\(\rArr\int u^\prime(x)\mathrm{d}x=\int Q(x)e^{\int P(x)\mathrm{d}x}\mathrm{d}x+C\)<br>
+\(\rArr u(x)=\int Q(x)e^{\int P(x)\mathrm{d}x}\mathrm{d}x+C\)<br>
+求得的 \(u(x)\) 再次带入通解式得 \(y=[\int Q(x)e^{\int P(x)\mathrm{d}x}\mathrm{d}x+C]e^{-\int P(x)\mathrm{d}x}\)</li>
+</ol>
+</li>
+</ol>
+<h3 id="可降阶的高阶微分方程">可降阶的高阶微分方程</h3>
+<ol>
+<li>
+<p>\(y^{(n)}=f(x)\enspace(n\geqslant2)\)<br>
+解法: 直接积分<br>
+\(y^{(n-1)}=\int f(x)\mathrm{d}x=F(x)+C\)<br>
+\(y^{(n-2)}=\int(\int(F(x)+C)\mathrm{d}x\)<br>
+\(\dots\)</p>
+<p>例: \(y^{\prime\prime}=x^3+e^{2x}\)<br>
+解:<br>
+\(y^\prime=\frac{1}{4}x^4+\frac{1}{2}e^{2x}+C_1\)<br>
+\(y=\frac{1}{20}x^5+\frac{1}{4}e^{2x}+C_1x+C_2\)</p>
+</li>
+<li>
+<p>(缺失 \(y\)) \(f(x,y^\prime,y^{\prime\prime})=0\)<br>
+解法:<br>
+令 \(y^\prime=p\), \(y^{\prime\prime}=\frac{\mathrm{d}p}{\mathrm{d}x}\) 代入得<br>
+\(f(x,p,\frac{\mathrm{d}p}{\mathrm{d}x})=0\rArr p=\varphi(x,C_1)\), 即 \(\frac{\mathrm{d}y}{\mathrm{d}x}=\varphi(x,C_1)\)<br>
+\(\therefore y=\int\varphi(x, C_1)\mathrm{d}x+C_2\)</p>
+<p>例: 求 \(xy^{\prime\prime}+2y^\prime=0\) 通解<br>
+解: 令 \(y^\prime=p\), \(y^{\prime\prime}=\frac{\mathrm{d}p}{\mathrm{d}x}\), 代入得<br>
+\(x\frac{\mathrm{d}p}{\mathrm{d}x}+2p=0\rArr\frac{\mathrm{d}p}{p}=-\frac{2\mathrm{d}x}{x}\)<br>
+\(\rArr\int\frac{1}{p}\mathrm{d}p=-2\int\frac{1}{x}\mathrm{d}x+C_0\)<br>
+\(\rArr\ln|p|=-2\ln|x|+C_0\)<br>
+\(\rArr|p|=e^{-2\ln|x|+C_0}=\frac{e^{C_0}}{x^2}\)<br>
+\(\rArr p=\pm\frac{e^{C_0}}{x^2}=\frac{C_1}{x^2}\), 即 \(y^\prime=\frac{C_1}{x^2}\)<br>
+\(\therefore y=-\frac{C_1}{x}+C_2\)</p>
+</li>
+<li>
+<p>(缺失 \(x\)) \(f(y,y^\prime,y^{\prime\prime})=0\)<br>
+解法:<br>
+令 \(y^\prime=p\), \(y^{\prime\prime}=\frac{\mathrm{d}p}{\mathrm{d}x}\rArr y^{\prime\prime}=\frac{\mathrm{d}p}{\mathrm{d}y}\cdot\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\mathrm{d}p}{\mathrm{d}y}\cdot p\), 代入得</p>
+<div>
+$$
+\begin{array}{rl}
+f(y,p,\frac{\mathrm{d}p}{\mathrm{d}y}\cdot p)=0 & \rArr p=\varphi(y,C_1) \\
+& \hArr\frac{\mathrm{d}y}{\mathrm{d}x}=\varphi(y,C_1) \\
+& \hArr\frac{\mathrm{d}y}{\varphi(y,C_1)}=\mathrm{d}x \\
+& \rArr\int\frac{\mathrm{d}y}{\varphi(y,C_1)}=\int\mathrm{d}x+C_2
+\end{array}
+$$
+</div> 
+<p>例: 求 \(yy^{\prime\prime}-y^{\prime 2}=0\) 满足初始条件 \(y(0)=1\), \(y^\prime(0)=1\) 的特解<br>
+解:<br>
+令 \(y^\prime=p\), \(y^{\prime\prime}=p\frac{\mathrm{d}p}{\mathrm{d}y}\), 代入得 \(yp\frac{\mathrm{d}p}{\mathrm{d}y}-p^2=0\)</p>
+<div>
+$$
+\begin{array}{ll}
+\because p\neq 0 & \\
+\therefore y\frac{\mathrm{d}p}{\mathrm{d}y}-p=0 & \hArr\frac{\mathrm{d}p}{\mathrm{d}y}-\frac{1}{y}p=0 \\
+& \rArr p=C_0e^{-\int-\frac{1}{y}p\mathrm{d}y} (\text{\footnotesize一阶齐次线性微分方程通解})\\
+& \hArr p=C_0e^{\ln|y|} \\
+& \rArr p=C_1y \\
+& \hArr\frac{\mathrm{d}y}{\mathrm{d}x}=C_1y \\
+& \hArr\frac{\mathrm{d}y}{C_1y}=\mathrm{d}x \\
+& \rArr\int\frac{\mathrm{d}y}{C_1y}=\int\mathrm{d}x+C_2 \\
+& \hArr\ln|C_1y|=x+C_2 \\
+& \rArr y=\frac{C_3e^x}{C_1} \\
+& \rArr y=C_4e^x
+\end{array}
+$$
+</div>
+<p>\(\because y(0)=1,y^\prime(0)=1\)<br>
+\(\therefore C_4=1\), 特解为 \(y=e^x\)</p>
+</li>
+</ol>
+<h3 id="高阶线性微分方程">高阶线性微分方程</h3>
+<ol>
+<li>基本概念
+<ol>
+<li>
+<p>二阶齐次线性微分方程: \(y^{\prime\prime}+a(x)y^\prime+b(x)y=0\)<br>
+二阶非齐线性微分方程: \(y^{\prime\prime}+a(x)y^\prime+b(x)y=c(x)\)</p>
+</li>
+<li>
+<p>\(n\) 阶齐次线性微分方程: \(y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}y^\prime+a_n(x)y=0\)<br>
+\(n\) 阶非齐线性微分方程: \(\footnotesize y^{(n)}+a_1(x)y^{(n-1)}+\dots+a_{n-1}y^\prime+a_n(x)y=f(x)\)</p>
+</li>
+<li>
+<p>线性相关和线性无关:<br>
+\(\varphi_1(x)\), \(\varphi_2(x)\) 为两个函数<br>
+若 \(\frac{\varphi_1(x)}{\varphi_2(x)}\equiv k\in R\), 称 \(\varphi_1(x)\), \(\varphi_2(x)\) 线性相关,<br>
+若 \(\frac{\varphi_1(x)}{\varphi_2(x)}=u(x)\) (两函数的比例与 \(x\) 相关, 不恒为某个常数), 则称线性无关.</p>
+<p>如 \(x^2\) 和 \(\sin x\) 线性无关, \(x^2\) 和 \(3x^2\) 线性相关</p>
+</li>
+</ol>
+</li>
+<li>性质<br>
+设 \(\begin{cases} \text{➀ }y^{\prime\prime}+a(x)y^\prime+b(x)y=0 \\ \text{➁ }y^{\prime\prime}+a(x)y^\prime+b(x)y=c(x) \end{cases}\)
+<ol>
+<li>若 \(\varphi_1(x)\), \(\varphi_2(x)\) 为 ➀ 的解, 则 \(y=C_1\varphi_1(x)+C_2\varphi_2(x)\) 仍为 ➀ 的解(线性组合)</li>
+<li>若 \(\varphi_1(x)\), \(\varphi_2(x)\) 分别为 ➀, ➁ 的解, 则 \(y=\varphi_1(x)+\varphi_2(x)\) 为 ➁ 的解</li>
+<li>若 \(\varphi_1(x)\), \(\varphi_2(x)\) 为 ➁ 的解, 则 \(y=\varphi_2(x)-\varphi_1(x)\) 为 ➀ 的解
+<blockquote>
+<p>证明:<br>
+若 \(\varphi_1(x)\), \(\varphi_2(x)\) 为 ➁ 的解<br>
+则有 \(\begin{cases} \varphi_1^{\prime\prime}+a(x)\varphi_1^\prime+b(x)\varphi_1=c(x) \\ \varphi_2^{\prime\prime}+a(x)\varphi_2^\prime+b(x)\varphi_2=c(x) \end{cases}\)<br>
+将 \(y=\varphi_2(x)-\varphi_1(x)\) 代入 ➁:<br>
+\((\varphi_2-\varphi_1)^{\prime\prime}+a(x)(\varphi_2-\varphi_1)^\prime+b(x)(\varphi_2-\varphi_1)\)<br>
+\(=(\varphi_2^{\prime\prime}+a(x)\varphi_2^\prime+b(x)\varphi_2)-(\varphi_1^{\prime\prime}+a(x)\varphi_1^\prime+b(x)\varphi_1)\)<br>
+\(=c(x)-c(x)=0\)<br>
+\(\therefore y=\varphi_2(x)-\varphi_1(x)\) 为 ➀ 的解</p>
+</blockquote>
+</li>
+<li>若 \(\varphi_1(x)\), \(\varphi_2(x)\) 为 ➀ 的两个线性无关的特解, \(\varphi_0(x)\) 为 ➁ 的一个特解<br>
+则 ➀ 通解为 \(y=C_1\varphi_1(x)+C_2\varphi_2(x)\);<br>
+➁ 的通解为 \(y=C_1\varphi_1(x)+C_2\varphi_2(x)+\varphi_0(x)\)</li>
+<li>➂ \(y^{\prime\prime}+a(x)y^\prime+b(x)y=f_1(x)+f_2(x)\)<br>
+➂’ \(\enspace y^{\prime\prime}+a(x)y^\prime+b(x)y=f_1(x)\)<br>
+➂’’ \(\enspace y^{\prime\prime}+a(x)y^\prime+b(x)y=f_2(x)\)<br>
+若 \(\varphi_1(x)\), \(\varphi_2(x)\) 分别为 ➂’, ➂’’ 的特解, 则 \(y=\varphi_1(x)+\varphi_2(x)\) 为 ➂ 的特解
+<blockquote>
+<p>证明:<br>
+若 \(\varphi_1(x)\), \(\varphi_2(x)\) 为 ➂’, ➂’’ 的解<br>
+则有 \(\begin{cases} \varphi_1^{\prime\prime}+a(x)\varphi_1^\prime+b(x)\varphi_1=f_1(x) \\ \varphi_2^{\prime\prime}+a(x)\varphi_2^\prime+b(x)\varphi_2=f_2(x) \end{cases}\)<br>
+将 \(y=\varphi_1(x)+\varphi_2(x)\) 代入 ➂:<br>
+\((\varphi_1+\varphi_2)^{\prime\prime}+a(x)(\varphi_1+\varphi_2)^\prime+b(x)(\varphi_1+\varphi_2)=f(x)\)<br>
+\(\hArr(\varphi_1^{\prime\prime}+a(x)\varphi_1^\prime+b(x)\varphi_1)+(\varphi_1^{\prime\prime}+a(x)\varphi_2^\prime+b(x)\varphi_2)=f(x)\)<br>
+\(\hArr f_1(x)+f_2(x)=f(x)\)<br>
+\(\therefore y=\varphi_1(x)+\varphi_2(x)\) 为 ➂ 的解</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="常系数齐次线性微分方程">常系数齐次线性微分方程</h3>
+<ol>
+<li>
+<p>二阶常系数齐次线性微分方程: \(y^{\prime\prime}+py^\prime+qy=0\)<br>
+它的特征方程: \(\lambda^2+p\lambda+q=0\) , \(\Delta=b^2-4q\)</p>
+<ol>
+<li>\(\Delta&gt;0\), \(y=C_1e^{\lambda_1x}+C_2e^{\lambda_2x}\)</li>
+<li>\(\Delta=0\), \(y=(C_1+C_2x)e^{\lambda_1x}\)</li>
+<li>\(\Delta&lt;0\), \(y=e^{\alpha x}[C_1\cos(\beta x)+C_2\sin(\beta x)]\)</li>
+</ol>
+<p>这种根据二阶常系数齐次线性方程的特征方程的根直接确定其通解的方法称为<strong>特征方程法</strong></p>
+</li>
+<li>
+<p>特征方程法解释:<br>
+二阶常系数齐次线性微分方程 \(y^{\prime\prime}+py^\prime+qy=0\enspace\) (\(p\)、\(q\) 为常数) (⁕)<br>
+猜测: (⁕) 解的形式? \(\begin{cases} e^{\lambda x} \\ \sin(\beta x)\cdot\cos(\beta x) \end{cases}\)<br>
+令 \(y=e^{\lambda x}\) 为 (⁕) 的解, 有<br>
+\(\lambda^2e^{\lambda x}+p\lambda e^{\lambda x}+qe^{\lambda x}=0\rArr\lambda^2+p\lambda+q=0\), 称其为 (⁕) 的特征方程</p>
+<ul>
+<li>情况1 \(\Delta=p^2-4q&gt;0\)<br>
+则 \(\lambda^2+p\lambda+q=0\) 有两个不同实根 \(\lambda_1\)、\(\lambda_2\)<br>
+因此 \(y_1=e^{\lambda_1x}\), \(y_2=e^{\lambda_2x}\) 为 (⁕) 的特解<br>
+\(\because\lambda_1\neq\lambda_2\)<br>
+\(\therefore\frac{y_1}{y_2}=e^{(\lambda_1-\lambda_2)x}\) 不恒为某个常数, \(y_1\) 与 \(y_2\) 线性无关<br>
+\(\therefore\) (⁕) 的通解为 \(y=C_1e^{\lambda_1x}+C_2e^{\lambda_2x}\) (高阶线性线性微分方程性质 4)</li>
+<li>情况2 \(\Delta=p^2-4q=0\)<br>
+则 \(\lambda^2+p\lambda+q=0\) 有两个相等的实根 \(\lambda_1=\lambda_2\)<br>
+\(y_1=e^{\lambda_1x}\) 为 (⁕) 的一个特解, 还要找出与 \(y_1\) 线性无关的另一个特解 \(y_2\)<br>
+(满足 \(\frac{y_2}{y_1}\) 不是恒常数的 \(y_2\))<br>
+令 \(\frac{y_2}{y_1}=u(x)(\neq C)\) 且 \(y_2\) 为 (⁕) 的解, 得到<br>
+\(\begin{cases} y_2=ue^{\lambda_1x} \\ y_2^\prime=u^\prime e^{\lambda_1x}+\lambda_1ue^{\lambda_1x} \\ y_2^{\prime\prime}=u^{\prime\prime}e^{\lambda_1x}+2\lambda_1u^\prime e^{\lambda_1x}+\lambda_1^2ue^{\lambda_1x} \end{cases}\)<br>
+将以上三式代入 (⁕) 得<br>
+\(u^{\prime\prime}e^{\lambda_1x}+2\lambda_1u^\prime e^{\lambda_1x}+\lambda_1^2ue^{\lambda_1x}+pu^\prime e^{\lambda_1x}+p\lambda_1ue^{\lambda_1x}+que^{\lambda_1x}=0\)<br>
+\(\rArr u^{\prime\prime}+2\lambda_1u^\prime+\lambda_1^2u+pu^\prime+p\lambda_1u+qu=0\)<br>
+\(\rArr u^{\prime\prime}+(2\lambda_1+p)u^\prime+(\lambda_1^2+p\lambda_1+q)u=0\)<br>
+\(\because \begin{cases} \lambda_1^2+p\lambda_1+q=0 \\ \lambda_1+\lambda_2=-p \rArr 2\lambda_1+p=0\enspace\footnotesize(\text{韦达定理} x_1+x_2=-\frac{b}{a}) \end{cases}\)<br>
+\(\therefore u^{\prime\prime}=0\), 取 \(u(x)=C_1x+C_2\)<br>
+\(\therefore y_2=(C_1x+C_2)e^{\lambda_1x}=C_1xe^{\lambda_1x}+C_2e^{\lambda_1x}\)<br>
+则通解 \(\footnotesize y=C_0e^{\lambda_1x}+C_1xe^{\lambda_1x}+C_2e^{\lambda_1x}=(C_0+C_1x+C_2)e^{\lambda_1x}=(C_3+C_1x)e^{\lambda_1x}\)</li>
+<li>情况3 \(\Delta=p^2-4q&lt;0\)<br>
+则 \(\lambda^2+p\lambda+q=0\) 有一对共轭复根 \(\footnotesize\lambda_{1,2}=-\frac{1}{2}p\pm\frac{1}{2}\sqrt{4q-p^2}i=\alpha\pm\beta i\)<br>
+\(y_1=e^{(\alpha+\beta i)x}\) 与 \(y_2=e^{(\alpha-\beta i)x}\) 为 (⁕) 的复值函数形式特解<br>
+为了求出实值函数形式的特解, 将 \(y_1\) 与 \(y_2\) 改写为:<br>
+\(y_1=e^{\alpha x+\beta xi}=e^{\alpha x}\cdot e^{\beta xi}=e^{\alpha x}\cdot\underbrace{[\cos(\beta x)+i\sin(\beta x)]}_{\text{欧拉公式 }e^{i\theta}=\cos\theta+i\sin\theta}\)<br>
+\(y_2=e^{\alpha x-\beta xi}=e^{\alpha x}\cdot e^{-\beta xi}=e^{\alpha x}\cdot[\cos(\beta x)-i\sin(\beta x)]\)<br>
+取方程的两个特解: (高阶线性线性微分方程性质 1)<br>
+\(Y_1=\frac{1}{2}(y_1+y_2)=e^{\alpha x}\cos(\beta x)\)<br>
+\(Y_2=\frac{1}{2i}(y_1-y_2)=e^{\alpha x}\sin(\beta x)\)<br>
+\(\because\frac{Y_2}{Y_1}=\tan(\beta x)\)<br>
+\(\therefore\) \(Y_1\) 与 \(Y_2\) 线性无关, (⁕) 的通解为 \(\footnotesize y=C_1e^{\alpha x}\cos(\beta x)+C_2e^{\alpha x}\sin(\beta x)=e^{\alpha x}[C_1\cos(\beta x)+C_2\sin(\beta x)]\)</li>
+</ul>
+</li>
+<li>
+<p>\(n\) 阶常系数齐次线性微分方程 \(y^{(n)}+p_1y^{(n-1)}+\cdots+p_{n-1}y^\prime+p_ny=0\)<br>
+其特征方程: \(\lambda^n+p_1\lambda^{n-1}+\cdots+p_{n-1}\lambda+p_n=0\)</p>
+<table>
+<thead>
+<tr>
+<th>特征方程的根</th>
+<th>通解中的对应项</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\(k\) 重根 \(\lambda_1=\lambda_2=\cdots=\lambda_k\)</td>
+<td>\(y=C_1+C_2x+\cdots+C_kx^{k-1})e^{\lambda_1x}\)</td>
+</tr>
+<tr>
+<td>\(k\) 重共轭复根 \(\lambda_{1,\cdots,n}=\alpha\pm\beta i\)</td>
+<td>\(e^{\alpha x}[(C_1+C_2x+\cdots+C_kx^{n-1})\cos(\beta x) \\ +(D_0+D_1x+\cdots+D_kx^{k-1})\sin(\beta x)]\)</td>
+</tr>
+<tr>
+<td>例: \(y^{\prime\prime\prime}+py^{\prime\prime}+qy^\prime+ry=0\), 它的特征方程 \(\lambda^3+p\lambda^2+q\lambda+r=0\)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>\(\lambda_1\)、\(\lambda_2\)、\(\lambda_3\) 为实数且各不相等<br>
+\(y=C_1e^{\lambda_1x}+C_2e^{\lambda_2x}+C_3e^{\lambda_3x}\)</li>
+<li>\(\lambda_1\)、\(\lambda_2\)、\(\lambda_3\) 为实数且 \(\lambda_1=\lambda_2\neq\lambda_3\)<br>
+\(y=(C_1+C_2x)e^{\lambda_1x}+C_3e^{\lambda_3x}\)</li>
+<li>\(\lambda_1\)、\(\lambda_2\)、\(\lambda_3\) 为实数且相等<br>
+\(y=(C_1+C_2x+C_3x^2)e^{\lambda_1x}\)</li>
+<li>\(\lambda_1\in R\), \(\lambda_{2,3}=\alpha\pm i\beta\)<br>
+\(y=C_1e^{\lambda_1x}+e^{\alpha x}[C_2\cos(\beta x)+C_3\sin(\beta x)]\)</li>
+</ol>
+</li>
+</ol>
+<h3 id="常系数非齐次线性微分方程">常系数非齐次线性微分方程</h3>
+<ol>
+<li>形如 \(y^{\prime\prime}+py^\prime+qy=f(x)\enspace\) (\(p\)、\(q\) 为常数, \(f(x)\) 称为<strong>自由项</strong>)<br>
+通解思路: (高阶线性微分方程性质 5)
+<ol>
+<li>先求 \(y^{\prime\prime}+py^\prime+qy=0\) 通解</li>
+<li>找 \(y^{\prime\prime}+py^\prime+qy=f(x)\) 的一个特解 \(y_0(x)\)<br>
+(很困难, 接下来只谈两种使用待定系数法的情况)</li>
+<li>有通解 \(y=C_1e^{-x}+C_2e^{2x}+y_0(x)\)</li>
+</ol>
+</li>
+<li>自由项 \(f(x)=P_n(x)e^{kx}\)<br>
+其中 \(P_n(x)=a_0x^n+a_1x^{n-1}+\cdots+a_{n-1}x+a_n\)<br>
+令特解为 \(y_0=x^l(ax+b)e^{kx}\) , 其中 \(l\) 为与 \(k\) 的值相等的特征值个数
+<ul>
+<li>
+<p>例1: 求 \(y^{\prime\prime}-3y^\prime+2y=(2x+3)e^x\) 通解<br>
+解:</p>
+<ol>
+<li>
+<p>特征方程: \(\lambda^2-3\lambda+2=0\rArr\lambda_1=1\), \(\lambda_2=2\)<br>
+\(y^{\prime\prime}-3y^\prime+2y=0\) 通解为 \(y=C_1e^{x}+C_2e^{2x}\)</p>
+</li>
+<li>
+<p>\(k=1=\lambda_1\), 因此令特解 \(y_0(x)=x(ax+b)e^x=(ax^2+bx)e^x\), 有<br>
+\(\begin{array}{rl} y_0^\prime(x) &amp; =(2ax+b)e^x+(ax^2+bx)e^x=(ax^2+2ax+bx+b)e^x \\ y_0^{\prime\prime}(x) &amp; =(2ax+2a+b)e^x+(ax^2+2ax+bx+b)e^x \\ &amp; =(ax^2+4ax+bx+2a+2b)e^x \end{array}\)<br>
+代入原式, 得到:</p>
+<div>
+$$
+\begin{array}{l}
+\footnotesize(ax^2+4ax+bx+2a+2b)e^x-3(ax^2+2ax+bx+b)e^x+2(ax^2+bx)e^x=(2x+3)e^x \\
+\footnotesize\hArr(ax^2+4ax+bx+2a+2b)-3(ax^2+2ax+bx+b)+2(ax^2+bx)=2x+3 \\
+\footnotesize\hArr -2ax+2a-b=2x+3 \\
+\footnotesize\rArr\begin{cases} -2ax=2x & \hArr a=-1\\ 2a-b=3 & \hArr b=-5 \end{cases}
+\end{array}
+$$
+</div>
+<p>即 \(y_0(x)=-(x^2+5x)e^x\)</p>
+</li>
+</ol>
+<p>\(\therefore\) 原方程通解为 \(y=C_1e^x+C_2e^{2x}-(x^2+5x)e^x\)</p>
+</li>
+<li>
+<p>例2: 求 \(y^{\prime\prime}-2y^\prime+y=(3x+2)e^x\) 通解<br>
+解:</p>
+<ol>
+<li>特征方程 \(\lambda^2-2\lambda+1=0\rArr\lambda_1=\lambda_2=1\)<br>
+\(y^{\prime\prime}-2y^\prime+y=0\) 通解 \(y=(C_1+C_2x)e^x\)</li>
+<li>\(k=1=\lambda_1=\lambda_2\), 因此令特解 \(\footnotesize y_0(x)=x^2(ax+b)e^x=(ax^3+bx^2)e^x\)<br>
+\(y_0^\prime(x)=\cdots\), \(y_0^{\prime\prime}(x)=\cdots\)<br>
+代入原方程解得 \(a=\frac{1}{2}\), \(b=1\)<br>
+即 \(y_0(x)=(\frac{1}{2}x^3+x^2)e^x\)</li>
+</ol>
+<p>\(\therefore\) 原方程通解为 \(y=(C_1+C_2x)e^x+(\frac{1}{2}x^3+x^2)e^x\)</p>
+</li>
+<li>
+<p>例3: 求 \(y^{\prime\prime}-2y^\prime-3y=6x-1\) 通解<br>
+解:</p>
+<ol>
+<li>\(\lambda^2-2\lambda-3=0\rArr\lambda_1=-1\), \(\lambda_2=3\)<br>
+\(y^{\prime\prime}-2y^\prime-3y=0\) 通解为 \(y=C_1e^{-x}+C_2e^3\)</li>
+<li>自由项 \(6x-1\) 可视为 \((6x-1)e^0x\), 即 \(k=0\).<br>
+注意此题中 \(\lambda\) 的值没有与 \(k=0\) 相同的<br>
+因此令特解 \(y_0(x)=ax+b\)<br>
+(余下略)<br>
+\(\dots\)</li>
+</ol>
+<p>\(\dots\)</p>
+</li>
+</ul>
+</li>
+<li>\(f(x)=e^{\alpha x}\) [\(\text{多项式}\cdot\cos(\beta x)+\text{多项式}\cdot\sin(\beta x)\)]<br>
+令特解为 \(\footnotesize y_0(x)=x^le^{\alpha x}[a\cdot\cos(\beta x)+b\cdot\sin(\beta x)]\enspace\) (\(a\)、\(b\) 根据多项式内容决定, \(l\) 的值为与 \(\alpha+i\beta\) 的值相等的特征值个数)<br>
+注: \(\alpha\)、\(\beta\) 的值已经在方程中给出, 因此解对应非齐次方程通解可以直接用
+<ul>
+<li>
+<p>例1: 求 \(y^{\prime\prime}+4y=3\cos 2x\) 通解<br>
+解:</p>
+<ol>
+<li>\(\lambda^2+4=0\rArr\lambda_{1,2}=\pm 2i\)<br>
+\(y^{\prime\prime}+4y=0\) 通解为 \(y=C_1\cos 2x+C_2\sin 2x\)</li>
+<li>\(\alpha=0\), \(\beta=2\rArr\alpha+i\beta=2i=\lambda_1\)<br>
+因此令特解 \(y_0(x)=x(a\cos 2x+b\sin 2x)\enspace\) (\(\cos\) 和 \(\sin\) 都不能少哦)<br>
+(余下略)<br>
+\(\dots\)</li>
+</ol>
+<p>\(\dots\)</p>
+</li>
+<li>
+<p>例2: \(y^{\prime\prime}-2y^\prime+2y=(x+1)e^x\cos x\)<br>
+解:</p>
+<ol>
+<li>\(\lambda^2-2\lambda+2=0\rArr\lambda_{1,2}=1\pm i\)<br>
+\(y^{\prime\prime}-2y^\prime+2y=0\) 通解为 \(y=e^x(\cos x+\sin x)\)</li>
+<li>\(\alpha=1\), \(\beta=1\rArr\alpha+i\beta=1+i=\lambda_1\)<br>
+因此令特解 \(y_0(x)=xe^x[(ax+b)\cos x+(cx+d)\sin x]\)<br>
+(余下略, 解出 \(a,b,c,d\), 最后得出通解)<br>
+\(\dots\)</li>
+</ol>
+<p>\(\dots\)</p>
+</li>
+</ul>
+</li>
+</ol>
+</div><div class="article-licensing box"><div class="licensing-title"><p>postgraduate-advanced-mathematics</p><p><a href="https://magic0whi.github.io/learn/postgraduate-advanced-mathematics/">https://magic0whi.github.io/learn/postgraduate-advanced-mathematics/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Proteus Chan</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-01-19</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2024-07-21</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/mathematics/">mathematics</a><a class="link-muted mr-2" rel="tag" href="/tags/postgraduate/">postgraduate</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/learn/postgraduate-advanced-mathematics-2/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">postgraduate-advanced-mathematics-2</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/learn/english-grammar/"><span class="level-item">english-grammar</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#函数与极限"><span class="level-left"><span class="level-item">1</span><span class="level-item">函数与极限</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#函数"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">函数</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#初等性质"><span class="level-left"><span class="level-item">1.1.1</span><span class="level-item">初等性质</span></span></a></li></ul></li><li><a class="level is-mobile" href="#数列极限"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">数列极限</span></span></a></li><li><a class="level is-mobile" href="#函数极限"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">函数极限</span></span></a></li><li><a class="level is-mobile" href="#无穷小与无穷大"><span class="level-left"><span class="level-item">1.4</span><span class="level-item">无穷小与无穷大</span></span></a></li><li><a class="level is-mobile" href="#极限的运算法则"><span class="level-left"><span class="level-item">1.5</span><span class="level-item">极限的运算法则</span></span></a></li><li><a class="level is-mobile" href="#极限存在法则和两个重要极限"><span class="level-left"><span class="level-item">1.6</span><span class="level-item">极限存在法则和两个重要极限</span></span></a></li><li><a class="level is-mobile" href="#无穷小的比较"><span class="level-left"><span class="level-item">1.7</span><span class="level-item">无穷小的比较</span></span></a></li><li><a class="level is-mobile" href="#函数的连续性与间断点"><span class="level-left"><span class="level-item">1.8</span><span class="level-item">函数的连续性与间断点</span></span></a></li><li><a class="level is-mobile" href="#连续函数运算及初等函数连续性"><span class="level-left"><span class="level-item">1.9</span><span class="level-item">连续函数运算及初等函数连续性</span></span></a></li><li><a class="level is-mobile" href="#闭区间上连续函数的性质"><span class="level-left"><span class="level-item">1.10</span><span class="level-item">闭区间上连续函数的性质</span></span></a></li></ul></li><li><a class="level is-mobile" href="#导数与微分"><span class="level-left"><span class="level-item">2</span><span class="level-item">导数与微分</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#导数的概念"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">导数的概念</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#常见初等函数的导函数"><span class="level-left"><span class="level-item">2.1.1</span><span class="level-item">常见初等函数的导函数</span></span></a></li></ul></li><li><a class="level is-mobile" href="#求导法则"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">求导法则</span></span></a></li><li><a class="level is-mobile" href="#高阶导数"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">高阶导数</span></span></a></li><li><a class="level is-mobile" href="#隐函数及由参数方程确定的函数求导"><span class="level-left"><span class="level-item">2.4</span><span class="level-item">隐函数及由参数方程确定的函数求导</span></span></a></li><li><a class="level is-mobile" href="#微分"><span class="level-left"><span class="level-item">2.5</span><span class="level-item">微分</span></span></a></li></ul></li><li><a class="level is-mobile" href="#微分中值定理及导数应用"><span class="level-left"><span class="level-item">3</span><span class="level-item">微分中值定理及导数应用</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#微分中值定理"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">微分中值定理</span></span></a></li><li><a class="level is-mobile" href="#洛必达法则"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">洛必达法则</span></span></a></li><li><a class="level is-mobile" href="#泰勒公式"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">泰勒公式</span></span></a></li><li><a class="level is-mobile" href="#导数与函数单调性和曲线凹凸性的关系"><span class="level-left"><span class="level-item">3.4</span><span class="level-item">导数与函数单调性和曲线凹凸性的关系</span></span></a></li><li><a class="level is-mobile" href="#极值与最值"><span class="level-left"><span class="level-item">3.5</span><span class="level-item">极值与最值</span></span></a></li><li><a class="level is-mobile" href="#函数图像描绘"><span class="level-left"><span class="level-item">3.6</span><span class="level-item">函数图像描绘</span></span></a></li><li><a class="level is-mobile" href="#弧微分与曲率"><span class="level-left"><span class="level-item">3.7</span><span class="level-item">弧微分与曲率</span></span></a></li></ul></li><li><a class="level is-mobile" href="#不定积分"><span class="level-left"><span class="level-item">4</span><span class="level-item">不定积分</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#不定积分的概念与性质"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">不定积分的概念与性质</span></span></a></li><li><a class="level is-mobile" href="#不定积分的换元积分法与分部积分法"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">不定积分的换元积分法与分部积分法</span></span></a></li></ul></li><li><a class="level is-mobile" href="#定积分"><span class="level-left"><span class="level-item">5</span><span class="level-item">定积分</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#定积分的概念与性质"><span class="level-left"><span class="level-item">5.1</span><span class="level-item">定积分的概念与性质</span></span></a></li><li><a class="level is-mobile" href="#积分基本定理"><span class="level-left"><span class="level-item">5.2</span><span class="level-item">积分基本定理</span></span></a></li><li><a class="level is-mobile" href="#定积分的换元积分法与分部积分法"><span class="level-left"><span class="level-item">5.3</span><span class="level-item">定积分的换元积分法与分部积分法</span></span></a></li><li><a class="level is-mobile" href="#反常积分"><span class="level-left"><span class="level-item">5.4</span><span class="level-item">反常积分</span></span></a></li></ul></li><li><a class="level is-mobile" href="#定积分应用"><span class="level-left"><span class="level-item">6</span><span class="level-item">定积分应用</span></span></a></li><li><a class="level is-mobile" href="#微分方程"><span class="level-left"><span class="level-item">7</span><span class="level-item">微分方程</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#微分方程的基本概念"><span class="level-left"><span class="level-item">7.1</span><span class="level-item">微分方程的基本概念</span></span></a></li><li><a class="level is-mobile" href="#可分离变量微分方程"><span class="level-left"><span class="level-item">7.2</span><span class="level-item">可分离变量微分方程</span></span></a></li><li><a class="level is-mobile" href="#齐次微分方程"><span class="level-left"><span class="level-item">7.3</span><span class="level-item">齐次微分方程</span></span></a></li><li><a class="level is-mobile" href="#一阶线性微分方程"><span class="level-left"><span class="level-item">7.4</span><span class="level-item">一阶线性微分方程</span></span></a></li><li><a class="level is-mobile" href="#可降阶的高阶微分方程"><span class="level-left"><span class="level-item">7.5</span><span class="level-item">可降阶的高阶微分方程</span></span></a></li><li><a class="level is-mobile" href="#高阶线性微分方程"><span class="level-left"><span class="level-item">7.6</span><span class="level-item">高阶线性微分方程</span></span></a></li><li><a class="level is-mobile" href="#常系数齐次线性微分方程"><span class="level-left"><span class="level-item">7.7</span><span class="level-item">常系数齐次线性微分方程</span></span></a></li><li><a class="level is-mobile" href="#常系数非齐次线性微分方程"><span class="level-left"><span class="level-item">7.8</span><span class="level-item">常系数非齐次线性微分方程</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/computer/"><span class="level-start"><span class="level-item">computer</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile" href="/categories/daily-life/"><span class="level-start"><span class="level-item">daily-life</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/learn/"><span class="level-start"><span class="level-item">learn</span></span><span class="level-end"><span class="level-item tag">14</span></span></a><ul><li><a class="level is-mobile" href="/categories/learn/mathematics/"><span class="level-start"><span class="level-item">mathematics</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/minecraft/"><span class="level-start"><span class="level-item">minecraft</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/electronic-and-information-engineering/"><span class="tag">electronic-and-information-engineering</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mathematics/"><span class="tag">mathematics</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/postgraduate/"><span class="tag">postgraduate</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/senior-high-schoool/"><span class="tag">senior-high-schoool</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Comet_symbol.svg" alt="Proteus Chan の Notebook" height="28"></a><p class="is-size-7"><span>&copy; 2024 Proteus Chan</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script><!-- hexo injector body_end start -->
+    <script>
+    (() => {
+        function switchTab() {
+            if (!location.hash) {
+              return;
+            }
+            Array
+                .from(document.querySelectorAll('.tab-content'))
+                .forEach($tab => {
+                    $tab.classList.add('is-hidden');
+                });
+            Array
+                .from(document.querySelectorAll('.tabs li'))
+                .forEach($tab => {
+                    $tab.classList.remove('is-active');
+                });
+            const $activeTab = document.querySelector(location.hash);
+            if ($activeTab) {
+                $activeTab.classList.remove('is-hidden');
+            }
+            const $tabMenu = document.querySelector(`a[href="${location.hash}"]`);
+            if ($tabMenu) {
+                $tabMenu.parentElement.classList.add('is-active');
+            }
+        }
+        switchTab();
+        window.addEventListener('hashchange', switchTab, false);
+    })();
+    </script>
+    <!-- hexo injector body_end end --></body></html>

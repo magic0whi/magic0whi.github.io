@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>git-usage - Proteus Chan の Notebook</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Proteus Chan の Notebook"><meta name="msapplication-TileImage" content="/img/favicon.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Proteus Chan の Notebook"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Some notes on Git"><meta property="og:type" content="blog"><meta property="og:title" content="git-usage"><meta property="og:url" content="https://magic0whi.github.io/computer/git-usage/"><meta property="og:site_name" content="Proteus Chan の Notebook"><meta property="og:description" content="Some notes on Git"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://magic0whi.github.io/img/og_image.png"><meta property="article:published_time" content="2022-05-02T10:08:14.000Z"><meta property="article:modified_time" content="2024-07-21T10:39:03.081Z"><meta property="article:author" content="Proteus Chan"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://magic0whi.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://magic0whi.github.io/computer/git-usage/"},"headline":"git-usage","image":["https://magic0whi.github.io/img/og_image.png"],"datePublished":"2022-05-02T10:08:14.000Z","dateModified":"2024-07-21T10:39:03.081Z","author":{"@type":"Person","name":"Proteus Chan"},"publisher":{"@type":"Organization","name":"Proteus Chan の Notebook","logo":{"@type":"ImageObject","url":"https://magic0whi.github.io/img/Comet_symbol.svg"}},"description":"Some notes on Git"}</script><link rel="canonical" href="https://magic0whi.github.io/computer/git-usage/"><link rel="icon" href="/img/favicon.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Comet_symbol.svg" alt="Proteus Chan の Notebook" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/peers">Peers</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2022-05-02T10:08:14.000Z" title="5/2/2022, 10:08:14 AM">2022-05-02</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-07-21T10:39:03.081Z" title="7/21/2024, 10:39:03 AM">2024-07-21</time></span><span class="level-item"><a class="link-muted" href="/categories/computer/">computer</a></span><span class="level-item">5 minutes read (About 771 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">git-usage</h1><div class="content"><p>Some notes on Git</p>
+<span id="more"></span>
+<h2 id="Difference-between-and">Difference between ^ and ~</h2>
+<p><code>commit^n</code> choose the nth parent of the commit</p>
+<p><code>HEAD^</code> = <code>HEAD^1</code> = <code>HEAD~</code> = <code>HEAD~1</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">G   H   I   J</span><br><span class="line"> \ /     \ /</span><br><span class="line">  D   E   F</span><br><span class="line">   \  |  / \</span><br><span class="line">    \ | /   |</span><br><span class="line">     \|/    |</span><br><span class="line">      B     C</span><br><span class="line">       \   /</span><br><span class="line">        \ /</span><br><span class="line">         A</span><br><span class="line"></span><br><span class="line">A =      = A^0</span><br><span class="line">B = A^   = A^1     = A~1</span><br><span class="line">C = A^2</span><br><span class="line">D = A^^  = A^1^1   = A~2</span><br><span class="line">E = B^2  = A^^2</span><br><span class="line">F = B^3  = A^^3</span><br><span class="line">G = A^^^ = A^1^1^1 = A~3</span><br><span class="line">H = D^2  = B^^2    = A^^^2  = A~2^2</span><br><span class="line">I = F^   = B^3^    = A^^3^</span><br><span class="line">J = F^2  = B^3^2   = A^^3^2</span><br></pre></td></tr></table></figure>
+<p>See <a target="_blank" rel="noopener" href="https://stackoverflow.com/a/2222920">What’s the difference between HEAD^ and HEAD~ in Git?</a></p>
+<h2 id="Clone">Clone</h2>
+<p>Clone a repository with its submodules (<code>--recurse-submodules</code>)</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone --recurse-submodules git@domain.tld:repo.git`</span><br></pre></td></tr></table></figure>
+<h2 id="Add-Move-Remove">Add &amp; Move &amp; Remove</h2>
+<p>Add file in a interactive patch way (<code>-p</code>/<code>--patch</code>)</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -p &lt;file&gt;</span><br></pre></td></tr></table></figure>
+<p>Move (Rename) file and then stage: <code>git mv &lt;filename1&gt; &lt;filename2&gt;</code><br>
+Remove file: <code>git rm &lt;file&gt;</code><br>
+Remove file in index only: <code>git rm --cached &lt;file&gt;</code></p>
+<h2 id="Commit">Commit</h2>
+<ul>
+<li>Automatically stage changes, add signoff, GPG-sign the commit: <code>git commit -asS</code></li>
+<li>Fast modify last commit: <code>git commit --amend</code></li>
+</ul>
+<h2 id="Log">Log</h2>
+<ul>
+<li>Show log in a friendly format: <code>git -P log --pretty='format:%C(auto)%G?%d %h %an %ar %s' --graph --all</code></li>
+<li>Show commits with diff patch (<code>-p</code>/<code>-u</code>/<code>--patch</code>/<code>--cc</code> (dense)): <code>git log -cc</code>, <code>git log --cc -1</code> (For HEAD only)</li>
+<li>Show commits for a user (<code>--author=</code>/<code>--committer=</code>): <code>git log --author=&lt;pattern&gt;</code></li>
+<li>Grep in commit logs: <code>git log --grep=&lt;pattern&gt;</code></li>
+</ul>
+<h2 id="Diff">Diff</h2>
+<ul>
+<li>Show a summary: <code>git -P diff --stat</code></li>
+<li>Show diff of the last commit: <code>git -P diff HEAD HEAD~1</code> or <code>git -P diff HEAD^!</code></li>
+</ul>
+<h2 id="Blame">Blame</h2>
+<p>Show each line of a file with last commit hash and author: <code>git blame &lt;file&gt;</code></p>
+<h2 id="Stash">Stash</h2>
+<p><code>git stash</code><br>
+<code>git stash pop</code></p>
+<h2 id="Branch-Remove">Branch &amp; Remove</h2>
+<p>Create a branch and set its upstream (<code>-t</code>/<code>--track</code>): <code>git branch &lt;new-branch&gt; &lt;remote-branch&gt;</code><br>
+Delete a branch (<code>-d</code>/<code>--delete</code>): <code>git branch -d &lt;branch&gt;</code><br>
+Delete a remote branch (<code>-d</code>/<code>--delete</code>): <code>git push &lt;remote&gt; -d &lt;branch&gt;</code> / <code>git push &lt;remote&gt; :&lt;branch&gt;</code><br>
+Rename a branch (<code>-m</code>/<code>--move</code>): <code>git branch -m &lt;old-branch&gt; &lt;new-branch&gt;</code><br>
+To rename a remtoe branch, first delete the remote branch, then push a branch with new name: <code>git push &lt;remote&gt; :&lt;old-branch&gt;; git push &lt;remote&gt; &lt;new-branch&gt;</code></p>
+<p>Add remote and choose a branch to track: (<code>-t</code>/<code>--track</code>): <code>git remote add -t &lt;remote-branch&gt; &lt;remote-name&gt; &lt;url&gt;</code></p>
+<h2 id="Tag">Tag</h2>
+<p>tag current HEAD: <code>git tag &lt;tag-name&gt;</code><br>
+push tags (under <code>refs/tags</code>): <code>git push --tags</code></p>
+<h2 id="Rebase">Rebase</h2>
+<p>Modify last 10 commits: <code>git rebase -i HEAD~10</code></p>
+<ul>
+<li><code>pick</code> doesn’t change this commit</li>
+<li><code>drop</code> drop this commit</li>
+<li><code>edit</code> edit this commit</li>
+<li><code>squash</code> merge this commit with one commit above</li>
+</ul>
+<h2 id="Reset-Clean">Reset &amp; Clean</h2>
+<p>Reset work tree and delete untracked files: <code>git reset --hard HEAD; git clean -fdx</code></p>
+<p>Reset:</p>
+<ul>
+<li><code>--soft</code> only change HEAD to <code>&lt;commit&gt;</code></li>
+<li><code>--mixed</code> reset index only.</li>
+<li><code>--hard</code> reset both index and working tree</li>
+<li><code>--keep</code> reset working tree only (If a file differ between <code>&lt;commit&gt;</code> and <code>HEAD</code>, and also has modified copy in index, this reset will be abort)</li>
+</ul>
+<p>Clean:</p>
+<ul>
+<li><code>-f --force</code> allow <code>git clean</code> to delete files or directories while <code>clean.requireForce</code> is not set to false.</li>
+<li><code>-d</code> Normally, when no <path> is set, <code>git clean</code> will not recurse into untracked directories to removing too much. Specify <code>-d</code> to have it recurse into such directories as well.</li>
+<li><code>-x</code> Remove ignored files and directories mentioned in <code>.gitignore</code></li>
+</ul>
+<h2 id="Restore">Restore</h2>
+<p>Restore a file from specify commit: <code>git restore -s &lt;commit&gt; &lt;file&gt;</code></p>
+<h2 id="Rvert">Rvert</h2>
+<p>Create a revert commit (Useful when in a team): <code>git revert &lt;commit&gt;</code><br>
+k</p>
+<h2 id="Submodule">Submodule</h2>
+<p>Show submodule status: <code>git submodule status</code><br>
+Add a submodule: <code>git submodule add -b &lt;remote-branch&gt; [--name &lt;name&gt;] &lt;url&gt;</code><br>
+Initialize and update submodule to superproject’s recorded commit SHA-1: <code>git submodule update --init</code> or <code>git submodule init; git submodule update</code><br>
+Update submodule to its remote-tracking branch: <code>git submodule update --remote &lt;submodule-name&gt;</code></p>
+<p>Specify how differences in submodule are shown when using <code>git diff</code>: <code>git diff --submodule=[diff|log|short]</code></p>
+<p>Push only when submodule commits are available on remote-tracking branch: <code>git push --recurse-submodules=check</code><br>
+Push also submodule commits: <code>git push --recurse-submodules=on-demand</code></p>
+<p>Run command in each submodules: <code>git submodule foreach &lt;command&gt;</code></p>
+<h3 id="More-Greater-Submodule-for-Git">More Greater Submodule for Git</h3>
+<p>使用<a target="_blank" rel="noopener" href="https://github.com/ingydotnet/git-subrepo">git-subrepo</a></p>
+<p>然后使用<code>git subrepo</code>为开头</p>
+<p>还可将子目录变为子仓库:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git subrepo init &lt;subdir&gt; [-r &lt;remote&gt;] [-b &lt;branch&gt;] [--method &lt;merge|rebase&gt;]</span></span><br></pre></td></tr></table></figure>
+<h2 id="Git-Cherry-pick">Git Cherry-pick</h2>
+<p>git cherry-pick用于把另一个本地分支的commit修改应用到当前分支</p>
+<p>假设<code>dev</code>分支有一个hash为<code>38361a68</code>的commit</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">$ git cherry-pick 38361a68</span><br></pre></td></tr></table></figure>
+<h2 id="Git-Format-patch">Git Format-patch</h2>
+<ol>
+<li>Create patch files between two commit<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git format-patch &lt;r1&gt;..&lt;r2&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>Single commit patch<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git format-patch -1 &lt;r1&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>Create patch file since commit r1 (But doesn’t include this commit)<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git format-patch &lt;r1&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>Apply series of patches<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git am *.patch</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Limit-memory-usage-of-git-gc">Limit memory usage of git-gc</h2>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git config --global pack.windowMemory <span class="string">&quot;100m&quot;</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git config --global pack.packSizeLimit <span class="string">&quot;100m&quot;</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git config --global pack.threads <span class="string">&quot;1&quot;</span></span></span><br></pre></td></tr></table></figure>
+</div><div class="article-licensing box"><div class="licensing-title"><p>git-usage</p><p><a href="https://magic0whi.github.io/computer/git-usage/">https://magic0whi.github.io/computer/git-usage/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Proteus Chan</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2022-05-02</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2024-07-21</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/computer/c-notes/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">c-notes</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/computer/bspwm-notes/"><span class="level-item">bspwm-notes</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Difference-between-and"><span class="level-left"><span class="level-item">1</span><span class="level-item">Difference between ^ and ~</span></span></a></li><li><a class="level is-mobile" href="#Clone"><span class="level-left"><span class="level-item">2</span><span class="level-item">Clone</span></span></a></li><li><a class="level is-mobile" href="#Add-Move-Remove"><span class="level-left"><span class="level-item">3</span><span class="level-item">Add &amp; Move &amp; Remove</span></span></a></li><li><a class="level is-mobile" href="#Commit"><span class="level-left"><span class="level-item">4</span><span class="level-item">Commit</span></span></a></li><li><a class="level is-mobile" href="#Log"><span class="level-left"><span class="level-item">5</span><span class="level-item">Log</span></span></a></li><li><a class="level is-mobile" href="#Diff"><span class="level-left"><span class="level-item">6</span><span class="level-item">Diff</span></span></a></li><li><a class="level is-mobile" href="#Blame"><span class="level-left"><span class="level-item">7</span><span class="level-item">Blame</span></span></a></li><li><a class="level is-mobile" href="#Stash"><span class="level-left"><span class="level-item">8</span><span class="level-item">Stash</span></span></a></li><li><a class="level is-mobile" href="#Branch-Remove"><span class="level-left"><span class="level-item">9</span><span class="level-item">Branch &amp; Remove</span></span></a></li><li><a class="level is-mobile" href="#Tag"><span class="level-left"><span class="level-item">10</span><span class="level-item">Tag</span></span></a></li><li><a class="level is-mobile" href="#Rebase"><span class="level-left"><span class="level-item">11</span><span class="level-item">Rebase</span></span></a></li><li><a class="level is-mobile" href="#Reset-Clean"><span class="level-left"><span class="level-item">12</span><span class="level-item">Reset &amp; Clean</span></span></a></li><li><a class="level is-mobile" href="#Restore"><span class="level-left"><span class="level-item">13</span><span class="level-item">Restore</span></span></a></li><li><a class="level is-mobile" href="#Rvert"><span class="level-left"><span class="level-item">14</span><span class="level-item">Rvert</span></span></a></li><li><a class="level is-mobile" href="#Submodule"><span class="level-left"><span class="level-item">15</span><span class="level-item">Submodule</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#More-Greater-Submodule-for-Git"><span class="level-left"><span class="level-item">15.1</span><span class="level-item">More Greater Submodule for Git</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Git-Cherry-pick"><span class="level-left"><span class="level-item">16</span><span class="level-item">Git Cherry-pick</span></span></a></li><li><a class="level is-mobile" href="#Git-Format-patch"><span class="level-left"><span class="level-item">17</span><span class="level-item">Git Format-patch</span></span></a></li><li><a class="level is-mobile" href="#Limit-memory-usage-of-git-gc"><span class="level-left"><span class="level-item">18</span><span class="level-item">Limit memory usage of git-gc</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/computer/"><span class="level-start"><span class="level-item">computer</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile" href="/categories/daily-life/"><span class="level-start"><span class="level-item">daily-life</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/learn/"><span class="level-start"><span class="level-item">learn</span></span><span class="level-end"><span class="level-item tag">14</span></span></a><ul><li><a class="level is-mobile" href="/categories/learn/mathematics/"><span class="level-start"><span class="level-item">mathematics</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/minecraft/"><span class="level-start"><span class="level-item">minecraft</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/electronic-and-information-engineering/"><span class="tag">electronic-and-information-engineering</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mathematics/"><span class="tag">mathematics</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/postgraduate/"><span class="tag">postgraduate</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/senior-high-schoool/"><span class="tag">senior-high-schoool</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Comet_symbol.svg" alt="Proteus Chan の Notebook" height="28"></a><p class="is-size-7"><span>&copy; 2024 Proteus Chan</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script><!-- hexo injector body_end start -->
+    <script>
+    (() => {
+        function switchTab() {
+            if (!location.hash) {
+              return;
+            }
+            Array
+                .from(document.querySelectorAll('.tab-content'))
+                .forEach($tab => {
+                    $tab.classList.add('is-hidden');
+                });
+            Array
+                .from(document.querySelectorAll('.tabs li'))
+                .forEach($tab => {
+                    $tab.classList.remove('is-active');
+                });
+            const $activeTab = document.querySelector(location.hash);
+            if ($activeTab) {
+                $activeTab.classList.remove('is-hidden');
+            }
+            const $tabMenu = document.querySelector(`a[href="${location.hash}"]`);
+            if ($tabMenu) {
+                $tabMenu.parentElement.classList.add('is-active');
+            }
+        }
+        switchTab();
+        window.addEventListener('hashchange', switchTab, false);
+    })();
+    </script>
+    <!-- hexo injector body_end end --></body></html>
